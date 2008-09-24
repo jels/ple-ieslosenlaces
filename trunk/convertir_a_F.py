@@ -1,19 +1,26 @@
-# -*- coding: utf-8 -*-
+# -*- coding: cp1252 -*-
+
+"""
+Modifica el programa convertir_a_F.py para que muestre una
+tabla de valores Centígrados - Fahrenheit de 0º C a 100º C.
+"""
 
 # Programa que convierte grados C a grados Fahrenheit.
-# Pide los grados al usuario, hace el cÃ¡lculo y muestra el resultado.
+# Pide los grados al usuario, hace el cálculo y muestra el resultado.
 
-# Buscamos fÃ³rmula de conversiÃ³n: http://es.wikipedia.org/wiki/Grado_Fahrenheit
-# FÃ³rmula: F = 1.8 * C + 32
+# Buscamos fórmula de conversión: http://es.wikipedia.org/wiki/Grado_Fahrenheit
+# Fórmula: F = 1.8 * C + 32
 
-# PeticiÃ³n de entrada:
-gradosC = input("Introduce grados CentÃ­grados: ")
 
-# CÃ¡lculo del resultado
-gradosF = 1.8 * gradosC + 32
+# Petición de entrada:
+# gradosC = input("Introduce grados Centígrados: ")
+# Ahora no pedimos datos de entrada --> range(101)
 
-# Muestra resultado
-print gradosC, 'Âº centrÃ­grados son', gradosF, 'Âº Fahrenheit'
+for gradosC in range(101):
+    # Cálculo del resultado
+    gradosF = 1.8 * gradosC + 32
+    # Muestra resultado
+    print gradosC, 'º centrígrados son', gradosF, 'º Fahrenheit'
 
 # Si ejecutamos en windows hay que parar para ver el resultado
 raw_input('Pulsa intro para terminar')
