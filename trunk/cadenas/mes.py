@@ -16,13 +16,15 @@ le restamos 1 al número de mes y lo multiplicamos por 3
 
 """
 
-meses = "EneFebMarAbrMayJunJulAgoSepOctNovDic"
+meses = "Enero Febrero Marzo Abril Mayo Junio Julio Agosto \
+Septiembre Octubre Noviembre Diciembre"
 
 num_mes = raw_input("Introduce el número del mes: ")
 num_mes = int(num_mes)
 
-pos = (num_mes -1) * 3
+lista_meses = meses.split()
 
-mes_abrev = meses[pos:pos+3]
+
+mes_abrev = lista_meses[num_mes -1]
 
 print 'El mes número', num_mes, 'es', mes_abrev
