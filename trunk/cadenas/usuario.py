@@ -6,4 +6,4 @@
 nombre = raw_input("Introduce tu nombre (en minúsculas): ")
 apellido = raw_input("Inrtroduce tu apellido (en minúsculas): ")
 
-print 'Nombre de usuario: ', nombre[0]+apellido
+print 'Nombre de usuario: ', nombre[0].lower()+apellido.lower()

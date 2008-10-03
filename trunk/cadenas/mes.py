@@ -18,7 +18,8 @@ le restamos 1 al número de mes y lo multiplicamos por 3
 
 meses = "EneFebMarAbrMayJunJulAgoSepOctNovDic"
 
-num_mes = input("Introduce el número del mes: ")
+num_mes = raw_input("Introduce el número del mes: ")
+num_mes = int(num_mes)
 
 pos = (num_mes -1) * 3
 
