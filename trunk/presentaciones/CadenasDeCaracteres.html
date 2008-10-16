@@ -53,59 +53,7 @@ alt="wispy clouds in a blue sky" />
 Ciclo DAI. IES Los Enlaces</h2>
 </div>
 
-<!--
-<div class="slide">
-<h1>Guión de la sesión</h1>
-<ul>
-<li>Proceso de desarrollo de software</li>
-<li>Primer programa: conversor de temperatura</li>
-<li>Elementos del programa</li>
-<li>Sentencias de salida</li>
-<li>Sentencias de asignación</li>
-<li>Repeticiones fijas</li>
-<li>Repaso</li>
-<li>Ejercicios</li>
-</ul>
-</div>
 
--->
-<!--
-<div class="slide">
-<h1>The Ubiquitous Web</h1>
-<ul>
-<li>Ubiquitous Web</li>
-<li>The Web is an increasingly dominant applications platform</li>
-<li>Applications that dynamically adapt to the user, device and environment</li>
-<li>Moving beyond today's client/server model</li>
-<li>Extending device capabilities via the network</li>
-<li>W3C UbiWeb Workshop, Tokyo March 2006</li>
-</ul>
-</div>
--->
-<!--
-<div class="slide">
-<h1>Web Trends</h1>
-
-<ul>
-<li>The Web is pervasive and an increasingly dominant
-applications platform</li>
-<li>Increasing variety of devices being connected to networks,
-not just desktops and cell phones</li>
-<li>First in offices, and now in homes, cars, trains and planes</li>
-<li>Web applications need to encompass a much wider range of devices
-<ul>
-<li>Cameras, copiers, scanners, printers, home appliances of all
-kinds, environmental sensors and effectors, specialized engines
-for speech, handwriting, etc.</li>
-</ul>
-</li>
-<li>Increased costs for delivering services to wide variety of
-devices and platforms</li> 
-<li>Need for applications to dynamically adapt to the user, the
-device capabilities and environmental conditions</li>
-</ul>
-</div>
--->
 <div class="slide">
 <h1>El tipo de datos Cadena de Caracteres</h1>
 <div class="extract">
@@ -293,17 +241,111 @@ c.upper()
 </div>
 </div>
 
+<div class="slide">
+<h1>Ejemplo: Conversión de fechas</h1>
+<div class="extract">
+<pre>
+# -*- encoding: utf-8 -*-
 
+"""
+Conversor de fechas
+convierte fechas en el formato "dd/mm/aaaa" a "dia de mes de año"
+"""
 
- 
- 
- 
- 
- 
- 
- 
- 
+# Toma de datos de la fecha
+fecha_cadena = raw_input("Introduce la fecha (dd/mm/aaaa): ")
+dia, mes, anno = fecha_cadena.split('/')
 
+# Meses ***** Por terminar ****
+meses = ["Enero", "Febrero", "Marzo", "..."]
+
+mes_cadena = meses[int(mes)-1]
+
+print "%s de %s de %s" % (dia, mes_cadena, anno)
+</pre>
+</div></div>
+
+<div class="slide">
+<h1>Proceso de ficheros</h1>
+<div class="extract">
+  <ul>
+    <li>Abrir fichero
+    <pre>
+      variable_fichero = open(nombre[, modo])
+      fichero_lectura = open("Texto ya escrito.txt")
+    </pre>
+    </li>
+    <li>Leer un fichero
+    <pre>
+      variable_fichero.read()
+      variable_fichero.readline()
+      variable_fichero.readlines()
+    </pre>
+    <pre>
+      nombre = raw_input("Introduce ruta fichero: ")
+      fich_lect = open(nombre)
+      contenido = fich_lect.read()
+      print contenido
+    </pre>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Lectura de ficheros. Ejemplos</h1>
+<div class="extract">
+  <ul>
+    <li>Leemos las primeras 5 líneas de un fichero
+    <pre>
+      fich_lectura = open(fichero)
+      for i in range(5):
+          linea = fich_lectura.readline()
+	  print linea,
+    </pre>
+    </li>
+    <li>Leer todo el fichero
+    <pre>
+      fich_lectura = open(fichero)
+      for linea in fich_lectura:
+          print linea,
+    </pre>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Utilidades para ficheros</h1>
+<div class="extract">
+  <pre>
+    import os
+    os.getcwd()
+    os.listdir(ruta)
+    os.listdir('.')
+    os.mkdir(nombre_dir)
+    os.path.getsize(ruta)
+  </pre>
+</div>
+</div>
+
+<div class="slide">
+<h1>Escritura en ficheros</h1>
+<div class="extract">
+  <pre>
+    f_escritura = open(ruta, 'w')
+    f_escritura.write(cadena)
+    
+    for x in range(100):
+        f_escritura.write("Línea número %d\n" % (x+1))
+    f_escritura.close()
+  </pre>
+</div>
+</div>
+
+  
+    
+    
 
 <!--
 <div class="slide">
