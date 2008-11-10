@@ -19,3 +19,8 @@ edad = 18
 suma_edad(edad)
 print edad
 }}}
+
+==Funciones y estructura de los programas==
+ * Funciones como mecanismos para reducir al duplicación del código
+ * Rompler la complejidad de un programa en subprogramas más pequeños.
+ 
