@@ -28,3 +28,27 @@ def _test():
 if __name__ == "__main__":
     _test()
 }}}
+
+Si no pasa las prueba, mostrará el error en pantalla: 
+{{{
+**********************************************************************
+File "/home/lm/Escritorio/ple/prueba_funciones.py", line 6, in __main__.cuadrado
+Failed example:
+    cuadrado(5)
+Expected:
+    25
+Got:
+    125
+**********************************************************************
+File "/home/lm/Escritorio/ple/prueba_funciones.py", line 8, in __main__.cuadrado
+Failed example:
+    cuadrado(10)
+Expected:
+    100
+Got:
+    1000
+**********************************************************************
+1 items had failures:
+   2 of   2 in __main__.cuadrado
+***Test Failed*** 2 failures.
+}}}
