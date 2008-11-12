@@ -5,7 +5,7 @@ from time import sleep
 
 """
 Ejemplo de uso de la librería graphics de zelle
-Descargar de http://mcsp.wartburg.edu/zelle/python/graphics.py
+Descargar de http://mcsp.w -fartburg.edu/zelle/python/graphics.py
 
 Necesita optimizar el código.
 """
