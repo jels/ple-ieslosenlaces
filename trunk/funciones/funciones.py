@@ -17,3 +17,17 @@ def circunferencia(radio):
     circunferencia(radio) --> devuelve longitud circunf.
     """
     return pi * 2 * radio
+
+def doble(x):
+    """
+    >>> doble(5)
+    10
+    """
+    return x + x
+
+
+
+
+
+
+
