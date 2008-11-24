@@ -8,62 +8,121 @@ import sys
 
 pygame.init()
 
-screen = pygame.display.set_mode((350, 300))
+screen = pygame.display.set_mode((350, 300), 0, 16)
 pygame.display.set_caption("Juego ahorcado")
 
 #### poner sonido
-sonido = pygame.mixer.Sound(
-    os.path.join('data', 'telefono.ogg'))
-sonido.play()
+sonido_mal = pygame.mixer.Sound(
+    os.path.join('data', 'mal.wav'))
+sonido_bien = pygame.mixer.Sound(
+    os.path.join('data', 'bien.ogg'))
+sonido_repe = pygame.mixer.Sound(
+    os.path.join('data', 'mal2.ogg'))
+sonido_gano = pygame.mixer.Sound(
+    os.path.join('data', 'gana.wav'))
 
 
 #### poner texto
-fuente = pygame.font.Font(None, 48)
-texto = fuente.render("_ _ _ _ _ _ _",1 , (10, 10, 10))
-posicion_texto = texto.get_rect()
-posicion_texto.centerx = screen.get_rect().centerx
-posicion_texto.centery = 280
+fuente = pygame.font.SysFont('courier', 48)
+
+
+
+def mensaje_fin(screen, gana):
+    fuente = pygame.font.SysFont('arial', 52)
+    if gana:
+        texto = u"Fin. Enhorabuena."
+    else:
+        texto = u"Fin. Otra vez será."    
+    texto_fin = fuente.render(texto ,1 , (255, 0, 0))
+    posicion_texto = texto_fin.get_rect()
+    posicion_texto.centerx = screen.get_rect().centerx
+    posicion_texto.centery = screen.get_rect().centery
+    
+    screen.blit(texto_fin, posicion_texto)
+    
 
 
 num = 0 ## repeticiones --> nombres de imágenes
+palabra_oculta = "adivinanza"
+errores = 0
+introducidas = ""
+
+def dame_letra(evento):
+    letra = evento.unicode
+    if letra.isalpha():
+        return letra
+    else:
+        return None
+    
+def muestra_texto(oculta, introducidas):
+    muestra = ""
+    for letra in oculta:
+        if letra in introducidas:
+            muestra = muestra + letra+ ' '
+        else:
+            muestra = muestra + "_ "
+    return muestra
+
+### texto
+texto_muestra = muestra_texto(palabra_oculta, introducidas)
+texto = fuente.render(texto_muestra ,1 , (10, 10, 10))
+posicion_texto = texto.get_rect()
+posicion_texto.centerx = screen.get_rect().centerx
+posicion_texto.centery = 280
+                        
+fondo = pygame.image.load(
+                        os.path.join('data', '0.jpg'))
+fondo = fondo.convert()
+screen.blit(fondo, (0,0))
+screen.blit(texto, posicion_texto)
+pygame.display.flip()
+
+fin = False
 
 while True:
-    
     events = pygame.event.get()
     for event in events:
         #print event
         if event.type == QUIT:
             sys.exit(0)
-    fondo = pygame.image.load(
-        os.path.join('data', '%d.jpg' % (num%8)))
+        if event.type == KEYDOWN:
+            if event.key == K_ESCAPE:
+                sys.exit(0)
+            if not fin:
+                letra = dame_letra(event)
+                if letra:
+                    if letra in introducidas:
+                        sonido_repe.play()
+                    else:
+                        introducidas = introducidas + letra
+                        if letra not in palabra_oculta:
+                            errores = errores + 1
+                            sonido_mal.play()
+                            fondo = pygame.image.load(
+                                os.path.join('data', '%d.jpg' % (errores)))
+                            fondo = fondo.convert()
+                            if errores == 7:
+                                fin = True
+                            
+                        else:
+                            texto_muestra = muestra_texto(palabra_oculta, introducidas)
+                            if '_' not in texto_muestra:
+                                sonido_gano.play()
+                                fin = True
+                            else:
+                                sonido_bien.play()
+                        screen.blit(fondo, (0,0)) 
+                        texto = fuente.render(texto_muestra ,1 , (10, 10, 10))
+                        screen.blit(texto, posicion_texto)
+                        if fin:
+                            if errores == 7:
+                                mensaje_fin(screen, False)
+                            else:
+                                mensaje_fin(screen, True)
+                        pygame.display.flip()
+                        if '_' not in texto_muestra:
+                            sonido_gano.play()
 
-    fondo = fondo.convert()
-
-    screen.blit(fondo, (0,0))
-    
-    screen.blit(texto, posicion_texto)
-    pygame.display.flip()
-
-    num = num + 1
-    #sonido.play()
-    pygame.time.delay(4000) # 1 segundo de retardo
-
-            
-
-import pygame
-from pygame.locals import *
-import os
-
-pygame.init()
-screen = pygame.display.set_mode((350, 300))
-pygame.display.set_caption("Juego ahorcado")
-
-for x in range(8):
-    fondo = pygame.image.load(os.path.join('data', '%d.jpg' % x))
-    fondo = fondo.convert()
-    screen.blit(fondo, (0,0))
-    pygame.display.flip()
-    pygame.time.delay(1000)
-
-
-raw_input()
+    #num = num + 1
+    ##sonido.play()
+    #pygame.time.delay(4000) # 1 segundo de retardo
