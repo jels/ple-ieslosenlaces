@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+from math import sqrt
 
 def es_primo_adrian(numero):
     """
@@ -15,7 +16,7 @@ def es_primo_adrian(numero):
     return primo
 
 def es_primo_pablo(numero):
-    for x in range(2,numero):
+    for x in range(2,round(sqrt(numero)) +1 ):
         if numero % x == 0:
             return False
     return True
