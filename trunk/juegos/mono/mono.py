@@ -14,17 +14,26 @@ ventana = pygame.display.set_mode((480, 160))  # resolución (,)
 pygame.display.set_caption("Juego del mono")  # título ventana
 screen = pygame.display.get_surface()
 
+
+# fondo
+fondo = pygame.Surface(screen.get_size())
+fondo = fondo.convert()
+fondo.fill((0, 250, 0))
+screen.blit(fondo, (0, 0) )
+
 # poner imagen
 fichero_mono = os.path.join('data', 'chimp.bmp')
 imagen_mono = pygame.image.load(fichero_mono)
 screen.blit(imagen_mono, (0,0) )
+
 
 # refrescar pantalla
 pygame.display.flip()
 
 
 avanza_x = 1
-posx = 1
+posx = 0
+posy = 0
 
 # terminar?
 while True:
@@ -36,7 +45,13 @@ while True:
                 posx = posx -10
             if event.key == K_RIGHT:
                 posx = posx +10
-            screen.blit(imagen_mono, (posx,0) )
+            if event.key == K_UP:
+                posy = posy -10
+            if event.key == K_DOWN:
+                posy = posy +10
+            # fondo y mono
+            screen.blit(fondo, (0, 0))
+            screen.blit(imagen_mono, (posx, posy) )
             pygame.display.flip()   
         
     """
