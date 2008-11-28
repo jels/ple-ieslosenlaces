@@ -29,7 +29,7 @@ imagen_mono.set_colorkey(colorkey)
 screen.blit(imagen_mono, (0,0) )
 
 # poner sonido
-fichero_sonido = os.path.join('data', 'punch.wav')
+fichero_sonido = os.path.join('data', 'mono.wav')
 sonido = pygame.mixer.Sound(fichero_sonido)
 
 
