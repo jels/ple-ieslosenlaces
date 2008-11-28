@@ -5,6 +5,7 @@ import pygame
 from pygame.locals import *
 import sys
 import os
+from axiliar_juegos import *
 
 # inicializar pygame
 pygame.init()
@@ -42,10 +43,12 @@ posy = 0
 
 # terminar?
 while True:
+    
     for event in pygame.event.get():
         if event.type == QUIT:
             sys.exit()
         if event.type == KEYDOWN:
+            rectangulo_mono = imagen_mono.get_rect()
             if event.key == K_LEFT:
                 posx = posx -10
             if event.key == K_RIGHT:
