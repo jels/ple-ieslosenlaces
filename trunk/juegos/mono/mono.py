@@ -8,7 +8,26 @@ import os
 from auxiliar_juegos import *
 
 
-
+class Mano(pygame.sprite.Sprite):
+    def __init__(self):
+        pygame.sprite.Sprite.__init__(self)
+        self.image, self.rect = cargar_imagen('mano.bmp', -1)
+        self.golpea = False
+    def update(self):
+        pos = pygame.mouse.get_pos()
+        self.rect.midtop = pos
+        if self.golpea:
+            self.rect.move_ip(5,10)
+    def baja(self, destino):
+        """Devuelve verdadero si la mano golpea al mono
+        """
+        if not self.golpea:
+            self.golpea = True
+            area_toque = self.rect.inflate(-5, -5)
+            return area_toque.colliderect(destino.rect)
+    def levanta(self):
+        self.golpea = False
+    
 
 class Mono(pygame.sprite.Sprite):
     def __init__(self):
@@ -33,6 +52,9 @@ class Mono(pygame.sprite.Sprite):
         self.rect = nueva_pos
     def update(self):
         self._anda()
+    def tocado(self):
+        """ Qué tiene que hacer si es golpeado"""
+        pass
         
 
 def main():
@@ -41,6 +63,7 @@ def main():
     # configurar la pantalla
     ventana = pygame.display.set_mode((600, 60))  # resolución (,)
     pygame.display.set_caption("Juego del mono")  # título ventana
+    pygame.mouse.set_visible(0)  # oculta punter ratón
 
     screen = pygame.display.get_surface()
 
@@ -58,7 +81,8 @@ def main():
     # crear personajes
     reloj = pygame.time.Clock()  # reloj que controla movimientos
     mono = Mono()
-    personajes = pygame.sprite.RenderPlain((mono))
+    mano = Mano()
+    personajes = pygame.sprite.RenderPlain((mono, mano))
 
     # terminar?
     while True:
@@ -66,6 +90,12 @@ def main():
         for event in pygame.event.get():
             if event.type == QUIT:
                 sys.exit()
+            elif event.type == MOUSEBUTTONDOWN:
+                if mano.baja(mono):
+                    print "Tocado"
+                    mono.tocado()
+            elif event.type == MOUSEBUTTONUP:
+                mano.levanta()
                 
         personajes.update()
         
