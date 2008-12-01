@@ -30,7 +30,7 @@ class Mano(pygame.sprite.Sprite):
     
 
 class Mono(pygame.sprite.Sprite):
-    def __init__(self):
+    def __init__(self, vel=6):
         # inicializa objeto tipy Sprite
         pygame.sprite.Sprite.__init__(self)
         # carga la imagen: devuelve imagen y rectángulo
@@ -39,8 +39,9 @@ class Mono(pygame.sprite.Sprite):
         self.area = ventana.get_rect()
         self.rect.topleft = 10, 10
         #ventana.blit(self.imagen, (0,0))
-        self.move = 6
+        self.move = vel
         self.ruido_choca = cargar_sonido('punch.wav')
+        self.vidas = 3
     def _anda(self):
         nueva_pos = self.rect.move((self.move, 0))
         if self.rect.left < self.area.left or \
@@ -81,8 +82,10 @@ def main():
     # crear personajes
     reloj = pygame.time.Clock()  # reloj que controla movimientos
     mono = Mono()
+    mono2 = Mono(10)
+    mono3 = Mono(4)
     mano = Mano()
-    personajes = pygame.sprite.RenderPlain((mono, mano))
+    personajes = pygame.sprite.RenderPlain((mono, mano,mono2,mono3))
 
     # terminar?
     while True:
