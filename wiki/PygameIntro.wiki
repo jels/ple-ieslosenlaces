@@ -1,0 +1,10 @@
+#summary Ejercicios de introducción a pygame
+
+= Apuntes pygame =
+
+ * listar modos de vídeo
+{{{
+import pygame
+pygame.init()
+pygame.display.list_modes()
+}}}
