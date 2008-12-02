@@ -25,8 +25,19 @@ screen = pybame.display.set_mode(SCREEN_SIZE, RESIZABLE, 32)
 {{{
 pygame.font.get_fonts()
 }}}
+ * uso
 {{{
 fuente = pygame.font.SysFont("arial", 16)
 text_surface = fuente.render("Pygame es cool!!", True, (0,0,0), (255, 255, 255))
 # parámetros: texto, antialiased, color, fondo
+}}}
+ * prueba
+{{{
+import pygame
+pygame.init()
+
+mi_nombre = "Luis Miguel"
+fuente = pygame.font.SysFont("arial", 64)
+nombre_surface = fuente.render(mi_nombre, True, (0,0,0), (255,255,255))
+pygame.image.save(nombre_surface, 'nombre.png')
 }}}
