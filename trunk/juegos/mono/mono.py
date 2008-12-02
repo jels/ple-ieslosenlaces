@@ -42,20 +42,40 @@ class Mono(pygame.sprite.Sprite):
         self.move = vel
         self.ruido_choca = cargar_sonido('punch.wav')
         self.vidas = 3
+        self.vueltas = 0 # contador de vueltas
+        self.aciertos = 0
     def _anda(self):
         nueva_pos = self.rect.move((self.move, 0))
         if self.rect.left < self.area.left or \
             self.rect.right > self.area.right:
+            # activa contador de vueltas
+            self.vueltas = self.vueltas + 1
+            print '-->', self.vueltas
             self.ruido_choca.play()
             self.move = -self.move
             nueva_pos = self.rect.move((self.move, 0))
             self.image = pygame.transform.flip(self.image, 1, 0)
+            
         self.rect = nueva_pos
     def update(self):
         self._anda()
     def tocado(self):
         """ Qué tiene que hacer si es golpeado"""
-        pass
+        self.vidas = self.vidas - 1
+        print "-->>>> vidas:", self.vidas
+        self._cambia_mono()
+        if self.vidas == 0:
+            self.kill()
+    def _cambia_mono(self):
+        if self.aciertos == 1:
+            self.image, self.rect = cargar_imagen('chimp2.bmp', -1)
+        else:
+            self.image, self.rect = cargar_imagen('chimp3.bmp', -1)
+        if self.move > 0:
+            self.move = self.move + 2
+        else:
+            self.move = self.move - 2
+        
         
 
 def main():
@@ -82,10 +102,10 @@ def main():
     # crear personajes
     reloj = pygame.time.Clock()  # reloj que controla movimientos
     mono = Mono()
-    mono2 = Mono(10)
-    mono3 = Mono(4)
+    #mono2 = Mono(10)
+    #mono3 = Mono(4)
     mano = Mano()
-    personajes = pygame.sprite.RenderPlain((mono, mano,mono2,mono3))
+    personajes = pygame.sprite.RenderPlain((mono, mano)) #,mono2,mono3))
 
     # terminar?
     while True:
