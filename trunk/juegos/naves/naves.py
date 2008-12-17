@@ -18,8 +18,11 @@ def load_image(name):
     colorkey = image.get_at((0,0))
     image.set_colorkey(colorkey,RLEACCEL)
     return image
+
+
 def main():
     pygame.init()
+    disparo = pygame.mixer.Sound(os.path.join('data', 'disparo.ogg'))
     screen = pygame.display.set_mode((640,480))
     pygame.display.set_caption('Invasores del espacio')
     sky = pygame.image.load('data/sky.bmp')
@@ -40,6 +43,7 @@ def main():
             if event.type == QUIT:
                 return
             if event.type == MOUSEBUTTONDOWN:
+                disparo.play()                
                 bulletY = 420
                 pos = pygame.mouse.get_pos()
                 bulletX = (pos[0]+25)
@@ -57,6 +61,8 @@ def main():
             screen.blit(bullet,(bulletX,bulletY))
             screen.blit(ship,(pos[0],420))
             bulletY -= 5
+            if bulletY == 475:
+                displaro.play()
             if bulletX > shipsX and bulletX < (shipsX + 150):
                 if bulletY > shipsY and bulletY < (shipsY + 110):
                     tempY = bulletX - shipsX

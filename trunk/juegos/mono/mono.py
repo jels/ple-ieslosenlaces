@@ -8,6 +8,8 @@ import os
 from auxiliar_juegos import *
 
 
+
+
 class Mano(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -99,6 +101,7 @@ def main():
     screen.blit(fondo, (0,0))
     pygame.display.flip()
 
+
     # crear personajes
     reloj = pygame.time.Clock()  # reloj que controla movimientos
     mono = Mono()
@@ -107,25 +110,39 @@ def main():
     mano = Mano()
     personajes = pygame.sprite.RenderPlain((mono, mano)) #,mono2,mono3))
 
+    # texto
+    vidas = "Vidas: %d"
+    fuente = pygame.font.SysFont("arial", 24)
+    rojo = pygame.color.Color('red')
+    gris = pygame.color.Color('grey')
+
+    en_juego = True
     # terminar?
     while True:
         reloj.tick(100)
         for event in pygame.event.get():
             if event.type == QUIT:
                 sys.exit()
-            elif event.type == MOUSEBUTTONDOWN:
-                if mano.baja(mono):
-                    print "Tocado"
-                    mono.tocado()
-            elif event.type == MOUSEBUTTONUP:
-                mano.levanta()
-                
-        personajes.update()
-        
-        #Vuelvo a dibujar todo 
-        screen.blit(fondo, (0,0))
-        personajes.draw(screen)
-        pygame.display.flip()
+            if en_juego:
+                if event.type == MOUSEBUTTONDOWN:
+                    if mano.baja(mono):
+                        print "Tocado"
+                        mono.tocado()
+                        if mono.vidas == 0:
+                            en_juego = False
+                            vidas = "Game Over  (%d)"
+                            fuente = pygame.font.SysFont("arial", 64)
+                elif event.type == MOUSEBUTTONUP:
+                    mano.levanta()
+		
+	personajes.update()
+	
+	#Vuelvo a dibujar todo 
+	screen.blit(fondo, (0,0))
+	vidas_surface = fuente.render(vidas % mono.vidas, True, rojo, gris)
+	screen.blit(vidas_surface, (0,0))
+	personajes.draw(screen)
+	pygame.display.flip()
 
                
 if __name__ == '__main__':
