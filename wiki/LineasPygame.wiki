@@ -1,0 +1,15 @@
+#summary Ejercicios con líneas
+
+= Ejercicios con líneas =
+
+== Líneas sencillas ==
+Modelo http://code.google.com/p/ple-ieslosenlaces/source/browse/trunk/juegos/ejercicios/lineas1.py
+
+ * Mejora el programa para que use variables para la anchura y altura de la pantalla.
+ * Usa variables: color_linea, topleft, bottomright etc.
+ * Modifica el programa para qu edibuje las dos líneas en diferentes colores
+ * Modifica el programa para que dibuje un línea vertical y otra horizontal centradas 
+ * Modifica el programa para que dibuje 4 líneas: las dos diagonales y las dos del ejercicio anterior.
+ * Escribe un programa que dibuje lo siguiente:
+
+http://lorenzod8n.files.wordpress.com/2007/05/fishnet.png
