@@ -1,5 +1,6 @@
 #! /usr/bin/env python
  
+# http://lorenzod8n.wordpress.com/2007/05/27/pygame-tutorial-2-drawing-lines/
 import pygame
 
 screen = pygame.display.set_mode((640, 480))
