@@ -38,7 +38,7 @@ while running:
         else:
             print event.type
 }}}
-
+Ahora tenemos un pequeño bucle {{{for}}} en lugar de llamar a {{{poll()}}}
 tice how we now have a little for loop instead of just the call to poll(). This loop will go through all the acive events on the queue. There is a big difference. Run the program again and notice the output. No zeros! Which means, pygame.event.get() is not generating any NOEVENTs. The only time you will see numbers appearing on the screen is when you move and/or click the mouse over the window. The numbers you see correspond to the event types.
 
 That takes care of part of the problem. However, if you go back to studying your CPU usage you will see that it is probably still high. It may be slightly lower, however. But we can still clearly do something about our CPU usage.
