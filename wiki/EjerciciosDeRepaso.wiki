@@ -1,0 +1,7 @@
+#summary Ejercicios de repaso
+
+= Ejercicios de repaso =
+
+# Escribe un programa que imprima 10 números pares aleatorios menores que 100.
+# Modifica el programa para que se guarden en un fichero, cada uno en una línea
+# Modifica 
