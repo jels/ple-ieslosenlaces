@@ -19,4 +19,4 @@
  80  81  82  83  84  85  86  87  88  89
  90  91  92  93  94  95  96  97  98  99
 }}}
-  # Modifica el programa para que lo escriba en un fichero con formato csv.
+  # Modifica el programa para que lo escriba en un fichero con formato csv. Impórtalo con la hoja de cálculo para comprobar que ha funcionado bien. http://es.wikipedia.org/wiki/CSV
