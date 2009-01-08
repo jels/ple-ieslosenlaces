@@ -1,13 +1,11 @@
 #summary One-sentence summary of this page.
 
-= Introduction =
-
-Add your content here.
+= Repaso clases y objetos =
 
 
-= Details =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  # Escribe el código que represente esta clase:
+http://ple-ieslosenlaces.googlecode.com/svn/trunk/repasos/camion.png
+  # Crea una lista con 10 camiones
+  # Escribe una función que, dada la lista de camiones, imprima sus matrículas.
+  # Escribe una función que, dada la lista de camiones, imprima los nombres de sus conductores ordenados por orden alfabético.
