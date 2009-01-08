@@ -38,8 +38,7 @@ while running:
         else:
             print event.type
 }}}
-Ahora tenemos un pequeño bucle {{{for}}} en lugar de llamar a {{{poll()}}}
-tice how we now have a little for loop instead of just the call to poll(). This loop will go through all the acive events on the queue. There is a big difference. Run the program again and notice the output. No zeros! Which means, pygame.event.get() is not generating any NOEVENTs. The only time you will see numbers appearing on the screen is when you move and/or click the mouse over the window. The numbers you see correspond to the event types.
+Ahora tenemos un pequeño bucle {{{for}}} en lugar de llamar a {{{poll()}}} Este bucle recorre los eventos activos en la cola. Ejecuta el programa y compara la salida. ¡¡¡No hay ceros!!!  Esto es porque {{{pygame.event.get()}}} no genera *NOEVENTs*. Sólo se ven números cuando se mueve o hace clic con el ratón.
 
 That takes care of part of the problem. However, if you go back to studying your CPU usage you will see that it is probably still high. It may be slightly lower, however. But we can still clearly do something about our CPU usage.
 
@@ -50,25 +49,21 @@ For the time being it may be helpful to understand this as that we have a clock 
 Creating the Clock() is only the first part, we also need to let it work. This is done inside the event loop. Simply call the tick() method on the Clock object. You can optionally pass in a number that I won’t go into too much because it will spoil one of the exercises. ;-)
 
 The final version of our program then looks as follows:
+{{{
+#! /usr/bin/env python
+import pygame
 
+screen = pygame.display.set_mode((640, 480))
+clock = pygame.time.Clock()
+running = 1
+while running:
+   for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = 0
+   clock.tick(20)
+}}}
 
- 1 #! /usr/bin/env python
- 2
- 3 import pygame
- 4
- 5 screen = pygame.display.set_mode((640, 480))
- 6 clock = pygame.time.Clock()
- 7 running = 1
- 8
- 9
-10 while running:
-11     for event in pygame.event.get():
-12         if event.type == pygame.QUIT:
-13             running = 0
-14
-15     clock.tick(20)
-
-Notice that I have used clock.tick(20). In this case there is nothing happening on the screen, so the value I place there is rather irrelevant. But when you add “things” to your screen you will notice that the value you use will make a difference. Without going into too much detail, there is a trade-off between getting your program to run as fast as possible, and your resource usage spiking to the point where the computer becomes very slow.
+Ntice that I have used clock.tick(20). In this case there is nothing happening on the screen, so the value I place there is rather irrelevant. But when you add “things” to your screen you will notice that the value you use will make a difference. Without going into too much detail, there is a trade-off between getting your program to run as fast as possible, and your resource usage spiking to the point where the computer becomes very slow.
 
 What I have taught you here obviously means that you have to “unlearn” some of the things I taught you from the beginning. Sorry about that. But then again, it won’t be the last time.
 
@@ -76,10 +71,8 @@ I personally don’t like tutorials that say “do like this, don’t do like th
 
 That’s it for now. But this time you won’t have to wait as long for the next tutorial, I promise.
 
-Exercises
+== Ejercicios ==
 
-Just a single exercise this time, lucky you!
-
-1. Rewrite every single application you have written so far as a part of the tutorial series, both the examples I have given as well as the exercise you have solved (because you have been doing the exercises, haven’t you?). In each case, re-write it to use pygame.event.get() instead of pygame.event.poll(). Also include a Clock().
+Rewrite every single application you have written so far as a part of the tutorial series, both the examples I have given as well as the exercise you have solved (because you have been doing the exercises, haven’t you?). In each case, re-write it to use pygame.event.get() instead of pygame.event.poll(). Also include a Clock().
 
 For each program, compare CPU usage and responsiveness between the original version and your new version. Also, experiment with different values in the clock.tick() method call. Try a really large number. Then try a really small number. In each case, look at CPU usage. See how fast or slow the program runs. Based on what you see, what can you say about x in clock.tick(x)? How does a low or a high value of x affect responsiveness and speed of the application as well as CPU usage? Finally try to find a value that keeps your pygame application running as smoothly as possible but without making the rest of your computer too slow.
