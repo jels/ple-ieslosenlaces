@@ -1,0 +1,12 @@
+#summary Ejercicios
+
+= Ejercicios con las clases Conductor y Conductor =
+
+http://ple-ieslosenlaces.googlecode.com/svn/trunk/repasos/camion.png
+
+  # Implementa en python la especificación anterior
+  # Escribe un programa que 
+    # Cree 10 camiones 
+    # Les ponga un peso aleatorio entre 1000 y 10000 kgs. (sin sobrepasar el máximo)
+    # Cree 10 conductores y los asigne de forma aleatoria a los camiones
+    # Haga un listado con la información del estado de nuestra flota
