@@ -4,7 +4,11 @@
 
 Tenemos que gestionar información de una clase de alumnos.
 De cada alumno tenemos su nombre, su edad y sus notas. Las notas están agrupadas por asignaturas.
+
+
 http://ple-ieslosenlaces.googlecode.com/svn/trunk/diccionarios/clase.gif
+
+== Tareas ==
   *Diseña una estructura para almacenar la información del siguiente tipo:
     * Un curso será un diccionario. La clave será su nombre.
     * Un alumno será un diccionario con las entradas: edad y notas.
@@ -14,4 +18,3 @@ http://ple-ieslosenlaces.googlecode.com/svn/trunk/diccionarios/clase.gif
   * Los alumnos que aprueban las tres asignaturas
   * La asignatura que más suspensos tiene
   * La asignatura que tiene un mayor porcentaje de suspensos.
-
