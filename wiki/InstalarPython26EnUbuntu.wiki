@@ -1,0 +1,7 @@
+#summary One-sentence summary of this page.
+
+== Paquetes necesarios: ==
+
+{{{
+sudo aptitude install build-essential libncursesw5-dev libreadline5-dev libssl-dev libgdbm-dev libbz2-dev libsqlite3-dev tk-dev
+}}}
