@@ -2,6 +2,11 @@
 
 == Paquetes necesarios: ==
 
+=== Fuente de python ===
+{{{
+wget http://python.org/ftp/python/2.6.1/Python-2.6.1.tgz
+}}}
+=== Librerías de linux ===
 {{{
 sudo aptitude install build-essential libncursesw5-dev libreadline5-dev libssl-dev libgdbm-dev libbz2-dev libsqlite3-dev tk-dev
 }}}
@@ -10,4 +15,20 @@ sudo aptitude install build-essential libncursesw5-dev libreadline5-dev libssl-d
 {{{
 $ cd Python-2.6
 $ ./configure --prefix=/home/<mi_usuario>/lib/python2.6
+$ make
+$ make install
 }}}
+
+== configurar path ==
+*.bashrc*
+{{{
+export PATH=/home/mi_user/bin:$PATH
+}}}
+*crear bin y enlaces*
+{{{
+~$ mkdir bin
+~$ cd bin
+~/bin$ ln -s /home/mi_user/lib/python2.6/bin/python
+~/bin$ ln -s /home/mi_user/lib/python2.6/bin/idle
+}}}
+*modificar la primera línea de {{{/home/mi_user/lib/python2.6/bin/idle}}}*
