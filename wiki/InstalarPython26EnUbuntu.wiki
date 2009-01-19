@@ -20,7 +20,7 @@ $ make install
 }}}
 
 == configurar path ==
-*.bashrc*
+editar *.bashrc*
 {{{
 export PATH=/home/mi_user/bin:$PATH
 }}}
