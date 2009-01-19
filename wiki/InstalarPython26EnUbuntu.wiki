@@ -5,3 +5,9 @@
 {{{
 sudo aptitude install build-essential libncursesw5-dev libreadline5-dev libssl-dev libgdbm-dev libbz2-dev libsqlite3-dev tk-dev
 }}}
+
+== configure ==
+{{{
+$ cd Python-2.6
+$ ./configure --prefix=/home/<mi_usuario>/lib/python2.6
+}}}
