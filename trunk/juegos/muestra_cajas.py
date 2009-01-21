@@ -22,7 +22,7 @@ while en_marcha:
     # limpiar pantalla
     screen.fill([0,0,0])
     for c in cajas:
-        c.update(150)
+        c.update(150, 150)
         screen.blit(c.image, c.rect)
     pygame.display.update()
     pygame.time.delay(10)

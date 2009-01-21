@@ -28,15 +28,25 @@ class CajaArribaAbajo(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.topleft = posicion_inicial
         self.hacia_abajo = True
-    def update(self, bajo):
+        self.hacia_derecha = True
+    def update(self, bajo, ancho):
         if self.rect.bottom == bajo - 1:
             self.hacia_abajo = False
         elif self.rect.top == 0:
             self.hacia_abajo = True
+        if self.rect.right == ancho - 1:
+            self.hacia_derecha = False
+        elif self.rect.left == 0:
+            self.hacia_derecha = True
         if self.hacia_abajo:
             self.rect.top += 1
         else:
             self.rect.top -= 1
+        if self.hacia_derecha:
+            self.rect.left += 1
+        else:
+            self.rect.left -= 1
+
 
     
         
