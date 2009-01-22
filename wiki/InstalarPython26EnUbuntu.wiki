@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Instalar python y más en ubuntu
 
 == Paquetes necesarios: ==
 
