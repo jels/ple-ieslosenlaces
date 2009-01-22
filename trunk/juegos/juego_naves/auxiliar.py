@@ -4,6 +4,12 @@ import os
 import pygame
 from pygame.locals import *
 
+def get_coords():
+    sf = pygame.display.get_surface()
+    ALTO = sf.get_height()
+    ANCHO = sf.get_width()
+    return ANCHO, ALTO
+
 def cargar_imagen(nombre, colorkey=None):
     ruta = os.path.join('data', nombre)
     try:
@@ -57,7 +63,7 @@ class Nave(pygame.sprite.Sprite):
         for m in self.misiles:
             m.update()
     def dispara(self):
-        self.misiles.append(Disparo(self.rect.midtop))       
+        return Disparo(self.rect.midtop)
         
         
             
@@ -72,14 +78,13 @@ class Enemigo(pygame.sprite.Sprite):
         self.image, self.rect = cargar_imagen('malo.png')
         self.rect.topleft = pos_inicial
         self.ypos = pos_inicial[1]
-    def update(self, ancho):
-        if self.rect.topleft[0] == 0:
+    def update(self):
+        if self.rect.topleft[0] <= 0:
             Enemigo.izquierda = False
-            Enemigo.altura += 1
-            self.altura += 1
-        elif self.rect.topright[0] == ancho:  #OJO
+            Enemigo.altura += 2
+        elif self.rect.topright[0] >= 320:  #OJO
             Enemigo.izquierda = True
-            Enemigo.altura += 1
+            Enemigo.altura += 2
         if Enemigo.izquierda == True:
             self.rect.topleft = [self.rect.topleft[0]-1, \
                                  self.rect.topleft[1]]
@@ -92,7 +97,7 @@ class Enemigo(pygame.sprite.Sprite):
 class Disparo(pygame.sprite.Sprite):
     def __init__(self, pos_inicial):
         pygame.sprite.Sprite.__init__(self)
-        self.image, self.rect = cargar_imagen('disparo.png')
+        self.image, self.rect = cargar_imagen('disparo.png', -1)
         self.rect.topleft = pos_inicial
         self.vivo = True
     def update(self):
@@ -100,17 +105,19 @@ class Disparo(pygame.sprite.Sprite):
             self.rect.top -= 1
         else:
             self.kill()
-            #self.vivo = False
+            self.vivo = False
     def toca_nave(self, naves):
         for nave in pygame.sprite.spritecollide(self,naves, 0):
-            nave.kill()
             self.kill()
+            return nave
+        return None
     
         
             
-def comprueba_colisiones(nave, enemigos):
-    for m in nave.misiles:
+def comprueba_colisiones(misiles, enemigos):
+    for m in misiles:
         m.toca_nave(enemigos)
+        
 
             
         
