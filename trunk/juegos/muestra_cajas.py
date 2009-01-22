@@ -1,7 +1,7 @@
 import pygame
 import sys
 from pygame.locals import *
-from cajas import Caja, CajaArribaAbajo
+from cajas import Caja, CajaArribaAbajo, Pelota
 
 pygame.init()
 screen = pygame.display.set_mode([150, 150])
@@ -11,7 +11,7 @@ for color, posicion in [
     ([0,255,0], [0,60]),
     ([0,0,255], [0,120])
     ]:
-    cajas.append(CajaArribaAbajo(color, posicion))
+    cajas.append(Pelota(posicion))
 
     
 en_marcha = True
