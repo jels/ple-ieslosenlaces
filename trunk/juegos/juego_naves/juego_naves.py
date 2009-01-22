@@ -10,13 +10,17 @@ import sys
 pygame.init()
 
 # variables globales
-ALTO, ANCHO = 240, 320
+ALTO, ANCHO = 480, 320
 
 
-screen = pygame.display.set_mode([ALTO, ANCHO])  # Tamaño de la pantalla
+screen = pygame.display.set_mode([ANCHO, ALTO])  # Tamaño de la pantalla
 
+# creación de objetos
 minave = Nave()
-
+lista_naves = []
+for x in range(6):
+    for y in range(0, ALTO/3, 30):
+        lista_naves.append(Enemigo((x*40+10,y+10)))
 
 # bucle principal del juego
 while True:
@@ -30,8 +34,12 @@ while True:
             elif event.key == K_LEFT:
                 minave.derecha = False
                 minave.izquierda = True
-
+    # actualiza minave
     minave.update()
     screen.blit(minave.image, minave.rect)
+    # actualiza enemigos
+    for nave in lista_naves:
+        screen.blit(nave.image, nave.rect)
+    
     pygame.display.update()
     pygame.time.delay(10)

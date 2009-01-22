@@ -61,7 +61,15 @@ class Nave(pygame.sprite.Sprite):
 
         
         
+class Enemigo(pygame.sprite.Sprite):
+    def __init__(self, pos_inicial):
+        pygame.sprite.Sprite.__init__(self)
+        self.image, self.rect = cargar_imagen('malo.png')
+        self.rect.topleft = pos_inicial
+    def update(self):
+        pass
         
+    
         
         
         
