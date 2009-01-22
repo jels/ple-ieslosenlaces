@@ -24,6 +24,7 @@ for x in range(6):
 
 # bucle principal del juego
 while True:
+    screen.fill([0,0,0])
     for event in pygame.event.get():
         if event.type == QUIT:
             sys.exit()
@@ -34,12 +35,18 @@ while True:
             elif event.key == K_LEFT:
                 minave.derecha = False
                 minave.izquierda = True
+            elif event.key == K_SPACE: 
+                minave.dispara()
+    #
+    comprueba_colisiones(minave, lista_naves)
     # actualiza minave
     minave.update()
     screen.blit(minave.image, minave.rect)
     # actualiza enemigos
     for nave in lista_naves:
+        nave.update(ANCHO)
         screen.blit(nave.image, nave.rect)
+        
     
     pygame.display.update()
     pygame.time.delay(10)
