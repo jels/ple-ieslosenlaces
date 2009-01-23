@@ -1,6 +1,11 @@
-#summary One-sentence summary of this page.
+#summary Ejemplo de juego de naves
 
 Ejemplo de: http://floppsie.comp.glam.ac.uk/Glamorgan/gaius/games/10.html
+
+== Tarea ==
+Hay que optimizar el ejemplo. 
+  * Podemos evitar el uso de tantas variables globales, usando atributos de clase
+  * Podemos usar grupos de sprites: http://miprogramacionenjuegos.wordpress.com/2007/05/15/la-clase-sprite/
 
 {{{
 #!/usr/bin/python
