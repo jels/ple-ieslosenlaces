@@ -1,14 +1,6 @@
-#-*- encoding: utf-8 -*-
-
 import os
 import pygame
 from pygame.locals import *
-
-def get_coords():
-    sf = pygame.display.get_surface()
-    ALTO = sf.get_height()
-    ANCHO = sf.get_width()
-    return ANCHO, ALTO
 
 def cargar_imagen(nombre, colorkey=None):
     ruta = os.path.join('data', nombre)
@@ -32,68 +24,72 @@ def cargar_sonido(nombre):
         print 'No puede cargar sonido', ruta
         raise SystemExit, mensaje
     return sonido
-    
 
 class Nave(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.image, self.rect = cargar_imagen('nave.png', -1)
-        #dimensiones pantalla
-        sf = pygame.display.get_surface()
-        pos_y = sf.get_height()
-        # posición inicial
-        self.rect.bottomleft = [0,  pos_y -5 ]
-        #max ancho = pantalla
-        self.max_ancho = sf.get_width()
-        # control movimiento
+        # dimensiones pantalla
+        self.ventana = pygame.display.get_surface()
+        self.ancho = self.ventana.get_width()
+        self.alto = self.ventana.get_height() 
+        self.rect.bottomleft = (0, self.alto - 5)
+        # control de movimientos
         self.derecha = False
         self.izquierda = False
-        self.misiles = []
     def update(self):
         if self.izquierda == True:
             if self.rect.left > 0:
-                self.rect.left -= 1 
+                self.rect.left -= 1
             else:
                 self.izquierda = False
         if self.derecha == True:
-            if self.rect.right < self.max_ancho:
-                self.rect.left += 1
+            if self.rect.right < self.ancho:
+                self.rect.right += 1
             else:
                 self.derecha = False
-        for m in self.misiles:
-            m.update()
+                
     def dispara(self):
-        return Disparo(self.rect.midtop)
-        
-        
-            
-       
-       
-        
+        misil = Disparo(self.rect.midtop)
+        return misil
+             
+                
+                
 class Enemigo(pygame.sprite.Sprite):
-    izquierda = False
+    # Variables de clase
+    izquierda = False # indica direccion de movimiento
+    toca_izquierda = False # variable centinela: avisa
     altura = 0
     def __init__(self, pos_inicial):
         pygame.sprite.Sprite.__init__(self)
         self.image, self.rect = cargar_imagen('malo.png')
         self.rect.topleft = pos_inicial
         self.ypos = pos_inicial[1]
+        self.ventana = pygame.display.get_surface()
+        self.ancho = self.ventana.get_width()
     def update(self):
-        if self.rect.topleft[0] <= 0:
-            Enemigo.izquierda = False
-            Enemigo.altura += 2
-        elif self.rect.topright[0] >= 320:  #OJO
-            Enemigo.izquierda = True
-            Enemigo.altura += 2
+        if self.rect.left <= 0:
+            Enemigo.toca_izquierda = False
+            
+        elif self.rect.right >= self.ancho:  #OJO
+            Enemigo.toca_izquierda = True
+            
         if Enemigo.izquierda == True:
-            self.rect.topleft = [self.rect.topleft[0]-1, \
-                                 self.rect.topleft[1]]
+            self.rect.left -= 1
         else:
-            self.rect.topleft = [self.rect.topleft[0]+1, \
-                                 self.rect.topleft[1]]
+            self.rect.left += 1
+        
         self.rect.topleft = [self.rect.topleft[0],
                              Enemigo.altura+self.ypos]
+    def direccion():
+        if Enemigo.izquierda != Enemigo.toca_izquierda:
+            Enemigo.altura += 10
+            Enemigo.izquierda = Enemigo.toca_izquierda
+    direccion = staticmethod(direccion)
         
+    
+        
+
 class Disparo(pygame.sprite.Sprite):
     def __init__(self, pos_inicial):
         pygame.sprite.Sprite.__init__(self)
@@ -103,40 +99,14 @@ class Disparo(pygame.sprite.Sprite):
     def update(self):
         if self.rect.top > 0:
             self.rect.top -= 1
+            return True
         else:
             self.kill()
             self.vivo = False
     def toca_nave(self, naves):
-        for nave in pygame.sprite.spritecollide(self,naves, 0):
-            self.kill()
-            return nave
-        return None
-    
-        
-            
-def comprueba_colisiones(misiles, enemigos):
-    for m in misiles:
-        m.toca_nave(enemigos)
-        
-
+        if pygame.sprite.spritecollide(self,naves, True):
+            return True
+        else:
+            return False
             
         
-            
-            
-        
-    
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-
-            
-            
-            
