@@ -10,6 +10,6 @@
 
 
 == otras herramientas ==
-  * Instalar crossover: http://www.elblogdejabba.es/2008/06/instala-aplicaciones-de-windows-en.html
-  * http://www.yoyogames.com/make
-  * http://www.comunidadgm.org/index.php?topic=5771.0
+  * bennugd http://es.wikipedia.org/wiki/BennuGD
+  * http://forum.bennugd.org/
+  * http://forum.bennugd.org/index.php?topic=150.0
