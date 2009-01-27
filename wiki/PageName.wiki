@@ -1,0 +1,16 @@
+#summary enlaces con recursos
+
+= Recursos para juegos =
+
+*revisad la licencia de cada recurso*
+
+Si utilizáis un recurso que no es vuestro, hay que citar su procedencia.
+
+
+== sprites == 
+  * http://www.spriters-resource.com/
+  * http://www.retrogamezone.co.uk/
+  * http://www.videogamesprites.net/
+  * http://laalianza.forogratis.es/index.php/
+  * http://timesprites.orgfree.com/
+  * http://www.gsarchives.net/index2.php
