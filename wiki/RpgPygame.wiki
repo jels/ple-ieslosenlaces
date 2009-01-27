@@ -1,13 +1,15 @@
-#summary One-sentence summary of this page.
-
-= Introduction =
-
-Add your content here.
+#summary Ayudas rpg con pygame
 
 
-= Details =
+== ideas ==
+  * Un rpg en una semana con pygame (en 40 horas): http://www.gamedev.net/reference/articles/article2259.asp
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+== movimientos ==
+  * http://www.cristalab.com/tips/movimientos-de-personajes-en-juegos-rpg-tipo-zelda-c48185l/
+
+
+== otras herramientas ==
+  * Instalar crossover: http://www.elblogdejabba.es/2008/06/instala-aplicaciones-de-windows-en.html
+  * http://www.yoyogames.com/make
+  * http://www.comunidadgm.org/index.php?topic=5771.0
