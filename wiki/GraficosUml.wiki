@@ -2,7 +2,8 @@
 
 == autodia ==
 === Descargar autodia ===
-http://www.aarontrevena.co.uk/opensource/autodia/
+  * http://www.aarontrevena.co.uk/opensource/autodia/
+  * http://cpan.dei.uc.pt/authors/id/T/TE/TEEJAY/Autodia-2.08.tar.gz
 === Instalar ===
 Descomprimir ...
 {{{
