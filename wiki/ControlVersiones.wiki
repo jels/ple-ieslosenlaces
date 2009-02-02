@@ -1,0 +1,6 @@
+#summary Introducción al control de versiones
+
+= Documentación =
+  * http://es.wikipedia.org/wiki/Control_de_versiones
+  * http://macprogramadores.org/tutoriales/tutoriales/cvssvn.pdf
+  * http://devnull.li/libromercurial/index.es.html
