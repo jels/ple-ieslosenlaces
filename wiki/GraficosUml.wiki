@@ -1,0 +1,13 @@
+#summary Crear gráficos UML de nuestras clases python
+
+== autodia ==
+=== Descargar autodia ===
+http://www.aarontrevena.co.uk/opensource/autodia/
+=== Instalar ===
+Descomprimir ...
+{{{
+$ perl Makefile.PL
+$ make
+$ make test
+$ sudo make install
+}}}
