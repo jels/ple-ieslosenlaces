@@ -12,6 +12,10 @@ $ make
 $ make test
 $ sudo make install
 }}}
+Instalar dependencias si hay errores ...
+{{{
+$ sudo aptitude install perl libtemplate-perl libgraphviz-perl
+}}}
 === Crear gráfico ===
 {{{
 $ autodia -i <nombre_archivo.py> -l python -o <archivo_salida.dia>
