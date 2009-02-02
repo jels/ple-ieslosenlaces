@@ -11,3 +11,7 @@ $ make
 $ make test
 $ sudo make install
 }}}
+=== Crear gráfico ===
+{{{
+$ autodia -i <nombre_archivo.py> -l python -o archivo_salida.xml
+}}}
