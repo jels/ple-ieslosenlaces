@@ -1,6 +1,51 @@
 #summary Introducción al control de versiones
 
-= Documentación =
+= Documentación general =
   * http://es.wikipedia.org/wiki/Control_de_versiones
+
+= Subversion =
+== Intro ==
+  * http://es.wikipedia.org/wiki/Subversion
   * http://macprogramadores.org/tutoriales/tutoriales/cvssvn.pdf
+  * http://picandocodigo.net/downloads/docs/subversion-presentacion-01.pdf
+  * http://picandocodigo.net/downloads/docs/subversion-presentacion-02.pdf
+== Instalación ==
+  * Instalación de subversion en ubuntu: http://www.fileden.com/files/2007/6/10/1162529/Manual%20Subversion%20Ubuntu.pdf
+== Ciclo de trabajo ==
+*Crear copia local*
+{{{ 
+$ svn checkout 
+}}}
+*Actualizar copia local*
+{{{
+$ svn update
+}}}
+*Hacer cambios*
+{{{
+$ svn add
+$ svn delete
+$ svn copy
+$ svn move
+}}}
+*Examinar cambios*
+{{{
+svn status
+svn diff
+}}}
+*Deshacer algunos cambios*
+{{{
+$ svn revert
+}}}
+*Resolver conflictos (merge con los cambios de otros)*
+{{{
+$ svn update
+$ svn resolve
+}}}
+*Convirmar tus cambios*
+{{{
+$ svn commit ­m ”Mensaje”
+}}}
+
+
+= Mercurial =
   * http://devnull.li/libromercurial/index.es.html
