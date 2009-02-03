@@ -9,6 +9,8 @@
   * http://macprogramadores.org/tutoriales/tutoriales/cvssvn.pdf
   * http://picandocodigo.net/downloads/docs/subversion-presentacion-01.pdf
   * http://picandocodigo.net/downloads/docs/subversion-presentacion-02.pdf
+== Referencia rápida ==
+  * http://www.addedbytes.com/cheat-sheets/subversion-cheat-sheet
 == Instalación ==
   * Instalación de subversion en ubuntu: http://www.fileden.com/files/2007/6/10/1162529/Manual%20Subversion%20Ubuntu.pdf
 == Ciclo de trabajo ==
