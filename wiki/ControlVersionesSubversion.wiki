@@ -33,3 +33,11 @@ $ svn copy http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/trunk
 {{{
 $ svn log
 }}}
+
+== Crear ficheros de cambios ==
+Ej. Cambios desde la revisión 42
+{{{
+$ cd ~/Proyectos/MiProyecto
+$ svn log -r42:HEAD >> ChangeLog
+$ svn commit ChangeLog -m 'Actualizar fichero de cambios'
+}}}
