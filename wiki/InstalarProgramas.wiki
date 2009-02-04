@@ -1,0 +1,4 @@
+#summary Instalar programas python
+
+
+  * http://www.python.com.ar/moin/Recetario/CrearEjecutableWindowsDesdeLinux
