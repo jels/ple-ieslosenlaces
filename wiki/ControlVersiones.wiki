@@ -6,6 +6,7 @@
 = Subversion =
 == Intro ==
   * http://es.wikipedia.org/wiki/Subversion
+  * http://svnbook.red-bean.com/nightly/es/index.html
   * http://macprogramadores.org/tutoriales/tutoriales/cvssvn.pdf
   * http://picandocodigo.net/downloads/docs/subversion-presentacion-01.pdf
   * http://picandocodigo.net/downloads/docs/subversion-presentacion-02.pdf
