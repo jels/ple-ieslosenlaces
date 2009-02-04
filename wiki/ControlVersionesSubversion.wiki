@@ -1,0 +1,35 @@
+summary Ejercicios con subversion
+
+==Crear nuevo proyecto==
+{{{
+$ mkdir NombreMiProyecto
+$ cd NombreMiProyecto
+$ mkdir branches tags trunk
+# colocar ficheros en el trunk si ya tenemos
+$ svn import . http://pepinon.inf.enlaces/plesvn/NombreMiProyecto -m "Inicio Proyecto"
+$ cd ..
+$ rm -rf NombreMiProyecto
+$ svn checkout http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/trunk NombreMiProyecto
+$ cd NombreMiProyecto
+...
+}}}
+
+== Ignorar ficheros ==
+{{{
+$ nano /.subversion/config file.
+[miscellany]
+global-ignores = build *.pyc *.~ 
+}}}
+
+== Crear etiquetas / ramas ==
+Esto crea una etiqueta (tag) "v0.1" de la versión *trunk* del momento.
+{{{
+$ svn copy http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/trunk 
+           http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/tags/v.01
+           -m "tag para versión 0.1"
+}}}
+
+== Analizar el proceso ==
+{{{
+$ svn log
+}}}
