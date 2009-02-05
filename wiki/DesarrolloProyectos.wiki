@@ -1,0 +1,7 @@
+#summary Desarrollo de un proyecto
+
+= Documentación para desarrollo de proyectos =
+
+== Fichero que debe de incluir un proyecto ==
+
+http://www.calcifer.org/documentos/librognome/ch02s02.html
