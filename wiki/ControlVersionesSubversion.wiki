@@ -6,7 +6,7 @@ $ mkdir NombreMiProyecto
 $ cd NombreMiProyecto
 $ mkdir branches tags trunk
 # colocar ficheros en el trunk si ya tenemos
-$ svn import . http://pepinon.inf.enlaces/plesvn/NombreMiProyecto -m "Inicio Proyecto"
+$ svn import . http://pepinon.inf.enlaces/plesvn/NombreMiProyecto -m "Inicio Proyecto" --username miuser
 $ cd ..
 $ rm -rf NombreMiProyecto
 $ svn checkout http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/trunk NombreMiProyecto
