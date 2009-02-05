@@ -1,0 +1,8 @@
+#summary BD Oracle con python
+
+== Instalar un driver ==
+  * http://wiki.python.org/moin/Oracle
+  * http://marcelosoft.blogspot.com/2008/10/cmo-conectarse-oracle-desde-python-en.html
+  * http://cx-oracle.sourceforge.net/
+
+== Ejemplos ==
