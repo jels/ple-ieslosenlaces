@@ -41,3 +41,21 @@ $ cd ~/Proyectos/MiProyecto
 $ svn log -r42:HEAD >> ChangeLog
 $ svn commit ChangeLog -m 'Actualizar fichero de cambios'
 }}}
+Si tenemos instalado el paquete subversion-tools también podemos usar {{{svn2cl}}}. Esta utilidad está disponible también en http://ch.tudelft.nl/~arthur/svn2cl
+{{{
+$ svn2cl http://pepinon.inf.enlaces/plesvn/NombreMiProyecto/trunk -o ChangeLog
+}}}
+
+== Crear un archivo comprimido con una versión de nuestro programa ==
+  # Preparar copia
+{{{
+$ svn export  http://pepinon.inf.enlaces/plesvn/juego_naves_clase/tags/v.01 juego_naves_01
+}}}
+  # Crear archivo comprimido
+{{{
+$ tar zcvf juego_naves_01.tgz juego_naves_01
+}}}
+  # Eliminar copia temporal
+{{{
+$ rm -r juego_naves_01
+}}}
