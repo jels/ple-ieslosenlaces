@@ -1,0 +1,12 @@
+#summary InstalarEclipse
+
+= Instalación de eclipse =
+
+== Ubuntu ==
+=== Versión que viene con el sistema ===
+{{{
+$ sudo aptitude install eclipse-pydev 
+}}}
+=== Instalar subclipse ===
+  * http://subclipse.tigris.org/install.html
+  * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
