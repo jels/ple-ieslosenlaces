@@ -1,6 +1,6 @@
 #summary Instalar subversion desde eclipse
 
-= Instalación de Subclipse =
+== Instalación de Subclipse ==
 
 
 
@@ -8,8 +8,7 @@
  * Pestaña 'Software Update' -> 'Search and Install...'  
  * Seleccionamos la opción 'Search for new features to Install' y le damos a 'Next'
  * Pulsamos la opción de 'New Remote Remote Site'
- * En 'Name' escribimos Subclipse  y en 'URL' escribimos la dirección de donde descargaremos Subclipse:
-http://subclipse.tigris.org/update_1.0.x
+ * En 'Name' escribimos Subclipse  y en 'URL' escribimos la dirección de donde descargaremos Subclipse: http://subclipse.tigris.org/update_1.0.x
  * Pulsamos 'OK' y se nos marcara para instalar Subclipse y pulsamos 'Next' hasta llegar al contrato de licencia, lo aceptamos le damos a 'Next' y 'Finish'
  * Nos saldra otra ventana, pulsamos en 'Install All' y nos pedirá reiniciar, le damos a 'Yes' y listo.
 
