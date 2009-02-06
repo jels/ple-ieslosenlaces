@@ -10,7 +10,11 @@
  * Pulsamos la opción de 'New Remote Remote Site'
  * En 'Name' escribimos Subclipse  y en 'URL' escribimos la dirección de donde descargaremos Subclipse:
 http://subclipse.tigris.org/update_1.0.x
- * Pulsamos 'OK' y se nos marcara para instalar Subclipse y pulsamos 'Finish'
+ * Pulsamos 'OK' y se nos marcara para instalar Subclipse y pulsamos 'Next' hasta llegar al contrato de licencia, lo aceptamos le damos a 'Next' y 'Finish'
+
+== Importa un proyecto del repositorio a Eclipse ==
+
+ * File -> Importar
 
 
 Esta por terminar
