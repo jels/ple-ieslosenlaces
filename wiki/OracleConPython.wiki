@@ -4,5 +4,5 @@
   * http://wiki.python.org/moin/Oracle
   * http://marcelosoft.blogspot.com/2008/10/cmo-conectarse-oracle-desde-python-en.html
   * http://cx-oracle.sourceforge.net/
-
+  * http://wiki.oracle.com/page/Installing+Oracle+&+Python+on+Linux
 == Ejemplos ==
