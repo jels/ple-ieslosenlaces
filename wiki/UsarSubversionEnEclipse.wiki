@@ -1,0 +1,23 @@
+#summary One-sentence summary of this page.
+
+= Instalación de Subclipse =
+
+* Abrimos eclipse y vamos a la pestaña 'Help' del menú
+* Pestaña 'Software Update' -> 'Search and Instal...'
+* Seleccionamos la opción 'Search for new features to Install' y le damos a 'Next'
+* Pulsamos la opción de 'New Remote Remote Site'
+* En 'Name' escribimos Subclipse  y en 'URL' escribimos la dirección de donde descargaremos Subclipse:
+http://subclipse.tigris.org/update_1.0.x
+* Pulsamos 'OK' y se nos marcara para instalar Subclipse y pulsamos 'Finish'
+
+
+Esta por terminar
+
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
