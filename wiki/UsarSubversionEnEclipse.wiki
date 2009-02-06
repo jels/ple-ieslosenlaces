@@ -1,4 +1,4 @@
-#Summary Instalar subversion desde eclipse
+#summary Instalar subversion desde eclipse
 
 = Instalación de Subclipse =
 
