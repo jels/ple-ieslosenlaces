@@ -1,7 +1,6 @@
 #summary Equipo de testeo de pygame & olpc
 
 (Propuesta de Martin Langhoff en olpc-sur@lists.laptop.org)
-= Proceso =
 <wiki:toc max_depth="3" />
 
 == Preparar máquinas ==
