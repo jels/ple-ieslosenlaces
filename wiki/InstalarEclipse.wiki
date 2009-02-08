@@ -17,3 +17,7 @@ $ sudo aptitude install eclipse-pydev
   * Si se quiere poner en español, descargar language-packs de http://download.eclipse.org/technology/babel/babel_language_packs/ (al menos BabelLanguagePack-eclipse-es_3.4.0)
   * Descomprimir archivos
   * Ejecutar *eclipse* y configurar el *workspace*.
+
+== Pydev==
+  * http://pydev.sourceforge.net/
+  * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
