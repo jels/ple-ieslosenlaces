@@ -1,8 +1,9 @@
 #summary Equipo de testeo de pygame & olpc
 
-<wiki:toc max_depth="1" />
-= Proceso =
 (Propuesta de Martin Langhoff en olpc-sur@lists.laptop.org)
+= Proceso =
+<wiki:toc max_depth="3" />
+
 == Preparar máquinas ==
 Inicialmente, tener computadoras / laptops convencionales y testear el OS del XO dentro de un emulador. Una computadora por tester, o una por cada 2 testers (un tester al teclado, el otro tomando nota...) - y un emulador: http://wiki.laptop.org/go/Emulating_the_XO
 == ¿Qué testear? ==
