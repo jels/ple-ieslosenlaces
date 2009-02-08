@@ -8,8 +8,7 @@
   #b - O bien dedicarse a testear actividades -- a veces el testeo del OS que proponen en Friends in testing requiere tener el hardware y/o estar mirando cosas muy especificas. Es más divertido e interesante instalar actividades y testearlas: http://wiki.laptop.org/go/Activities
   # Escribir un sumario o reporte de cada reunión de testeo. Esto es _sumamente importante_ porque les da oportunidad de reportar éxitos también. Es energizante escuchar que el programa que has hecho anda bien -- esos informes son fantásticos y hay que mandarlos a la lista de desarrolladores. Un par de muestras...  
     * sesión enfocada en testear actividades:  http://lists.laptop.org/pipermail/testing/2008-November/000579.html
-    * sesión enfocada en testear como andan las actividades en una nueva
-versión del OS:  http://lists.laptop.org/pipermail/devel/2008-September/018879.html
+    * sesión enfocada en testear como andan las actividades en una nueva versión del OS:  http://lists.laptop.org/pipermail/devel/2008-September/018879.html
   Hay varios desarrolladores que hablan castellano, pero habría que encontrar la manera de enviar una versión en inglés tambien si es posible.
   # - Reportar bugs cuando los encuentran... con logs. Más detalles en... http://wiki.laptop.org/go/Attaching_Sugar_logs_to_tickets -- si quieren meterse a diagnosticar el bug y proponer soluciones, fantastico. Pero el primer paso es... _reportar el bug_.
   Lo importante es hacerlo interesante para el grupo con el que estás trabajando. En NZ lo que hacemos es juntarnos en un café los sabados a la mañana, algunos testers traen a sus hijos, la gente de otras mesas pregunta, en el café nos regalan bebidas, y amigos bloggean del asunto http://maresdelsur.wordpress.com/2008/09/26/plan-ceibal-en-nueva-zelandia/
