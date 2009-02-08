@@ -7,6 +7,12 @@
 {{{
 $ sudo aptitude install eclipse-pydev 
 }}}
-=== Instalar subclipse ===
+
+== Instalar subclipse ==
   * http://subclipse.tigris.org/install.html
   * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
+
+== Desde la web ==
+  * http://www.eclipse.org/downloads/  --> Eclipse IDE for Java Developers (85 MB)
+  * Descomprimir archivo
+  * Ejecutar *eclipse* y configurar el *workspace*.
