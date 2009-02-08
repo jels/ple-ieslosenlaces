@@ -14,5 +14,6 @@ $ sudo aptitude install eclipse-pydev
 
 == Desde la web ==
   * http://www.eclipse.org/downloads/  --> Eclipse IDE for Java Developers (85 MB)
-  * Descomprimir archivo
+  * Si se quiere poner en español, descargar language-packs de http://download.eclipse.org/technology/babel/babel_language_packs/ (al menos BabelLanguagePack-eclipse-es_3.4.0)
+  * Descomprimir archivos
   * Ejecutar *eclipse* y configurar el *workspace*.
