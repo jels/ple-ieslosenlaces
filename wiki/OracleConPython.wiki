@@ -33,7 +33,7 @@ root@ubuntu-server:~# ldconfig --print | grep /opt/oracle
 root@ubuntu-server:~# cd /opt/oracle/instantclient
 root@ubuntu-server:/opt/oracle/instantclient# ln -s libclntsh.so.11.1 libclntsh.so
 root@ubuntu-server:/opt/oracle/instantclient# ln -s libocci.so.11.1 libocci.so
-}}}}
+}}}
 La idea es crear un archivo con extensión .conf en el directorio /etc/ld.so.conf.d/ [1], con un nombre relacionado con nuestro propósito, que sólo indica un nuevo directorio de bibliotecas de ubicación "no estándar".
 
 Luego hay que refrescar la información de bibliotecas, con el comando "ldconfig". Después, "ldconfig --print" muestra todas las bibliotecas disponibles en el sistema para enlazar dinámicamente, pero como ahora sólo son de nuestro interés las del directorio /opt/oracle, se filtra la salida con un grep acorde.
