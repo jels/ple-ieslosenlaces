@@ -26,14 +26,17 @@ nombre text, departamento text)"""
 #cursor.execute(sentencia_creacion)
 # insert
 sentencia_insertar = "insert into empleados values (?, ?, ?)"
-#cursor.execute(sentencia_insertar, ('123456', 'Damir', 'DAI'))
+cursor.execute(sentencia_insertar, ('123456', 'Damir', 'DAI'))
 empleados = (('2222222', 'Pablo', 'DAI'),
              ('3333333', u'Jesús', 'DAI'),
              ('444444', 'Alejandra', 'DAI'),
              ('555555', 'Carmen', u'Dirección')
              )
 cursor.executemany(sentencia_insertar, empleados)
+con.commit()
 # select
-cursor.execute('select * from empleados')
+cursor.execute("select * from empleados where departamento=?",
+               ('DAI',))
+
 for em in cursor.fetchall():
     print "%-12s %-10s %-10s" % em 
