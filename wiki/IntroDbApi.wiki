@@ -1,5 +1,6 @@
 #summary Introducción dbapi
 
+<wiki:toc max_depth="1" />
 = Intro dbapi =
 == Documentación inicial ==
   * http://wiki.python.org/moin/DatabaseProgramming/
