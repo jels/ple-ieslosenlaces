@@ -2,7 +2,7 @@
 
 (Propuesta de Martin Langhoff en olpc-sur@lists.laptop.org)
 <wiki:toc max_depth="3" />
-
+http://img.xataka.com/olpc-green.jpg
 = Preparar máquinas =
 Inicialmente, tener computadoras / laptops convencionales y testear el OS del XO dentro de un emulador. Una computadora por tester, o una por cada 2 testers (un tester al teclado, el otro tomando nota...) - y un emulador: http://wiki.laptop.org/go/Emulating_the_XO
 = ¿Qué testear? =
