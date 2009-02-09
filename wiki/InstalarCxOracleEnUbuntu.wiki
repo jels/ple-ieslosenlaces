@@ -38,6 +38,11 @@ Configurar el linker para que encuentre las nuevas librerías instaladas. Import
   * {{{ldconfig}}} refresca las bibliotecas disponibles.
   * Puedes comprobar la nueva ubicación con {{{# ldconfig --print | grep oracle}}}
   * Enlaces simbólicos al nombre (sin versión)
+== ORACLE_HOME ==
+Luego, para poder compilar/construir primero e instalar después el módulo, hay que establecer la variable de entorno ORACLE_HOME:
+{{{
+$ export ORACLE_HOME=/opt/oracle/instantclient/
+}}}
 
 = Instalación del cx_Oracle = 
 == dependencias para instalar ...==
@@ -54,13 +59,6 @@ Descargar fuente de http://cx-oracle.sourceforge.net/ . Por ejemplo:
 ~/cx_Oracle-5.0 $
 }}}
 
-== ORACLE_HOME ==
-Luego, para poder compilar/construir primero e instalar después el módulo, hay que establecer la variable de entorno ORACLE_HOME:
-{{{
-$ export ORACLE_HOME=/opt/oracle/instantclient/
-}}}
-
-Ahora, a construir el módulo. Puede verse que no hace falta ser root:
 {{{
 ~/cx_Oracle-5.0$ python setup.py build
 }}}
