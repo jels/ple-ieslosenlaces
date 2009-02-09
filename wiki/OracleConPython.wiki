@@ -24,7 +24,7 @@ Creamos el directorio /opt/oracle, y después lo movemos al nuevo directorio ren
 :~$ sudo mv instantclient_11_1 /opt/oracle/instantclient
 
 Ahora debemos decirle al linker de bibliotecas dinámicas del sistema (ld) la ubicación de un nuevo path donde podrá encontrar más bibliotecas software para el programa que lo requiera; en este caso ese "programa" será el módulo de python para acceder a Oracle, cx_Oracle. Es decir, que además de las bibliotecas disponibles en, por ejemplo, /usr/lib y /usr/local/lib, también pondremos a disposición de los programas del usuario las bibliotecas del directorio /opt/oracle/instantclient. Esto se hace con el programa ldconfig:
-
+{{{
 :~$ sudo -i
 [sudo] password for ****:
 root@ubuntu-server:~# echo "/opt/oracle/instantclient" > /etc/ld.so.conf.d/oracle.conf
@@ -33,7 +33,7 @@ root@ubuntu-server:~# ldconfig --print | grep /opt/oracle
 root@ubuntu-server:~# cd /opt/oracle/instantclient
 root@ubuntu-server:/opt/oracle/instantclient# ln -s libclntsh.so.11.1 libclntsh.so
 root@ubuntu-server:/opt/oracle/instantclient# ln -s libocci.so.11.1 libocci.so
-
+}}}}
 La idea es crear un archivo con extensión .conf en el directorio /etc/ld.so.conf.d/ [1], con un nombre relacionado con nuestro propósito, que sólo indica un nuevo directorio de bibliotecas de ubicación "no estándar".
 
 Luego hay que refrescar la información de bibliotecas, con el comando "ldconfig". Después, "ldconfig --print" muestra todas las bibliotecas disponibles en el sistema para enlazar dinámicamente, pero como ahora sólo son de nuestro interés las del directorio /opt/oracle, se filtra la salida con un grep acorde.
@@ -51,10 +51,11 @@ Primero instalamos algunas dependencias:
 Cuando se compilan módulos de python que acceden a librerías nativas (generalmente en C), debe instalarse el paquete "python-dev", que contiene los headers de las estructuras, funciones y demás símbolos del lenguaje. Las setuptools creo que no hacen falta, pero siempre es útil tenerlo para instalar más módulos después. El metapaquete "build-essential" nos provee todo lo básico necesario para compilar programas en C/C++.
 
 Luego descargamos y descomprimimos el código fuente del módulo, en formato .tar.gz (hay RPMs y paquetes para Windows, pero no DEBs). La última versión es la 5.0. La descompresión puede ser en un directorio cualquiera, como por ejemplo, el home de un usuario (no es necesario root):
+{{{
 :~$ tar xvzf cx_Oracle-5.0.tar.gz
 :~$ cd cx_Oracle-5.0/
 :~/cx_Oracle-5.0 $
-
+}}}
 Luego, para poder compilar/construir primero e instalar después el módulo, hay que establecer la variable de entorno ORACLE_HOME:
 
 :~/cx_Oracle-5.0$ export ORACLE_HOME=/opt/oracle/instantclient/
