@@ -1,7 +1,0 @@
-#summary Ejercicio dbapi
-
-
-
-= Ejercicio con dbapi =
-
-* Crea una clase comunidad
