@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Generar gráficos con python
 
 = Paquetes =
   * http://matplotlib.sourceforge.net/
