@@ -1,0 +1,9 @@
+#summary One-sentence summary of this page.
+
+= Paquetes =
+  * http://matplotlib.sourceforge.net/
+  * http://www.lorenzogil.com/projects/pycha/
+  * http://code.google.com/p/open-flash-chart-python/
+  * http://linil.wordpress.com/2008/09/16/cairoplot-11/
+  * http://bettercom.de/de/pycairochart
+  * http://pygooglechart.slowchop.com/
