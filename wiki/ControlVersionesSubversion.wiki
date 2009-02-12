@@ -2,6 +2,7 @@ summary Ejercicios con subversion
 
 == Documentación ==
   * http://svnbook.red-bean.com/nightly/es/index.html
+  * http://www.kopernix.com/?q=node/41
   * http://www.mononeurona.org/pages/display/746
   * http://prhlt.iti.es/seminars/2007/Andres07b.pdf
 
