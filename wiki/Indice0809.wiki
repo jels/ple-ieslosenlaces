@@ -6,7 +6,7 @@
   * InstalarPython26EnUbuntu
   * InstalarEclipse
   * PythonConPydev
-  * UsarSuversionEnEclipse
+  * UsarSubversionEnEclipse
 == Proyectos ==
   * DesarrolloProyectos
   * ControlVersionesSubversion
