@@ -5,6 +5,7 @@
 
 == Objetivos ==
   * Implementar la clase siguiente utilizando la dbapi. Podemos utilizar cx_Oracle o sqlite.
+  * Los datos se sacarán de los fichero del repositorio: http://code.google.com/p/ple-ieslosenlaces/source/browse/trunk/dbapi/ej_municipios/
   * Para los gráficos podemos utilizar cualquiera de los módulos que citamos en GraficosConPython
   * Crear una función que utilice la clase para generar la información que buscamos.
   * El proyecto tiene que residir en el repositorio de código del aula (subversion)
