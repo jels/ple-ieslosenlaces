@@ -1,0 +1,18 @@
+#summary Guión actividades curso 08 09
+
+
+= Desarrollo =
+== Configuración de entornos =
+  * InstalarPython26EnUbuntu
+  * InstalarEclipse
+  * PythonConPydev
+  * UsarSuversionEnEclipse
+== Proyectos ==
+  * DesarrolloProyectos
+  * ControlVersionesSubversion
+  * InstalarProgramas
+  * GraficosUml
+= Bases de Datos =
+  * IntroDbApi
+  * OracleConPython
+  * InstalarCxOracleEnUbuntu
