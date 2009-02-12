@@ -1,0 +1,5 @@
+#summary Instalar setuptools
+
+Para instalar setuptools en nuestra instalación de python local:
+  * descarga http://peak.telecommunity.com/dist/ez_setup.py
+  * ejecuta {{{python ez_setup.py}}}
