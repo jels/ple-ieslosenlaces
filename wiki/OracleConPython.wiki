@@ -23,7 +23,7 @@ In [5]: cursor.execute('SELECT ename FROM emp')
 In [6]: registros = cursor.fetchall()
 
 In [7]: for r in registros:
-...:     print str(r)
+...:        print str(r)
 ...:
 ...:
 ('KING',)
