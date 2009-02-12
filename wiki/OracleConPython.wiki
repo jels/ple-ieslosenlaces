@@ -5,126 +5,11 @@
   * http://marcelosoft.blogspot.com/2008/10/cmo-conectarse-oracle-desde-python-en.html
   * http://cx-oracle.sourceforge.net/
   * http://wiki.oracle.com/page/Installing+Oracle+&+Python+on+Linux
-== Ejemplos ==
-COMO CONECTARSE A ORACLE CON PYTHON DESDE UBUNTU:
-Luego de luchar (y bastante) para acceder a una BD Oracle desde Python, me propuse escribir los pasos a realizar así quedan para la posteridad. Tengo entendido que el único driver que funciona bien para conectarse es el cx_Oracle, así que voy a tratar de explicar cómo se instala todo desde el comienzo, usando Ubuntu Intrepid Ibex 8.10.
 
-1. Instalación del Oracle InstantClient
-Primero, hay que descargar el Oracle InstantClient para la plataforma Linux que se utilice (x86, x86_64, Power, Itanium, etc.) desde acá (es necesario registrarse, pero es gratuito). Los paquetes necesarios son "Instant Client Package - Basic Lite" y "Instant Client Package - SDK". cx_Oracle debería funcionar con cualquiera de las versiones 9.x y 10.x, así que vamos a bajar la última versión.
-
-Primero hay que descomprimir los 2 archivos .zip; por ejemplo:
-{{{
-:~$ unzip instantclient-basiclite-linux32-11.1.0.7.zip
-:~$ unzip instantclient-sdk-linux32-11.1.0.7.zip
-}}}
-Al descomprimir ambos archivos en el mismo directorio se generó el nuevo directorio "instantclient_11_1" con todo el contenido:
-{{{
-:~$ cd instantclient_11_1/
-}}}
-Creamos el directorio /opt/oracle, y después lo movemos al nuevo directorio renombrado como /opt/oracle/instantclient.
-{{{
-:~$ sudo mkdir -p /opt/oracle/
-:~$ sudo mv instantclient_11_1 /opt/oracle/instantclient
-}}}
-Ahora debemos decirle al linker de bibliotecas dinámicas del sistema (ld) la ubicación de un nuevo path donde podrá encontrar más bibliotecas software para el programa que lo requiera; en este caso ese "programa" será el módulo de python para acceder a Oracle, cx_Oracle. Es decir, que además de las bibliotecas disponibles en, por ejemplo, /usr/lib y /usr/local/lib, también pondremos a disposición de los programas del usuario las bibliotecas del directorio /opt/oracle/instantclient. Esto se hace con el programa ldconfig:
-{{{
-:~$ sudo -i
-[sudo] password for ****:
-root@ubuntu-server:~# echo "/opt/oracle/instantclient" > /etc/ld.so.conf.d/oracle.conf
-root@ubuntu-server:~# ldconfig
-root@ubuntu-server:~# ldconfig --print | grep /opt/oracle
-root@ubuntu-server:~# cd /opt/oracle/instantclient
-root@ubuntu-server:/opt/oracle/instantclient# ln -s libclntsh.so.11.1 libclntsh.so
-root@ubuntu-server:/opt/oracle/instantclient# ln -s libocci.so.11.1 libocci.so
-}}}
-La idea es crear un archivo con extensión .conf en el directorio /etc/ld.so.conf.d/ [1], con un nombre relacionado con nuestro propósito, que sólo indica un nuevo directorio de bibliotecas de ubicación "no estándar".
-
-Luego hay que refrescar la información de bibliotecas, con el comando "ldconfig". Después, "ldconfig --print" muestra todas las bibliotecas disponibles en el sistema para enlazar dinámicamente, pero como ahora sólo son de nuestro interés las del directorio /opt/oracle, se filtra la salida con un grep acorde.
-
-También hacemos dos enlaces simbólicos a las bibliotecas principales del Instantclient, cuyo número de versión es "genérico", a diferencia de los archivos originales, cuya versión es 11.1. Al momento de compilar el cx_Oracle, éste buscará la versión genérica de estas librerías, no una versión específica (por ende, serán los archivos libclntsh.so y libocci.so). Todo esto debe hacerse como root, por eso el "sudo -i" inicial.
-
-2. Instalación del cx_Oracle
-
-Una vez que se tiene el Instantclient instalado y configurado, vamos a proceder a instalar el módulo cx_Oracle. Lo "complicado" de la instalación del módulo (a diferencia de la gran mayoría que son 100% python) es que requiere correr un proceso de compilación contra las bibliotecas Instantclient que acabamos de instalar. Lo bueno es que a esta altura ya hicimos casi todo el trabajo. :-)
-
-Primero instalamos algunas dependencias:
-{{{
-:~$ sudo apt-get install python-dev python-setuptools build-essential
-}}}
-Cuando se compilan módulos de python que acceden a librerías nativas (generalmente en C), debe instalarse el paquete "python-dev", que contiene los headers de las estructuras, funciones y demás símbolos del lenguaje. Las setuptools creo que no hacen falta, pero siempre es útil tenerlo para instalar más módulos después. El metapaquete "build-essential" nos provee todo lo básico necesario para compilar programas en C/C++.
-
-Luego descargamos y descomprimimos el código fuente del módulo, en formato .tar.gz (hay RPMs y paquetes para Windows, pero no DEBs). La última versión es la 5.0. La descompresión puede ser en un directorio cualquiera, como por ejemplo, el home de un usuario (no es necesario root):
-{{{
-:~$ tar xvzf cx_Oracle-5.0.tar.gz
-:~$ cd cx_Oracle-5.0/
-:~/cx_Oracle-5.0 $
-}}}
-Luego, para poder compilar/construir primero e instalar después el módulo, hay que establecer la variable de entorno ORACLE_HOME:
-{{{
-:~/cx_Oracle-5.0$ export ORACLE_HOME=/opt/oracle/instantclient/
-}}}
-Ahora, a construir el módulo. Puede verse que no hace falta ser root:
-{{{
-:~/cx_Oracle-5.0$ python setup.py build
-}}}
-Listo, ya podemos instalar y probar el nuevo módulo:
-{{{
-:~/cx_Oracle-5.0$ python setup.py install
-}}}
-Descargamos una libreria que nos falta:
-{{{
-:~$ sudo aptitude install libaio1
-}}}
-Una vez instalada la nueva libreria, creamos un archivo en la ruta "/opt/oracle/instantclient/network/admin" llamado 'tnsnames.ora' con el siguiente contenido:
-# tnsnames.ora Network Configuration File: D:\DevSuiteHome_1\network\admin\tnsnames.ora
-
-# Generated by Oracle configuration tools.
-
-EXTPROC_CONNECTION_DATA =
-
-  (DESCRIPTION =
-
-    (ADDRESS_LIST =
-
-      (ADDRESS = (PROTOCOL = TCP)(HOST = "direccion_ip_servidor_oracle")(PORT = 1521))
-
-    )
-
-    (CONNECT_DATA =
-
-      (SERVICE_NAME = PLSExtProc)
-
-    )
-
-  )
-
-
-
-ENLACES5 =
-
-  (DESCRIPTION =
-
-    (ADDRESS_LIST =
-
-      (ADDRESS = (PROTOCOL = TCP)(HOST = "direccion_ip_servidor_oracle")(PORT = 1521))
-
-    )
-
-    (CONNECT_DATA =
-
-      (SERVICE_NAME = enlaces5)
-
-    )
-
-  )
-
-
-
+== Ejemplo de uso ==
 Ejecutamos python:
-:~/cx_Oracle-5.0$ python
-Python 2.5.2 (r252:60911, Jul 31 2008, 17:31:22)
-Type "copyright", "credits" or "license" for more information.
-
+{{{
+$ ipython
 In [1]: import cx_Oracle
 
 In [2]: conexion='usuario/contraseña@direccion_ip_servidor_oracle:1521/cadena_conexion'
@@ -155,8 +40,4 @@ In [7]: for r in registros:
 ('SCOTT',)
 ('ADAMS',)
 ('MILLER',)
-
-Listo! Ya tenemos acceso a Oracle desde mi lenguaje de programación preferido, Python.
-
-Espero que les sirva.
------------------------------------------------------------------------------------------------
+}}}
