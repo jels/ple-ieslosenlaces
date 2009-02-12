@@ -11,4 +11,4 @@
   * El proyecto tiene que residir en el repositorio de código del aula (subversion)
   * Tiene que estar bien documentado y con los ficheros de uso e instalación correspondientes.
 
-http://code.google.com/p/ple-ieslosenlaces/source/browse/trunk/dbapi/ej_municipios/poblacion.png
+http://ple-ieslosenlaces.googlecode.com/svn/trunk/dbapi/ej_municipios/poblacion.png
