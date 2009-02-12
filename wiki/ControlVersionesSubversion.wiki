@@ -1,5 +1,10 @@
 summary Ejercicios con subversion
 
+== Documentación ==
+  * http://svnbook.red-bean.com/nightly/es/index.html
+  * http://www.mononeurona.org/pages/display/746
+  * prhlt.iti.es/seminars/2007/Andres07b.pdf
+
 ==Crear nuevo proyecto==
 {{{
 $ mkdir NombreMiProyecto
