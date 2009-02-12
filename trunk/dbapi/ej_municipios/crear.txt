@@ -1,0 +1,17 @@
+create table comunitat
+(
+	ca_id integer,
+	nom varchar(50)
+);
+
+create table municipi
+(
+	m_id integer,
+	nom varchar(70),
+	poblacio2003 integer,
+	poblacio2001 integer,
+	poblacio1996 integer,
+	poblacio1991 integer,
+	superficie float,
+	ca_id integer	
+);
