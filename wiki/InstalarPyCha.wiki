@@ -1,5 +1,5 @@
 #summary Instalar PyCha
-
+<wiki:toc />
 = Instalación =
 == Setuptools ==
 Instala primero setuptools si no está instalado InstalarSetuptools
