@@ -1,4 +1,4 @@
-summary Ejercicios con subversion
+#summary Ejercicios con subversion
 
 == Documentación ==
   * http://svnbook.red-bean.com/nightly/es/index.html
