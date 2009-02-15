@@ -17,7 +17,7 @@ data_set = (
     (u'Sistemas', ((0,1), (1, 5), (2, 4), (3, 1)))
 )
 
-
+# configuración opciones del gráfico
 options = {
     'legend': {'hide': False,
                'position': {'right': 20}
@@ -39,6 +39,7 @@ options = {
             }
     }
 
+# generación del gráfico
 grafico = pycha.bar.VerticalBarChart(surface, options)
 grafico.addDataset(data_set)
 grafico.render()
