@@ -22,3 +22,4 @@
 = Gráficos =
   * GraficosConPython
   * BarrasPyCha
+  * SectoresPyCha
