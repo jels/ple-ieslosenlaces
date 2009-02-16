@@ -21,4 +21,5 @@ $ sudo aptitude install eclipse-pydev
 == Pydev==
   * http://www.aptana.com/python
   * http://pydev.sourceforge.net/
+  * http://fabioz.com/pydev/manual_101_root.html
   * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
