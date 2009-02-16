@@ -22,7 +22,9 @@ options = {
     'legend': {'hide': False,
                'position': {'right': 20}
                },
-    'background': {'color': '#F0F0F0'},
+    'background': {'chartColor': '#444444',
+                   'baseColor': '#FFFFFF'},
+    'colorScheme': 'blue',
     'axis': {
             'x': {
                 'ticks': ({'label': u'Insuf.', 'v': 0},
