@@ -5,6 +5,7 @@
 http://img.xataka.com/olpc-green.jpg
 = Preparar máquinas =
 Inicialmente, tener computadoras / laptops convencionales y testear el OS del XO dentro de un emulador. Una computadora por tester, o una por cada 2 testers (un tester al teclado, el otro tomando nota...) - y un emulador: http://wiki.laptop.org/go/Emulating_the_XO
+  * http://wiki.laptop.org/go/Using_QEMU_on_Troubleshooting
 = ¿Qué testear? =
 == Áreas del sistema ==
 Ver que versiones o áreas del sistema estan necesitando testeo - la coordinación del "tema de la semana" la hacen en este momento Michael Stone y Mel Chua, y aparece publicada en http://wiki.laptop.org/go/Friends_in_testing. A veces el testeo del OS que proponen en Friends in testing requiere tener el hardware y/o estar mirando cosas muy especificas. 
