@@ -19,5 +19,6 @@ $ sudo aptitude install eclipse-pydev
   * Ejecutar *eclipse* y configurar el *workspace*.
 
 == Pydev==
+  * http://www.aptana.com/python
   * http://pydev.sourceforge.net/
   * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
