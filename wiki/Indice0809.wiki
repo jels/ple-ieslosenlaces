@@ -23,3 +23,5 @@
   * GraficosConPython
   * BarrasPyCha
   * SectoresPyCha
+= Formatos Especiales =
+  * GenerarPdf
