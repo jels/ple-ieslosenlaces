@@ -1,0 +1,15 @@
+#summary Introducción a Reportlab
+
+
+= Documentación =
+== Oficial ==
+  * http://www.reportlab.org/rl_toolkit.html
+  * http://www.reportlab.com/docs/reportlab-userguide.pdf
+== Artículos y blogs ==
+  * www.linux-magazine.es/issue/13/ReportLab.pdf
+  * http://maengora.blogspot.com/2008/12/leccin-no-8.html
+  * http://www.devshed.com/c/a/Python/Python-for-PDF-Generation/
+= Instalación =
+{{{
+$ easy_install reportlab
+}}}
