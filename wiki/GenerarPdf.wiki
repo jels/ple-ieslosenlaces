@@ -1,0 +1,8 @@
+#summary Generar pdf desde programas python
+
+=Librerías disponibles=
+  * Reportlab http://www.reportlab.org/rl_toolkit.html --> IntroReportlab
+  * Pisa http://www.xhtml2pdf.com/
+  * pdflib http://www.pdflib.com/
+  * pyuno http://udk.openoffice.org/python/python-bridge.html
+
