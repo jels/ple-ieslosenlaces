@@ -1,4 +1,6 @@
 #summary Documentación provisional italc
+<wiki:toc />
+
 http://italc.sourceforge.net/logo.png
 = Presentación ==
   * iTALC : Intelligent Teaching And Learning with Computers
