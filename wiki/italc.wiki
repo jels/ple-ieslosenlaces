@@ -17,4 +17,4 @@ http://italc.sourceforge.net/logo.png
   * https://maktub.eps.ua.es/servicios/laboratorios/visualizar/italc.phtml
   * http://observatorio.cnice.mec.es/modules.php?op=modload&name=News&file=article&sid=642
   * http://escuelaslibres.mcye.misiones.gov.ar/herramientas/49-como-administracie-clases-usando-italc.html
-  * *http://www.grulic.org.ar/ftp/media/7jrsl/2007081009-D1.odp*
+  * *http://www.grulic.org.ar/ftp/media/7jrsl/2007081009-D1.odp *
