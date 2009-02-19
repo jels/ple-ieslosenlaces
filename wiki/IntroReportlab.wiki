@@ -11,6 +11,17 @@
   * http://www.devshed.com/c/a/Python/Python-for-PDF-Generation/
   * http://radicalpython.blogspot.com/2009/01/reportes-con-python-i-de-ii.html
 = Instalación =
+== con setuptools ==
 {{{
 $ easy_install reportlab
 }}}
+== Desde el fuente ==
+  * Descargar último estable (http://www.reportlab.org/ftp/ReportLab_2_3.tar.gz)
+  * Installar Python Imaging Library para usar imágenes png o gif (http://www.pythonware.com/products/pil/)
+    * http://effbot.org/downloads/Imaging-1.1.6.tar.gz
+  En ambos paquetes:
+{{{
+$ python setup.py build
+$ sudo python setup.py install
+}}}
+
