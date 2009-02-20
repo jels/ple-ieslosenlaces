@@ -1,0 +1,4 @@
+#summary Uso platypus - reportlab
+*Page Layout and Typography Using Scripts*
+
+Platypus ofrece una API de más alto nivel. Separa formato de contenido. Tiene recursos predefinidos para tablas y otras estructuras.
