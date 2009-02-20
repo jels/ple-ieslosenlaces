@@ -1,5 +1,5 @@
 #summary Introducción a Reportlab
-
+<wiki:toc />
 
 = Documentación =
 == Oficial ==
@@ -25,3 +25,8 @@ $ python setup.py build
 $ sudo python setup.py install
 }}}
 
+= ¿Cómo se usa? =
+Reportlab tiene tres formas (APIs) de uso:
+  * [ReportlabCanvas Canvas]
+  * [ReportlabPlatypus Platypus]
+  * [ReportlabDrawing Drawing]
