@@ -47,7 +47,7 @@ lc.valueAxis.valueMin = 0
 lc.valueAxis.valueMax = 12
 lc.valueAxis.valueStep = 2
 lc.lines[0].strokeWidth = 2
-lc.lines[0].symbol = makeMarker('FilledCircle') # added to make filled circles.
+lc.lines[0].symbol = makeMarker('FilledCircle') # círculos rellenos
 lc.lines[1].strokeWidth = 1.5
 drawing.add(lc)
 
