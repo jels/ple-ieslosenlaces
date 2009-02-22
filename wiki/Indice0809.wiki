@@ -25,4 +25,4 @@
   * SectoresPyCha
 = Formatos Especiales =
   * GenerarPdf
-  * IntroReportlab
+  * [IntroReportlab Pdf con Reportlab]
