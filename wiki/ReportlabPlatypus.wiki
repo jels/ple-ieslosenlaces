@@ -60,17 +60,22 @@ tabla = Table(data = datos,
 contenido.append(tabla)
 
 # espacio adicional
-contenido.append(Spacer(0, inch*.2))
+contenido.append(Spacer(0, inch*.4))
 
 
 para2 = Paragraph(u"""Gráficos de ejemplo de <a href="http://www.reportlab.org/meteo.html" color="blue">
 reportlab.org</a>""", style=estilo['Normal'])
 contenido.append(para2)
-# imagen
-foto = Image("http://www.reportlab.org/rsrc/meteo.gif", width=A4[0]-2*inch, preserveAspectRatio=True)
-contenido.append(foto)
-    
+contenido.append(Spacer(0, inch*.1))
 
+# imagen
+foto = Image("http://www.reportlab.org/rsrc/meteo.gif")
+# Ajustamos tamaño al ancho porque es más grande
+ancho = A4[0]-2*inch
+foto.drawHeight = ancho * foto.drawHeight/foto.drawWidth
+foto.drawWidth = ancho
+
+contenido.append(foto)
 
 pdf.build(contenido)
 
