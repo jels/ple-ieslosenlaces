@@ -26,6 +26,9 @@ $ python setup.py build
 $ sudo python setup.py install
 }}}
 
+*Problemas con pil*
+Editar setup.py (línea 41). Cambiar {{{TCL_ROOT = None}}} por {{{TCL_ROOT = "/usr/include/tk"}}}
+
 = ¿Cómo se usa? =
 Reportlab tiene tres formas (APIs) de uso:
   * [ReportlabCanvas Canvas]
