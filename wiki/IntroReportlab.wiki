@@ -26,7 +26,7 @@ $ python setup.py build
 $ sudo python setup.py install
 }}}
 
-*Problemas con pil*
+== Problemas con Imaging ==
 Editar setup.py (línea 41). Cambiar {{{TCL_ROOT = None}}} por {{{TCL_ROOT = "/usr/include/tk"}}}
 
 = ¿Cómo se usa? =
