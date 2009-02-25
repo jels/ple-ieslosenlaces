@@ -27,3 +27,14 @@ public class HolaMundo {
 == Numéricos ==
   * Tipos primitivos no son objetos en Java
   * Entrada y salida
+=== Scanner ===
+{{{
+.hasNext()
+.hasNextInt()
+.hasNextFloat()
+.hasNextDouble()
+.nextInt()
+.nextFloat()
+.next()
+.useDelimiter("\n")
+}}}
