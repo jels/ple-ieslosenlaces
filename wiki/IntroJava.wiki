@@ -25,6 +25,5 @@ public class HolaMundo {
 }}}
 == Tipos de datos ==
 == Numéricos ==
-Tipos primitivos no son objetos en Java
-Entrada y salida
-
+  * Tipos primitivos no son objetos en Java
+  * Entrada y salida
