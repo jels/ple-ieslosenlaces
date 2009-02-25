@@ -2,6 +2,8 @@
 
 <wiki:toc />
 
+http://knuth.luther.edu/~bmiller/JavaForPython.html
+
 = Java en Ubuntu =
   * http://www.guia-ubuntu.org/index.php?title=Java
   * InstalarEclipse
@@ -12,12 +14,17 @@
   * Todo programa Java tiene que tener una función llamada {{{public static void main(String[] args)}}}.
   * Separación de bloques con llaves: {{{{}}}}
   * Indentación no obligatoria
+  * final de sentencia: {{{;}}}
 == Hola Mundo ==
 {{{
 public class HolaMundo {
     public static void main(String[] args) {
-	system.out.println("Hola, Mundo");
+	System.out.println("Hola, Mundo");
 	}
 }
 }}}
+== Tipos de datos ==
+== Numéricos ==
+Tipos primitivos no son objetos en Java
+Entrada y salida
 
