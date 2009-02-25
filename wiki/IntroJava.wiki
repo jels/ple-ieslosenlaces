@@ -38,3 +38,50 @@ public class HolaMundo {
 .next()
 .useDelimiter("\n")
 }}}
+
+
+== Chuleta de Pablo ==
+
+Instalar Ecplipse:
+
+Descargar la version eclipse que quieras de la pagina web http://www.eclipse.org/downloads/ (version de 85mb)
+Descargar babel http://www.eclipse.org/babel/downloads.php
+Descomprimimos las dos carpetas en el escritorio por ejemplo, primero eclipse y luego babel
+
+Ya tenemos eclipse en su ultima version y en castellano
+
+
+
+Desarrollar en Python utilizando eclipse
+Abrimos eclipse > auda > software updates > encontrar e instalar
+
+Tenemos que instalar Pydev, para ello sabemos que necesitamos (http://pydev.sourceforge.net/download.html)
+Volvemos a exlipse y le damos a la pestaña Add site
+Para nuestra version actual utilizamos esta direccion http://pydev.sourceforge.net/updates/
+Ponemos el nombre que queramos al sitio añadido
+
+Tambien queremos añadir a eclipse el modulo necesario para poder usar subversion, esta es subclipse http://subclipse.tigris.org/install.html
+Seguimos el procedimiento anterior para añadirle el modulo
+http://subclipse.tigris.org/update_1.4.x
+
+Aceptamos las licencias y le damos Finish
+
+
+Si queremos desarrollar en otro lenguaje que no sea java, vamos a perspectivas, otras perspectivas
+y alli tenemos que encontrar todos los modulos instlados en el sistema
+Seleccionamos pydev y aceptamos
+Carga una serie de modulos y crea la perspectuva Pydev
+
+Si el python de systema es python 2.5 y queremos usar 2.6
+Vamos a ventana > preferencias > Pydev > Editor > interpreter - Python
+Le damos a nuevo y seleccionamos la ruta de nuestro python 2.6 /usuario/lib/python2.6/python
+Una vez añadido lo subimos para que por defecto utilice siempre el 2.6
+
+
+Para empezar a trabajar Archivo > Nuevo > proyecto de pydev
+Por defecto todo se guarda en el workspace configurado al inicio
+Si queremos cambiar la ubicacion desactivamos el use default y le decimos la ruta
+Damos nombre al archivo
+Podemos elegir el proyecto entre Python o Jython la version de sintaxis y el interprete
+Desactivamos la carpeta para crear src
+Si hace referencia a otro proyecto podemos en la ventana siguiente decirle a que proyecto esta vinculado
