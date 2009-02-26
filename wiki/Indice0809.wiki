@@ -1,6 +1,6 @@
 #summary Guión actividades curso 08 09
 
-
+http://python.org/images/python-logo.gif
 = Desarrollo =
 == Configuración de entornos =
   * InstalarPython26EnUbuntu
@@ -26,3 +26,6 @@
 = Formatos Especiales =
   * GenerarPdf
   * [IntroReportlab Pdf con Reportlab]
+= Introducción a Java = http://www.sun.com/images/e19/e19_jre.gif
+  * InstalarEclipse
+  * IntroJava
