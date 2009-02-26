@@ -26,6 +26,7 @@ http://python.org/images/python-logo.gif
 = Formatos Especiales =
   * GenerarPdf
   * [IntroReportlab Pdf con Reportlab]
-= Introducción a Java = http://www.sun.com/images/e19/e19_jre.gif
+http://blogs.sun.com/prats/resource/java-logo-thumb.png
+= Introducción a Java = 
   * InstalarEclipse
   * IntroJava
