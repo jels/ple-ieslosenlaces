@@ -1,25 +1,30 @@
 #summary InstalarEclipse
+<wiki:toc />
 
-= Instalación de eclipse =
-
-== Ubuntu ==
-=== Versión que viene con el sistema ===
+= Ubuntu =
+== Versión que viene con el sistema ==
 {{{
 $ sudo aptitude install eclipse-pydev 
 }}}
 
-== Instalar subclipse ==
-  * http://subclipse.tigris.org/install.html
-  * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
+=Windows=
+ * Descargar JSE http://java.sun.com/javase/downloads/index.jsp
+ * Descargar eclipse: http://www.eclipse.org/downloads/
 
-== Desde la web ==
+= Desde la web =
   * http://www.eclipse.org/downloads/  --> Eclipse IDE for Java Developers (85 MB)
   * Si se quiere poner en español, descargar language-packs de http://download.eclipse.org/technology/babel/babel_language_packs/ (al menos BabelLanguagePack-eclipse-es_3.4.0)
   * Descomprimir archivos
   * Ejecutar *eclipse* y configurar el *workspace*.
 
-== Pydev==
+
+
+= Pydev=
   * http://www.aptana.com/python
   * http://pydev.sourceforge.net/
   * http://fabioz.com/pydev/manual_101_root.html
   * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
+
+= Instalar subclipse =
+  * http://subclipse.tigris.org/install.html
+  * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
