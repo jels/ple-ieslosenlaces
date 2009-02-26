@@ -1,5 +1,6 @@
 #summary InstalarEclipse
-<wiki:toc />
+
+<wiki:toc max_depth="3" />
 
 = Ubuntu =
 == Versión que viene con el sistema ==
