@@ -9,6 +9,7 @@ http://knuth.luther.edu/~bmiller/JavaForPython.html
   * InstalarEclipse
 
 = Primeros pasos =
+  * EjerciciosJava
   * Todo programa Java tiene que definir una clase. Todo el código está dentro de una clase.
   * Todo en Java tiene que tener un tipo predefinido.
   * Todo programa Java tiene que tener una función llamada {{{public static void main(String[] args)}}}.
@@ -50,4 +51,3 @@ import java.util.Scanner;
 .next()
 .useDelimiter("\n")
 }}}
-
