@@ -1,0 +1,6 @@
+#summary Ejercicios java
+
+= Ejercicios Java =
+  # Pedimos 10 números y mostramos la media
+  # Pedimos 10 números y mostramos el mayor, el menor y la media.
+  # Pedimos 5 nombres de personas y su edad, mostramos el nombre de la de mayor edad.
