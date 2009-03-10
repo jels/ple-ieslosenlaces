@@ -39,7 +39,7 @@ El cargador se encarga de cargar las clases en memoria.
 === CLASSPATH ===
   # jar que contiene clases de java
   # directorios con ficheros de clases
-=== Scanner ===
+== Scanner ==
 {{{
 import java.util.Scanner;
 .hasNext()
@@ -50,4 +50,18 @@ import java.util.Scanner;
 .nextFloat()
 .next()
 .useDelimiter("\n")
+}}}
+
+== Cadenas ==
+{{{String cadena;}}}
+Equivalencias python - java
+{{{
+str[3] 	        str.charAt(3) 	
+str[2:5] 	str.substring(2,4)
+len(str) 	str.length() 	
+str.find('x') 	str.indexOf('x')
+str.split() 	str.split('s') 
+str.split(',') 	str.split(',') 
+str + str 	str.concat(str)
+str.strip() 	str.trim() 	
 }}}
