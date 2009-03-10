@@ -6,3 +6,9 @@
   # Pedimos 10 números y mostramos la media.
   # Pedimos 10 números y mostramos el mayor, el menor y la media.
   # Pedimos 5 nombres de personas y su edad, mostramos el nombre de la de mayor edad.
+  # Números primos menores 100
+    # Var1. El número lo pedimos al usuario
+    # Método {{{static boolean esPrimo(int i) }}}
+
+
+  
