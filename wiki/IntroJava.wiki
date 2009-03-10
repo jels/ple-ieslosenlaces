@@ -67,7 +67,7 @@ str.strip() 	str.trim()
 }}}
 
 == Listas ==
-[Ejemplo de B. Miller]
+Ejemplo de B. Miller:
 {{{
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -101,4 +101,30 @@ public class Histo {
         }
     }
 }
+}}}
+
+== Excepciones ==
+{{{
+try {
+   código de riesgo, que puede dar problemas: abrir archivo ...
+}
+catch (Exception e) {
+   Si ocurre un error en el bloque try, se lanza la excepción
+   Aquí se captura la excepción
+}
+}}}
+
+== Bucles ==
+{{{
+while (condicion)}
+    bloque de acciones;
+    }
+for (int i; i<limite; i++){
+    bloque de acciones;
+    }
+for (Integer i: iterador){
+    bloque de acciones;
+    }
+}}}
+
 }}}
