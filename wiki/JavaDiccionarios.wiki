@@ -1,0 +1,36 @@
+#summary One-sentence summary of this page.
+{{{
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.TreeMap;
+import java.io.File;
+import java.io.IOException;
+public class EjemploArrayList {
+	     public static void main(String[] args) {
+	        Scanner data = null;
+	        ArrayList<Integer> count;
+	        TreeMap <Integer, Integer> contador;
+	        Integer idx;
+	        try {
+	                data = new Scanner(new File("datos.txt"));
+	        }
+	        catch ( IOException e) {
+	            System.out.println("No se puede abrir el fichero");
+	            e.printStackTrace();
+	            System.exit(0);
+	        }
+	        contador = new TreeMap<Integer, Integer>();
+	        
+	        while(data.hasNextInt()) {
+	            idx = data.nextInt();
+	            if (contador.containsKey(idx))
+	            	contador.put(idx, contador.get(idx)+1);
+	            else
+	            	contador.put(idx, 1);
+	        }
+	        contador.
+	        for(Integer i : count) {
+	            System.out.println(idx + " aparece " + i + " vez/veces.");
+	            idx++;
+	        }
+}}}
