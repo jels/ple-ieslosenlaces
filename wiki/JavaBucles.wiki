@@ -1,0 +1,14 @@
+#summary Bucles en Java
+
+{{{
+while (condicion)}
+    bloque de acciones;
+    }
+for (int i; i<limite; i++){
+    bloque de acciones;
+    }
+for (Integer i: iterador){
+    bloque de acciones;
+    }
+
+}}}
