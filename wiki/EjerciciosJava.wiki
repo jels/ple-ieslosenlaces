@@ -9,6 +9,8 @@
   # Números primos menores 100
     # Var1. El número lo pedimos al usuario
     # Método {{{static boolean esPrimo(int i) }}}
+  # Escribe un programa que pida una serie de números. El programa termina cuando no se introduce ningún número (entrada en blanco). El programa mostrará la lista de números introducidos, el menor, el mayor y la media.
+
 
 
   
