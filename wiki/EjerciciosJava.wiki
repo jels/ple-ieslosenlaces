@@ -10,6 +10,18 @@
     # Var1. El número lo pedimos al usuario
     # Método {{{static boolean esPrimo(int i) }}}
   # Escribe un programa que pida una serie de números. El programa termina cuando no se introduce ningún número (entrada en blanco). El programa mostrará la lista de números introducidos, el menor, el mayor y la media.
+  # Crea una clase Persona ({{{Persona.java}}}). Almacenaremos el nombre, la edad y el número de hijos de esa persona. Añadiremos un método {{{.cadena()}}} que devuelva una cadena con su nombre y edad.
+    # Crea  una nueva clase {{{PruebaPersona}}} con un método {{{static void main(String[] args)}}} para hacer una prueba de que funciona bien.
+    # Los campos nombre, número de hijos y edad serán privados.
+    # Crea métodos públicos (setNombre) que tome como parámetro el nuevo nombre.
+    # Crea métodos públicos (getNombre) que devuelva el nombre.
+    # Modifica el {{{main}}}.
+    # Crea dos constructores. Uno con parámetros y otro sin parámetros. El que no tiene parámetros pondrá como nombre anónimo.
+    # Añade una variable estática para almacenar el número total de personas que se creen. Modifica los constructores.
+    # Crea un método estático que muestre los elementos de un vector de personas. Haz un programa que cree un vector de 5 personas y los muestre en pantalla.
+    # Crea un método de clase que tome como parámetros un nombre y un vector de personas y devuelva la posiciópn de esa persona dentro del vector o -1 si no está en el vector.
+
+
 
 
 
