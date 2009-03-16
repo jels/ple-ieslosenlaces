@@ -20,6 +20,23 @@
     # Añade una variable estática para almacenar el número total de personas que se creen. Modifica los constructores.
     # Crea un método estático que muestre los elementos de un vector de personas. Haz un programa que cree un vector de 5 personas y los muestre en pantalla.
     # Crea un método de clase que tome como parámetros un nombre y un vector de personas y devuelva la posiciópn de esa persona dentro del vector o -1 si no está en el vector.
+  # Crea una clase Fecha con los siguientes métodos:
+    # {{{Fecha(int dia, int mes, int anio)}}}
+    # {{{Fecha()}}}  --> fecha del día
+    # {{{boolean anterior(Fecha f)}}}  --> devuelve verdadero si la fecha es anterior a f.
+    # {{{boolean equal(Fecha f)}}}
+    # {{{int dia()}}}
+    # {{{int mes()}}}
+    # {{{int anio()}}}
+    # {{{int diaSemana()}}} --> día de la semana: 1=lunes, 2=martes ...
+    # {{{String toString()}}}
+  # Añade a Persona un atributo para almacenar la fecha de nacimiento.
+  # Crea una clase {{{Empleado}}} que guarde los datos de nombre, número de hijos, fecha de nacimiento y categoría (un núm. entero). La clase Empleado derivará de Persona.
+    # Define los métodos necesarios.
+    # Añade método {{{.toString()}}}
+  # Haz que la clase persona implemente el interfaz {{{Comparable}}} ordenando según el nombre de la persona. ==> crea el método {{{compareTo(Persona p}}}
+    # Utiliza un vector de personas (ArrayList) para comprobarlo.
+
 
 
 
