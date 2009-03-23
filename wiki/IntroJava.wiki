@@ -93,4 +93,5 @@ catch (Exception e) {
 == Bucles ==
 JavaBucles
 
-= JavaSwing =
+= Swing =
+  JavaSwing
