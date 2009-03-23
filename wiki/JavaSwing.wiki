@@ -5,11 +5,12 @@
   * http://java.sun.com/docs/books/tutorial/ui/features/components.html
   * http://ji.ehu.es/LMAlonso/SW/java/Bib/tutorjava/html/ui/index.html
   * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
-  * https://secure.manning.com/assets/products/gallardo2/eclipse_article.pdf
+  
 = Ejemplos de código =
    * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
 = Visual Editor =
   * http://wiki.eclipse.org/VE/Update
+  * https://secure.manning.com/assets/products/gallardo2/eclipse_article.pdf
   * www.gallardo.org/VE_Swing.ppt
   * http://www.ajpdsoft.com/modules.php?name=News&file=print&sid=271
   * http://www.ibm.com/developerworks/library/os-ecvisual/
