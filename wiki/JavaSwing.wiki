@@ -1,5 +1,5 @@
 #summary Intro java swing
-<wiki:toc /<
+<wiki:toc />
 
 = Documentación =
   * http://java.sun.com/docs/books/tutorial/ui/features/components.html
