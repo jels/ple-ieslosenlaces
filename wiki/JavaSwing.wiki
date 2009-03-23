@@ -6,3 +6,8 @@
   * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
 = Ejemplos de código =
    * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
+= VisualEditor =
+  * http://wiki.eclipse.org/VE/Update
+  * www.gallardo.org/VE_Swing.ppt
+  * http://www.ajpdsoft.com/modules.php?name=News&file=print&sid=271
+  * http://www.ibm.com/developerworks/library/os-ecvisual/
