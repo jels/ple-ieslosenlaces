@@ -1,6 +1,7 @@
 #summary Clases de Swing
 
 = Árbol de clases =
+(*) Indica que es una clase abstracta.
 {{{
 Object
     *Component
