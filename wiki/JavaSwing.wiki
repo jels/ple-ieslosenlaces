@@ -6,7 +6,8 @@
   * http://ji.ehu.es/LMAlonso/SW/java/Bib/tutorjava/html/ui/index.html
   * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
 = Intro =
-== ArbolDeClases ==
+== Árbol de clases ==
+ArbolDeClases
 
 = Ejemplos de código =
    * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
