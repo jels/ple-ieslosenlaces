@@ -7,6 +7,15 @@ Lo hemos documentado en InstalarCxOracleEnUbuntu
   * http://cx-oracle.sourceforge.net/
   * http://wiki.oracle.com/page/Installing+Oracle+&+Python+on+Linux
 
+== Conexión ==
+{{{
+dsn = cx_Oracle.makedsn('host.com', int(1534), 'dbname')
+my_db = cx_Oracle.connect('username', 'password', dsn )
+cursor = my_db.cursor()
+cursor.execute("SELECT a, b, c FROM sometable")
+rows = cursor.fetchall()
+}}}
+
 == Ejemplo de uso ==
 Ejecutamos python:
 {{{
