@@ -10,7 +10,8 @@
 ArbolDeClases
 
 = Ejemplos de código =
-   * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
+  * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
+  * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:practica3
 = Visual Editor =
   * http://wiki.eclipse.org/VE/Update
   * https://secure.manning.com/assets/products/gallardo2/eclipse_article.pdf
