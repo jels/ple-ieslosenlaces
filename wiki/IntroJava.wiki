@@ -8,6 +8,7 @@
   * InstalarEclipse
 
 = Documentación ==
+  * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:inicio
   * http://ocw.uc3m.es/informatica/programacion/transparencias
   * http://knuth.luther.edu/~bmiller/JavaForPython.html
   * http://javahispano.org/documentacion/
