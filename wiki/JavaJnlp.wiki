@@ -1,7 +1,9 @@
 #summary Java jnlp
 
+<wiki:toc max_depth="2" />
 Work in progress
 
+= Algo de documentación =
   * http://es.wikipedia.org/wiki/JNLP
 
   * http://java.sun.com/developer/technicalArticles/Programming/jnlp/
@@ -9,3 +11,6 @@ Work in progress
 
   * http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-jws.html
   * http://www.eclipse.org/swt/jws/
+
+= Un ejemplo sencillo =
+http://cacharreadores.blogspot.com/2008/07/despliega-aplicaciones-por-la-red-con.html
