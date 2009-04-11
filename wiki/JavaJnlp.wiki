@@ -13,6 +13,7 @@ Work in progress
 
   * http://www.ibm.com/developerworks/edu/os-dw-os-eclipse-jws.html
   * http://www.eclipse.org/swt/jws/
+  * http://i-proving.ca/space/RCP+and+Java+Web+Start
 
 = Un ejemplo sencillo =
 http://cacharreadores.blogspot.com/2008/07/despliega-aplicaciones-por-la-red-con.html
