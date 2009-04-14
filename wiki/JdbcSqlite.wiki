@@ -1,7 +1,8 @@
 #summary sqlite con jdbc
 
 = Documentación =
-http://www.zentus.com/sqlitejdbc/
+  * http://www.zentus.com/sqlitejdbc/
+  * http://www.zentus.com/sqlitejdbc/usage.html
 
 Ejemplo de http://www.zentus.com/sqlitejdbc/
 {{{
