@@ -12,6 +12,5 @@
 || @return  || Lo que devuelve el método||
 || @see  ||	Referencia a otro objeto ||
 || @since || ||
-
 || @throws ||	Excepción ||
 || @version || 	Versión ||
