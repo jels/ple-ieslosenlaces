@@ -7,13 +7,13 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Main-Standard::Instantiate->/Interfaz*/Main-Soyatec::Import->/Interfaz" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="75,33" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,33"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0" name="Interfaz" location="255,45" size="204,481" id="/Interfaz" runTimeClassModel="labelUsuario,conexionAconsulta(),labelConsulta,labelServidor,contenedor,labelPassword,Interfaz(),botonConectar,botonConsulta,tabla,botonLimpiar,winConexion(),conexion,botonSalir,tFieldPassword,layoutConexion,layoutConsultaTabla,tFieldConsulta,consultaAconexion(),tFieldUsuario,botonDesconectar,scrollPane,botonLimpiar2,tFieldServidor">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0" name="Interfaz" location="255,45" size="204,481" id="/Interfaz" runTimeClassModel="labelUsuario,conexionAconsulta(),labelConsulta,labelServidor,contenedor,labelPassword,Interfaz(),botonConectar,botonConsulta,tabla,botonLimpiar,winConexion(),conexion,botonSalir,tFieldPassword,layoutConexion,tFieldConsulta,layoutConsultaTabla,consultaAconexion(),tFieldUsuario,botonDesconectar,scrollPane,botonLimpiar2,tFieldServidor">
     <children xsi:type="editmodel:CompartmentEditModel" size="181,360">
       <children xsi:type="editmodel:AttributeEditModel" name="botonConectar" id="/Interfaz#botonConectar"/>
       <children xsi:type="editmodel:AttributeEditModel" name="botonConsulta" id="/Interfaz#botonConsulta"/>
@@ -43,10 +43,10 @@
       <children xsi:type="editmodel:MethodEditModel" name="winConexion" id="/Interfaz#winConexion()"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
-    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Interfaz-Soyatec::Import->/Conexion" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import»" size="41,14" anchorKind="MiddlePart"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="204,87" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,87"/>
+    <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Interfaz-Soyatec::Import->/Conexion*/Interfaz-Standard::Instantiate->/Conexion" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,107" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,91"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
@@ -65,8 +65,8 @@
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Conexion-Soyatec::Access->/Interfaz" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,67" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="204,67"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,87" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,87"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>

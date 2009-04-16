@@ -37,9 +37,6 @@ public class Interfaz extends JFrame{
 	TableLayout layoutConsultaTabla; //Layout para la ventana de consulta
 	Conexion conexion;
 	
-	public void Interfaz(){
-		conexion = new Conexion();
-	}
 	//Preparacion de ventanas
 	public void winConexion(){
 		//Crea la ventana d conexion para la primera vez que arranca el programa
@@ -117,6 +114,7 @@ public class Interfaz extends JFrame{
 		winConexion(); //Añadimos los elementos de la ventana de conexion
 		setVisible(true); //Hace visible el JFrame
 		setResizable(false);
+		conexion = new Conexion();
 		
 		//Eventos de los botones
 		class EventoBotonLimpiar implements ActionListener{
