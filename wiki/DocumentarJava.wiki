@@ -1,8 +1,8 @@
 #summary Documentar java :: javadoc
 
 = Documentación =
-* http://es.wikipedia.org/wiki/Javadoc
-* http://java.sun.com/j2se/javadoc/
+  * http://es.wikipedia.org/wiki/Javadoc
+  * http://java.sun.com/j2se/javadoc/
 
 = Tags =
 || @author ||	Nombre del desarrollador ||
