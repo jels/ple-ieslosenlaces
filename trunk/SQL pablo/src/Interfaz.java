@@ -35,7 +35,11 @@ public class Interfaz extends JFrame{
 	JButton botonLimpiar2 = new JButton("Limpiar datos"); //Boton para limpiar datos de la ventana de consulta
 	JButton botonDesconectar = new JButton("Desconectar"); //Boton para desconectar del servidor
 	TableLayout layoutConsultaTabla; //Layout para la ventana de consulta
+	Conexion conexion;
 	
+	public void Interfaz(){
+		conexion = new Conexion();
+	}
 	//Preparacion de ventanas
 	public void winConexion(){
 		//Crea la ventana d conexion para la primera vez que arranca el programa
@@ -145,18 +149,21 @@ public class Interfaz extends JFrame{
 		class EventoBotonConexion implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				if (Conexion.conectar() == 0){//LLama a conexion.conectar para conectar, si tiene exito
-					JOptionPane.showMessageDialog(contenedor, "Conexion realizada con exito","EXITO", JOptionPane.PLAIN_MESSAGE); //Dialogo de exito
+				conexion.servidor = tFieldServidor.getText();
+				conexion.usuario = tFieldUsuario.getText();
+				conexion.password = String.valueOf(tFieldPassword.getPassword());
+				if (conexion.conectar() == 0){//LLama a conexion.conectar para conectar, si tiene exito
+					JOptionPane.showMessageDialog(contenedor, "conexion realizada con exito","EXITO", JOptionPane.PLAIN_MESSAGE); //Dialogo de exito
 					conexionAconsulta(); //Cambia la ventana
 				}
-				else if (Conexion.conectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible encontrar el driver necesario","ERROR", JOptionPane.ERROR_MESSAGE); // Si no encuentra driver
-				else if (Conexion.conectar() == 2)JOptionPane.showMessageDialog(contenedor, "Datos incorrectos \n No ha sido posible realizar la conexion con el servidor","ERROR", JOptionPane.ERROR_MESSAGE); //Si tiene datos incorrectos
+				else if (conexion.conectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible encontrar el driver necesario","ERROR", JOptionPane.ERROR_MESSAGE); // Si no encuentra driver
+				else if (conexion.conectar() == 2)JOptionPane.showMessageDialog(contenedor, "Datos incorrectos \n No ha sido posible realizar la conexion con el servidor","ERROR", JOptionPane.ERROR_MESSAGE); //Si tiene datos incorrectos
 			}
 		}
 		class EventoBotonDesconectar implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
-				if (Conexion.desconectar() == 0){//LLama a conexion.desconectar y si tiene exito
+				if (conexion.desconectar() == 0){//LLama a conexion.desconectar y si tiene exito
 					JOptionPane.showMessageDialog(contenedor, "Desconectado del servidor","EXITO", JOptionPane.PLAIN_MESSAGE); //Mensaje d exito
 					tFieldConsulta.setText("");//Borra la consulta escrita
 					tabla = new JTable(); //Borra la tabla
@@ -164,7 +171,7 @@ public class Interfaz extends JFrame{
 					scrollPane = new JScrollPane(); //Resetea el scroll
 					consultaAconexion(); //Cambia la ventana
 				}
-				if (Conexion.desconectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible desconectar del servidor","ERROR", JOptionPane.ERROR_MESSAGE); //Si falla la desconexion
+				if (conexion.desconectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible desconectar del servidor","ERROR", JOptionPane.ERROR_MESSAGE); //Si falla la desconexion
 			}
 		}
 		class EventoBotonConsulta implements ActionListener{
@@ -174,7 +181,7 @@ public class Interfaz extends JFrame{
 				tabla = new JTable(); //Resetea la tabla por si quedara alguna de una consulta anterior
 				contenedor.remove(scrollPane); //Quita el scroll de la pantalla para asegurar que no quedan restos
 				try {
-					ResultSet resultados = Conexion.consultaResultSet(); //LLama a la funcion que le devuelve un resultset con lo que ha devuelto la base de datos
+					ResultSet resultados = conexion.consultaResultSet(); //LLama a la funcion que le devuelve un resultset con lo que ha devuelto la base de datos
 					ResultSetMetaData resultadosMetadata = resultados.getMetaData(); //Extrae los metadatos de lo devuelo por la BD
 					Vector columnNames = new Vector(); //crea e inicializa un array para los nombres de las columnas
 					for(int c=1; c<=resultadosMetadata.getColumnCount(); c++){//Recorre el metadata cogiendo los nombres de las columnas

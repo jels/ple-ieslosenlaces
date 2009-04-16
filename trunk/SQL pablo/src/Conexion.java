@@ -10,15 +10,15 @@ import javax.swing.*;
 
 
 public class Conexion {
-	static String usuario = "";
-	static String password = "";
-	static String servidor = "";
-	static Connection conexion;
-	public static int conectar(){
+	Connection conexion;
+	String usuario;
+	String password;
+	String servidor;
+	public int conectar(){
 		//recoger los datos del usuario
-		servidor = Interfaz.tFieldServidor.getText();
-		usuario = Interfaz.tFieldUsuario.getText();
-		password = String.valueOf(Interfaz.tFieldPassword.getPassword());
+		//servidor = Interfaz.tFieldServidor.getText();
+		//usuario = Interfaz.tFieldUsuario.getText();
+		//password = String.valueOf(Interfaz.tFieldPassword.getPassword());
 		
 		//Crear conexion y conectar
 		try {
@@ -37,7 +37,7 @@ public class Conexion {
 			return 2; // error de conexion
 		}
 	}
-	public static int desconectar(){
+	public int desconectar(){
 		try {
 			conexion.close();
 			return 0;
@@ -45,7 +45,7 @@ public class Conexion {
 			return 1;
 		}
 	}
-	public static ResultSet consultaResultSet() throws SQLException{
+	public ResultSet consultaResultSet() throws SQLException{
 		String consulta = Interfaz.tFieldConsulta.getText(); //captura la cadena de la consulta
 		Statement sentencia = conexion.createStatement(); //crea un objeto sentencia
 		ResultSet resultados = sentencia.executeQuery(consulta); //ejecuta la sentencia y almacena el resultado
