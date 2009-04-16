@@ -6,7 +6,7 @@
 
 = Tags =
 || @author ||	Nombre del desarrollador ||
-|| @deprecated 	|| Indica que el método o clase es antigua y que no se recomienda su uso ||
+|| @deprecated 	|| Método o clase desaconsejada ||
 || @param  || 	Definición de un parámetro de un método||
 || @return  || Lo que devuelve el método||
 || @see  ||	Referencia a otro objeto ||
