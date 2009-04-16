@@ -147,9 +147,9 @@ public class Interfaz extends JFrame{
 		class EventoBotonConexion implements ActionListener{
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				conexion.servidor = tFieldServidor.getText();
-				conexion.usuario = tFieldUsuario.getText();
-				conexion.password = String.valueOf(tFieldPassword.getPassword());
+				conexion.setServidor(tFieldServidor.getText());
+				conexion.setUsuario(tFieldUsuario.getText());
+				conexion.setPassword(String.valueOf(tFieldPassword.getPassword()));
 				if (conexion.conectar() == 0){//LLama a conexion.conectar para conectar, si tiene exito
 					JOptionPane.showMessageDialog(contenedor, "conexion realizada con exito","EXITO", JOptionPane.PLAIN_MESSAGE); //Dialogo de exito
 					conexionAconsulta(); //Cambia la ventana

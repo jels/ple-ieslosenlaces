@@ -10,10 +10,10 @@ import javax.swing.*;
 
 
 public class Conexion {
-	Connection conexion;
-	String usuario;
-	String password;
-	String servidor;
+	private Connection conexion;
+	private String usuario;
+	private String password;
+	private String servidor;
 	public int conectar(){
 		//recoger los datos del usuario
 		//servidor = Interfaz.tFieldServidor.getText();
@@ -36,6 +36,30 @@ public class Conexion {
 			// Si no consigue crear la conexion
 			return 2; // error de conexion
 		}
+	}
+	public Connection getConexion() {
+		return conexion;
+	}
+	public void setConexion(Connection conexion) {
+		this.conexion = conexion;
+	}
+	public String getUsuario() {
+		return usuario;
+	}
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+	public String getServidor() {
+		return servidor;
+	}
+	public void setServidor(String servidor) {
+		this.servidor = servidor;
 	}
 	public int desconectar(){
 		try {
