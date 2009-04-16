@@ -1,0 +1,14 @@
+#summary Documentar java :: javadoc
+
+= Documentación =
+* http://es.wikipedia.org/wiki/Javadoc
+* http://java.sun.com/j2se/javadoc/
+
+= Tags =
+|| @author ||	Nombre del desarrollador ||
+|| @deprecated 	|| Indica que el método o clase es antigua y que no se recomienda su uso ||
+|| @param  || 	Definición de un parámetro de un método||
+|| @return  || Lo que devuelve el método||
+|| @see  ||	Referencia a otro objeto ||
+|| @throws ||	Excepción ||
+|| @version || 	Versión ||
