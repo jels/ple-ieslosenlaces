@@ -1,3 +1,7 @@
+/* @author PABLO MARTIN
+ * @version 1.0
+ */
+
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -12,11 +16,8 @@ import javax.swing.*;
 import layout.TableLayout;
 
 public class Interfaz extends JFrame{
-	//Declaracion de variables para la interfaz y layouts
+	//Declaracion de variables globales para la interfaz y layouts
 	Container contenedor = getContentPane(); //Crea contenedor
-	/*JPanel panelConsulta = new JPanel(); //crea 
-	JPanel panelBotones = new JPanel();
-	JPanel panelResultado = new JPanel();*/
 	JTable tabla = new JTable(); //crea una tabla para mostrar resultados
 	JScrollPane scrollPane = new JScrollPane(); //crea un scroll para insertar dentro la tabla
 	GridLayout layoutConexion = new GridLayout(0,2); //Layout para la ventana de conexion
@@ -154,7 +155,7 @@ public class Interfaz extends JFrame{
 					JOptionPane.showMessageDialog(contenedor, "conexion realizada con exito","EXITO", JOptionPane.PLAIN_MESSAGE); //Dialogo de exito
 					conexionAconsulta(); //Cambia la ventana
 				}
-				else if (conexion.conectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible encontrar el driver necesario","ERROR", JOptionPane.ERROR_MESSAGE); // Si no encuentra driver
+				else if (conexion.conectar() == 1)JOptionPane.showMessageDialog(contenedor, "No ha sido posible encontrar el driver necesario ","ERROR", JOptionPane.ERROR_MESSAGE); // Si no encuentra driver
 				else if (conexion.conectar() == 2)JOptionPane.showMessageDialog(contenedor, "Datos incorrectos \n No ha sido posible realizar la conexion con el servidor","ERROR", JOptionPane.ERROR_MESSAGE); //Si tiene datos incorrectos
 			}
 		}

@@ -1,3 +1,7 @@
+/* @author PABLO MARTIN
+ * @version 1.0
+ */
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -14,21 +18,17 @@ public class Conexion {
 	private String usuario;
 	private String password;
 	private String servidor;
-	public int conectar(){
-		//recoger los datos del usuario
-		//servidor = Interfaz.tFieldServidor.getText();
-		//usuario = Interfaz.tFieldUsuario.getText();
-		//password = String.valueOf(Interfaz.tFieldPassword.getPassword());
-		
+	
+	//@return Devuelve 0 si todo es correcto, 1 si hay error de driver, o 2 si hay error de conexion
+	//@throws Lanza 2 posibles excepciones, ClassNotFoundException si no carga el driver, SQLException si hay error en los datos
+	public int conectar(){	
 		//Crear conexion y conectar
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");//intenta leer el driver para conectar a la bd
 			conexion = DriverManager.getConnection("jdbc:oracle:thin:@"+servidor+":1521:ENLACES5", usuario, password);
 			Interfaz.tFieldPassword.setText("");
-			
 			//Cambio de ventana
-			return 0; // todo bien
-			
+			return 0;
 		} catch (ClassNotFoundException e1) {
 			// Si no conseguimos cargar el driver
 			return 1; // error de driver 
@@ -37,6 +37,7 @@ public class Conexion {
 			return 2; // error de conexion
 		}
 	}
+	//Getters y Setters
 	public Connection getConexion() {
 		return conexion;
 	}
@@ -61,6 +62,8 @@ public class Conexion {
 	public void setServidor(String servidor) {
 		this.servidor = servidor;
 	}
+	//@return Devuelve 0 si ha podido desconectar del servidor, y 1 si no lo ha conseguido
+	//@throws Lanza 1 excepcion SQLException si no ha conseguido desconectar
 	public int desconectar(){
 		try {
 			conexion.close();
@@ -69,6 +72,8 @@ public class Conexion {
 			return 1;
 		}
 	}
+	//@return devuelve un objeto ResultSet a la interfaz con los datos de la consulta
+	//@throws Lanza 1 excepcion para ser tratada por la interfaz si no ha conseguido ejecutar la sentencia SQLException
 	public ResultSet consultaResultSet() throws SQLException{
 		String consulta = Interfaz.tFieldConsulta.getText(); //captura la cadena de la consulta
 		Statement sentencia = conexion.createStatement(); //crea un objeto sentencia
