@@ -23,6 +23,10 @@ public class Interfaz extends JFrame{
 	GridLayout layoutConexion = new GridLayout(0,2); //Layout para la ventana de conexion
 	JLabel labelServidor = new JLabel("Servidor"); //Label
 	static JTextField tFieldServidor = new JTextField("172.30.6.190"); //Espacio para escribir el servidor/ip
+	JLabel labelBD = new JLabel("Base de datos"); //Label
+	static JTextField tFieldBD = new JTextField("ENLACES5"); //Espacio para escribir el nombre de la base de datos
+	JLabel labelPuerto = new JLabel("Puerto"); //Label
+	static JTextField tFieldPuerto = new JTextField("1521"); //Espacio para escribir el puerto
 	JLabel labelUsuario = new JLabel("Usuario"); //Label
 	static JTextField tFieldUsuario = new JTextField("dai2"); //Espacio para escribir el usuario
 	JLabel labelPassword = new JLabel("Contraseña"); //Label
@@ -44,6 +48,10 @@ public class Interfaz extends JFrame{
 		//Añade los elementos a mostrar y hace que la ventana sea de tamaño fijo
 		contenedor.add(labelServidor);
 		contenedor.add(tFieldServidor);
+		contenedor.add(labelBD);
+		contenedor.add(tFieldBD);
+		contenedor.add(labelPuerto);
+		contenedor.add(tFieldPuerto);
 		contenedor.add(labelUsuario);
 		contenedor.add(tFieldUsuario);
 		contenedor.add(labelPassword);
@@ -60,6 +68,10 @@ public class Interfaz extends JFrame{
 		contenedor.invalidate();
 		contenedor.remove(labelServidor);
 		contenedor.remove(tFieldServidor);
+		contenedor.remove(labelBD);
+		contenedor.remove(tFieldBD);
+		contenedor.remove(labelPuerto);
+		contenedor.remove(tFieldPuerto);
 		contenedor.remove(labelUsuario);
 		contenedor.remove(tFieldUsuario);
 		contenedor.remove(labelPassword);
@@ -95,6 +107,10 @@ public class Interfaz extends JFrame{
 		contenedor.setLayout(layoutConexion);
 		contenedor.add(labelServidor);
 		contenedor.add(tFieldServidor);
+		contenedor.add(labelBD);
+		contenedor.add(tFieldBD);
+		contenedor.add(labelPuerto);
+		contenedor.add(tFieldPuerto);
 		contenedor.add(labelUsuario);
 		contenedor.add(tFieldUsuario);
 		contenedor.add(labelPassword);
@@ -122,6 +138,8 @@ public class Interfaz extends JFrame{
 			public void actionPerformed(ActionEvent e) {
 				//Borra las casillas escritas en la ventana de conexion
 				tFieldServidor.setText("");
+				tFieldPuerto.setText("");
+				tFieldBD.setText("");
 				tFieldUsuario.setText("");
 				tFieldPassword.setText("");
 			}
@@ -149,6 +167,8 @@ public class Interfaz extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				conexion.setServidor(tFieldServidor.getText());
+				conexion.setPuerto(tFieldPuerto.getText());
+				conexion.setBd(tFieldBD.getText());
 				conexion.setUsuario(tFieldUsuario.getText());
 				conexion.setPassword(String.valueOf(tFieldPassword.getPassword()));
 				if (conexion.conectar() == 0){//LLama a conexion.conectar para conectar, si tiene exito

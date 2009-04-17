@@ -7,14 +7,14 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Main-Standard::Instantiate->/Interfaz*/Main-Soyatec::Import->/Interfaz" source="//@children.0" target="//@children.1" targetEnd="//@children.0/@sourceConnections.0/@children.2" label="//@children.0/@sourceConnections.0/@children.0" sourceEnd="//@children.0/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="75,33" attachSource="true"/>
       <children xsi:type="editmodel:AssociationEndEditModel" location="0,33"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0" name="Interfaz" location="255,45" size="204,481" id="/Interfaz" runTimeClassModel="labelUsuario,conexionAconsulta(),labelConsulta,labelServidor,contenedor,labelPassword,Interfaz(),botonConectar,botonConsulta,tabla,botonLimpiar,winConexion(),conexion,botonSalir,tFieldPassword,layoutConexion,tFieldConsulta,layoutConsultaTabla,consultaAconexion(),tFieldUsuario,botonDesconectar,scrollPane,botonLimpiar2,tFieldServidor">
-    <children xsi:type="editmodel:CompartmentEditModel" size="181,360">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.2/@sourceConnections.0 //@children.0/@sourceConnections.0" name="Interfaz" location="255,45" size="204,553" id="/Interfaz" runTimeClassModel="labelUsuario,tFieldPuerto,labelBD,contenedor,labelPassword,Interfaz(),botonLimpiar,conexion,layoutConsultaTabla,tFieldConsulta,botonLimpiar2,scrollPane,tFieldServidor,tFieldBD,labelServidor,labelConsulta,conexionAconsulta(),botonConectar,tabla,botonConsulta,labelPuerto,winConexion(),botonSalir,tFieldPassword,layoutConexion,consultaAconexion(),tFieldUsuario,botonDesconectar">
+    <children xsi:type="editmodel:CompartmentEditModel" size="181,432">
       <children xsi:type="editmodel:AttributeEditModel" name="botonConectar" id="/Interfaz#botonConectar"/>
       <children xsi:type="editmodel:AttributeEditModel" name="botonConsulta" id="/Interfaz#botonConsulta"/>
       <children xsi:type="editmodel:AttributeEditModel" name="botonDesconectar" id="/Interfaz#botonDesconectar"/>
@@ -35,6 +35,10 @@
       <children xsi:type="editmodel:AttributeEditModel" name="tFieldUsuario" id="/Interfaz#tFieldUsuario"/>
       <children xsi:type="editmodel:AttributeEditModel" name="tabla" id="/Interfaz#tabla"/>
       <children xsi:type="editmodel:AttributeEditModel" name="conexion" id="/Interfaz#conexion"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tFieldPuerto" id="/Interfaz#tFieldPuerto"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="labelBD" id="/Interfaz#labelBD"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="labelPuerto" id="/Interfaz#labelPuerto"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tFieldBD" id="/Interfaz#tFieldBD"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="123,72">
       <children xsi:type="editmodel:MethodEditModel" name="Interfaz" id="/Interfaz#Interfaz()"/>
@@ -44,20 +48,22 @@
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Interfaz-Soyatec::Import->/Conexion*/Interfaz-Standard::Instantiate->/Conexion" source="//@children.1" target="//@children.2" targetEnd="//@children.1/@sourceConnections.0/@children.2" label="//@children.1/@sourceConnections.0/@children.0" sourceEnd="//@children.1/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
-      <children xsi:type="editmodel:WireLabelEditModel" name="«Import, Instantiate»" size="96,14" anchorKind="MiddlePart"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="204,179" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,163"/>
+      <children xsi:type="editmodel:WireLabelEditModel" name="«Instantiate, Import»" size="96,14" anchorKind="MiddlePart"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,233" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,217"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>
-  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="Conexion" location="600,45" size="146,319" id="/Conexion" runTimeClassModel="desconectar(),getPassword(),getServidor(),usuario,getConexion(),conectar(),password,servidor,conexion,setPassword(Ljava.lang.String;),getUsuario(),setConexion(Ljava.sql.Connection;),setUsuario(Ljava.lang.String;),setServidor(Ljava.lang.String;),consultaResultSet()">
-    <children xsi:type="editmodel:CompartmentEditModel" size="123,72">
+  <children xsi:type="editmodel:ClassEditModel" targetConnections="//@children.1/@sourceConnections.0" name="Conexion" location="600,45" size="146,427" id="/Conexion" runTimeClassModel="desconectar(),getServidor(),getPassword(),usuario,getConexion(),puerto,conectar(),password,getPuerto(),setBd(Ljava.lang.String;),servidor,setPassword(Ljava.lang.String;),conexion,getUsuario(),setConexion(Ljava.sql.Connection;),setUsuario(Ljava.lang.String;),setServidor(Ljava.lang.String;),consultaResultSet(),bd,getBd(),setPuerto(Ljava.lang.String;)">
+    <children xsi:type="editmodel:CompartmentEditModel" size="123,108">
       <children xsi:type="editmodel:AttributeEditModel" name="conexion" id="/Conexion#conexion"/>
       <children xsi:type="editmodel:AttributeEditModel" name="password" id="/Conexion#password"/>
       <children xsi:type="editmodel:AttributeEditModel" name="servidor" id="/Conexion#servidor"/>
       <children xsi:type="editmodel:AttributeEditModel" name="usuario" id="/Conexion#usuario"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="puerto" id="/Conexion#puerto"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="bd" id="/Conexion#bd"/>
     </children>
-    <children xsi:type="editmodel:CompartmentEditModel" size="117,198">
+    <children xsi:type="editmodel:CompartmentEditModel" size="117,270">
       <children xsi:type="editmodel:MethodEditModel" name="conectar" id="/Conexion#conectar()"/>
       <children xsi:type="editmodel:MethodEditModel" name="consultaResultSet" id="/Conexion#consultaResultSet()"/>
       <children xsi:type="editmodel:MethodEditModel" name="desconectar" id="/Conexion#desconectar()"/>
@@ -69,12 +75,16 @@
       <children xsi:type="editmodel:MethodEditModel" name="setServidor" id="/Conexion#setServidor(Ljava.lang.String;)"/>
       <children xsi:type="editmodel:MethodEditModel" name="setPassword" id="/Conexion#setPassword(Ljava.lang.String;)"/>
       <children xsi:type="editmodel:MethodEditModel" name="getPassword" id="/Conexion#getPassword()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setPuerto" id="/Conexion#setPuerto(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getBd" id="/Conexion#getBd()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="setBd" id="/Conexion#setBd(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getPuerto" id="/Conexion#getPuerto()"/>
     </children>
     <children xsi:type="editmodel:CompartmentEditModel" size="0,0"/>
     <sourceConnections xsi:type="editmodel:DependencyEditModel" autoLocated="true" id="/Conexion-Soyatec::Access->/Interfaz" source="//@children.2" target="//@children.1" targetEnd="//@children.2/@sourceConnections.0/@children.2" label="//@children.2/@sourceConnections.0/@children.0" sourceEnd="//@children.2/@sourceConnections.0/@children.1" connectionRouterKind="Manual">
       <children xsi:type="editmodel:WireLabelEditModel" name="«Access»" size="50,14" anchorKind="MiddlePart"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="0,159" attachSource="true"/>
-      <children xsi:type="editmodel:AssociationEndEditModel" location="204,159"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="0,213" attachSource="true"/>
+      <children xsi:type="editmodel:AssociationEndEditModel" location="204,213"/>
     </sourceConnections>
     <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
   </children>

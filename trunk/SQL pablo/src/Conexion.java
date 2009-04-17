@@ -18,6 +18,8 @@ public class Conexion {
 	private String usuario;
 	private String password;
 	private String servidor;
+	private String puerto;
+	private String bd;
 	
 	//@return Devuelve 0 si todo es correcto, 1 si hay error de driver, o 2 si hay error de conexion
 	//@throws Lanza 2 posibles excepciones, ClassNotFoundException si no carga el driver, SQLException si hay error en los datos
@@ -25,7 +27,7 @@ public class Conexion {
 		//Crear conexion y conectar
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");//intenta leer el driver para conectar a la bd
-			conexion = DriverManager.getConnection("jdbc:oracle:thin:@"+servidor+":1521:ENLACES5", usuario, password);
+			conexion = DriverManager.getConnection("jdbc:oracle:thin:@"+servidor+":"+puerto+":"+bd, usuario, password);
 			Interfaz.tFieldPassword.setText("");
 			//Cambio de ventana
 			return 0;
@@ -38,6 +40,18 @@ public class Conexion {
 		}
 	}
 	//Getters y Setters
+	public String getBd() {
+		return bd;
+	}
+	public String getPuerto() {
+		return puerto;
+	}
+	public void setPuerto(String puerto) {
+		this.puerto = puerto;
+	}
+	public void setBd(String bd) {
+		this.bd = bd;
+	}
 	public Connection getConexion() {
 		return conexion;
 	}
