@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<editmodel:ClassDiagramEditModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:editmodel="editmodel.xmi" xmlns:options="options.xmi" name="src1" size="781,948" id="" metadata="uml2-1.0" initialized="true" tag="10" key="32303037303533312D313020424444">
+  <children xsi:type="editmodel:ClassEditModel" name="BDDJava" location="540,90" size="153,176" id="/BDDJava">
+    <children xsi:type="editmodel:CompartmentEditModel" size="130,36">
+      <children xsi:type="editmodel:AttributeEditModel" name="con" id="/BDDJava#con"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="conectado" id="/BDDJava#conectado"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="110,90">
+      <children xsi:type="editmodel:MethodEditModel" name="Conecta" id="/BDDJava#Conecta(Ljava.lang.String;Ljava.lang.String;Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="Desconexion" id="/BDDJava#Desconexion()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="SentenciaSQL" id="/BDDJava#SentenciaSQL(Ljava.lang.String;)"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getDatos" id="/BDDJava#getDatos()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="getNombres" id="/BDDJava#getNombres()"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel"/>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <children xsi:type="editmodel:ClassEditModel" name="InterfazBDDJava" location="165,75" size="250,878" id="/InterfazBDDJava">
+    <children xsi:type="editmodel:CompartmentEditModel" size="146,432">
+      <children xsi:type="editmodel:AttributeEditModel" name="area" id="/InterfazBDDJava#area"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="conectado" id="/InterfazBDDJava#conectado"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="conectar" id="/InterfazBDDJava#conectar"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="consul" id="/InterfazBDDJava#consul"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="contenedor" id="/InterfazBDDJava#contenedor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="descon" id="/InterfazBDDJava#descon"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eti1" id="/InterfazBDDJava#eti1"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eti2" id="/InterfazBDDJava#eti2"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="eti3" id="/InterfazBDDJava#eti3"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="lanzar" id="/InterfazBDDJava#lanzar"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="limpiar" id="/InterfazBDDJava#limpiar"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="p" id="/InterfazBDDJava#p"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="panel1" id="/InterfazBDDJava#panel1"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="panel2" id="/InterfazBDDJava#panel2"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="panel3" id="/InterfazBDDJava#panel3"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="panel4" id="/InterfazBDDJava#panel4"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="pass" id="/InterfazBDDJava#pass"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="relleno" id="/InterfazBDDJava#relleno"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="salir" id="/InterfazBDDJava#salir"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="scroll" id="/InterfazBDDJava#scroll"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="servidor" id="/InterfazBDDJava#servidor"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tabla" id="/InterfazBDDJava#tabla"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="tam" id="/InterfazBDDJava#tam"/>
+      <children xsi:type="editmodel:AttributeEditModel" name="usuario" id="/InterfazBDDJava#usuario"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="120,36">
+      <children xsi:type="editmodel:MethodEditModel" name="InterfazBDDJava" id="/InterfazBDDJava#InterfazBDDJava()"/>
+      <children xsi:type="editmodel:MethodEditModel" name="main" id="/InterfazBDDJava#main([Ljava.lang.String;)"/>
+    </children>
+    <children xsi:type="editmodel:CompartmentEditModel" size="227,350">
+      <children xsi:type="editmodel:ClassEditModel" name="EventoBotonConectar" size="201,68" id="/InterfazBDDJava$EventoBotonConectar">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+          <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="/InterfazBDDJava$EventoBotonConectar#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" name="EventoBotonDesconectar" size="227,68" id="/InterfazBDDJava$EventoBotonDesconectar">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+          <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="/InterfazBDDJava$EventoBotonDesconectar#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" name="EventoBotonLanzar" size="184,68" id="/InterfazBDDJava$EventoBotonLanzar">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+          <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="/InterfazBDDJava$EventoBotonLanzar#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" name="EventoBotonLimpiar" size="190,68" id="/InterfazBDDJava$EventoBotonLimpiar">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+          <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="/InterfazBDDJava$EventoBotonLimpiar#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+      <children xsi:type="editmodel:ClassEditModel" name="EventoBotonSalir" size="167,68" id="/InterfazBDDJava$EventoBotonSalir">
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <children xsi:type="editmodel:CompartmentEditModel" size="125,18">
+          <children xsi:type="editmodel:MethodEditModel" name="actionPerformed" id="/InterfazBDDJava$EventoBotonSalir#actionPerformed(Ljava.awt.event.ActionEvent;)"/>
+        </children>
+        <children xsi:type="editmodel:CompartmentEditModel"/>
+        <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+      </children>
+    </children>
+    <classifierPreferences xsi:type="editmodel:UMLClassDiagramClassifierPreference" showStereotype="true" attributeSorter="Natural" methodSorter="Natural" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+  </children>
+  <diagramOptions xsi:type="options:ClassDiagramOptions" level="-1" showScope="InPackage" properties="wireOptions=7;Product=eUML2"/>
+  <boardSetting snapToGeometry="true" gridEnabled="true" gridSpacing="15,15" gridOrigin="0,0" rulerUnit="pixel" gridVisibility="false">
+    <leftRuler/>
+    <topRuler/>
+  </boardSetting>
+  <classDiagramPreferences xsi:type="editmodel:UMLClassDiagramPreference" showPopupBars="true" showConnectionHandles="true" attributeSorter="Natural" methodSorter="Natural" showClassStereotype="true" showPackageStereotype="true" showDependencyStereotype="true" showInterfaceStereotype="true" innerClassSorter="Natural" showPublicAttributes="true" showPackageAttributes="true" showStaticAttributes="true" showPublicMethods="true" showPackageMethods="true" showStaticMethods="true" showPublicInnerClasses="true" showPackageInnerClasses="true" showStaticInnerClasses="true" packageIndication="3" showAttributeProperty="true"/>
+</editmodel:ClassDiagramEditModel>
