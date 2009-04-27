@@ -1,0 +1,32 @@
+#summary jdbc con jython
+
+= Ejemplo =
+
+{{{
+from oracle.jdbc.driver import OracleDriver
+from java.sql import DriverManager
+
+def connect(un, pw, sid, host, port):
+     driver = OracleDriver()
+     DriverManager.registerDriver(driver)
+     connection = "jdbc:oracle:thin:@%s:%s:%s" % (host, port, sid)
+     conn = DriverManager.getConnection(connection, un, pw)
+     return conn
+
+def doStuff(conn):
+     stmt = conn.createStatement()
+     rset = stmt.executeQuery("SELECT banner FROM sys.v_$version")
+     while (rset.next()):
+         print rset.getString(1)
+     stmt.close()
+
+if __name__ == "__main__":
+     un = 'scott'
+     pw = 'tiger'
+     sid = 'orcl'
+     host = 'localhost'
+     port = '1521'
+     conn = connect(un, pw, sid, host, port)
+     doStuff(conn)
+
+}}}
