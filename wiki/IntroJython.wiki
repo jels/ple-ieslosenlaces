@@ -12,6 +12,7 @@
   * http://wiki.python.org/jython/SwingExamples
   * http://www.halfcooked.com/mt/archives/000979.html
   * http://www.fishandcross.com/blog/?p=205
+  * JythonJdbc
 
 = Editores =
 http://wiki.python.org/jython/JythonEditors
