@@ -21,12 +21,19 @@ class Conexion:
                                                    self.sid)
         self.conexion = None
     def conectar(self):
-        driver = OracleDriver()
-        DriverManager.registerDriver(driver)
-        self.conexion = DriverManager.getConnection(self.url, self.usuario, 
+        try:
+            driver = OracleDriver()
+            DriverManager.registerDriver(driver)
+            self.conexion = DriverManager.getConnection(self.url, self.usuario, 
                                                self.passw)
+        except:
+            print "Error en la conexion"
+            
     def desconectar(self):
-        self.conexion.close()
+        try:
+            self.conexion.close()
+        except: 
+            print "Error al desconectar"
         
     def banner(self):
         self.conectar()
@@ -38,8 +45,8 @@ class Conexion:
         self.desconectar()
         
     def creaEmpleados(self):
-        crea_tabla = """create table Employees (Employee_ID INTEGER, 
-                               Name VARCHAR(30))"""
+        crea_tabla = """create table lm_Empleados (Empleado_ID INTEGER, 
+                               Nombre VARCHAR(30))"""
         self.conectar()
         sentencia = self.conexion.createStatement()
         sentencia.executeUpdate(crea_tabla)
