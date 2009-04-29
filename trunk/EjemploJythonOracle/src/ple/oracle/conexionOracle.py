@@ -19,6 +19,7 @@ class Conexion:
         self.url = "jdbc:oracle:thin:@%s:%s:%s" % (self.host,
                                                    self.puerto,
                                                    self.sid)
+        self.conexion = None
     def conectar(self):
         driver = OracleDriver()
         DriverManager.registerDriver(driver)
@@ -43,7 +44,8 @@ class Conexion:
         sentencia = self.conexion.createStatement()
         sentencia.executeUpdate(crea_tabla)
         sentencia.close()
-        self.conexion.close()
+        self.desconectar()
+
            
         
 if __name__ == '__main__':
