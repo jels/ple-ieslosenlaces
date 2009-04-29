@@ -1,0 +1,5 @@
+#summary Uso de jython con zxJDBC
+
+= Docs =
+  * http://www.jython.org/docs/zxjdbc.html
+  * http://www.pyzine.com/Issue002/Section_Articles/article_JythonzxDBC.html
