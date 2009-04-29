@@ -1,0 +1,8 @@
+#summary Acceso a bases de datos con Java
+= Intro =
+  * http://java.sun.com/docs/books/tutorial/jdbc/basics/
+  * http://www.itapizaco.edu.mx/paginas/JavaTut/froufe/parte21/cap21-4.html
+  * http://www.proactiva-calidad.com/java/jdbc/index.html
+
+
+http://www.itapizaco.edu.mx/paginas/JavaTut/froufe/parte21/cap21-11.gif
