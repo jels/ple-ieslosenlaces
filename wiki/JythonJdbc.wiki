@@ -67,12 +67,8 @@ if __name__ == '__main__':
 
 
 = Otro ejemplo =
+www.oracle.com/technology/products/oracle-data-integrator/10.1.3/htdocs/documentation/oracledi_jython_reference.pdf
 {{{
-'''
-Created on 29/04/2009
-
-@author: lm
-'''
 import java.sql as sql
 import java.lang as lang
 def main():
