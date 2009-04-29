@@ -25,6 +25,5 @@ for l in cursor.fetchall():
 print db.dbname
 print db.dbversion
 print cursor.updatecount
-print dir(zxJDBC)
 print zxJDBC.paramstyle
 
