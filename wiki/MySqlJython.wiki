@@ -1,0 +1,6 @@
+#summary Acceso a mysql con jython
+
+= Intro MySql =
+  * http://es.wikipedia.org/wiki/MySQL
+  * http://www.apachefriends.org/es/xampp.html
+  * [http://www.mysql-hispano.org/page.php?id=45 Guía rápida de administración]
