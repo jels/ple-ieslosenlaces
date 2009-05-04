@@ -11,3 +11,6 @@ Actualmente la versión en producción es la 1.x, que necesita 4Suite-XML . Est�
 
 = Instalación = 
 AmaraInstalar
+
+= Arquitectura=
+http://wiki.xml3k.org/Amara2/Architecture
