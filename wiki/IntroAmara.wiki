@@ -2,6 +2,8 @@
 
 <wiki:toc />
 
+= ¿XML? =
+http://www.w3c.es/divulgacion/guiasbreves/tecnologiasXML
 = ¿Qué es? = 
 Amara es un conjunto de librerías para procesar XML en Python. 
 http://wiki.xml3k.org/Amara2
