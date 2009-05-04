@@ -7,4 +7,8 @@ Vamos a instalar la versión 2.x
 == Instalación en windows ==
 http://wiki.xml3k.org/Amara2/Windows
 == Instalación en linux ==
-http://wiki.xml3k.org/Amara2/Install#Formostusers
+  * http://wiki.xml3k.org/Amara2/Install#Formostusers
+  * Instalar python-dev si no está instalado
+easy_install python-dateutil html5lib
+  * Descargar fuentes {{{hg clone http://hg.4suite.org/amara/trunk amara-HG
+}}}
