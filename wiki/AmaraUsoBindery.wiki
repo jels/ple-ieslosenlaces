@@ -1,0 +1,10 @@
+#summary Intro uso bindery
+
+<wiki:toc />
+
+http://wiki.xml3k.org/Amara2/QuickRef#Amarabindery
+
+= Leer documento =
+{{{
+
+}}}
