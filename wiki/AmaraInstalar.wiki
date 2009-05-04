@@ -1,5 +1,6 @@
 #summary Instalar Amara
 
+<wiki:toc />
 = Instalación Amara = 
 Vamos a instalar la versión 2.x
 
