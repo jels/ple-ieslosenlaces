@@ -1,0 +1,9 @@
+#summary Instalar Amara
+
+= Instalación Amara = 
+Vamos a instalar la versión 2.x
+
+== Instalación en windows ==
+http://wiki.xml3k.org/Amara2/Windows
+== Instalación en linux ==
+http://wiki.xml3k.org/Amara2/Install#Formostusers
