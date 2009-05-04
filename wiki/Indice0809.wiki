@@ -30,3 +30,18 @@ http://blogs.sun.com/prats/resource/java-logo-thumb.png
 = Introducción a Java = 
   * InstalarEclipse
   * IntroJava
+  * JavaSwing
+    * TableLayout
+  * Bases de datos
+    * JdbcJava
+    * OracleConJava
+    * JdbcSqlite
+  * DocumentarJava
+= Jython =
+  * IntroJython
+  * JythonZxJDBC
+  * MySqlJython
+
+= XML =
+http://www.xml3k.org/logos/amaralogo-medium.png
+  * XML fácil con amara  http://wiki.xml3k.org/Amara2
