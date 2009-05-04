@@ -14,7 +14,10 @@ Vamos a instalar la versión 2.x
 {{{
 easy_install python-dateutil html5lib
 }}}
-  * Descargar fuentes 
+  * Descargar fuente
 {{{
-hg clone http://hg.4suite.org/amara/trunk amara-HG
+$ hg clone http://hg.4suite.org/amara/trunk amara-HG
+$ cd amara-HG
+$ sudo python setup.py install
 }}}
+  
