@@ -77,3 +77,16 @@ Eliminamos el primer libro:
 {{{
 >>> del doc.biblioteca.libro
 }}}
+
+{{{
+doc = bindery.parse('manual.xml')
+
+secciones = doc.xml_select(u'/article/section')
+
+for n, secc in enumerate(secciones):
+	print n+1, unicode(secc.title).upper()
+	subsecc = secc.xml_select(u'section')
+	for m, sec2 in enumerate(subsecc):
+		print u'%d.%02d - %s' % (n+1, m+1, sec2.title)
+
+}}}
