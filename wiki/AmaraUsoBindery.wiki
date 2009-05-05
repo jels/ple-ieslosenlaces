@@ -1,10 +1,27 @@
 #summary Intro uso bindery
 
+
 <wiki:toc />
 
 http://wiki.xml3k.org/Amara2/QuickRef#Amarabindery
 
+Basado en el ejemplo libros.xml
+
 = Leer documento =
 {{{
+from amara import bindery
+doc = amara.parse('libros.xml')
+}}}
 
+= Mostrar documento =
+{{{
+from amara import xml_print
+xml_print(doc)
+}}}
+
+= Búsqueda sencilla con XPath =
+{{{
+>>> libros = doc.xml_select(u'//libro')
+>>> len(libros)
+5
 }}}
