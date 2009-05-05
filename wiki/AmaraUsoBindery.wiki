@@ -60,3 +60,20 @@ Segundo libro de la biblioteca
 >>> print doc.biblioteca.libro[1].titulo
 Learning Python
 }}}
+= Manipulación = 
+Cambiamos el título al primer libro:
+{{{
+>>> doc.biblioteca.libro.titulo = u"Nuevo título"
+>>> xml_print(doc.biblioteca.libro)
+<libro xmlns="http://www.ies-losenlaces.com/biblioteca" idioma="es" lenguaje="python">
+    <titulo>Nuevo título</titulo>
+    <autor>
+      <nombre>Benjamin</nombre>
+      <apellido>Martínez</apellido>
+    </autor>
+  </libro>
+}}}
+Eliminamos el primer libro:
+{{{
+>>> del doc.biblioteca.libro
+}}}
