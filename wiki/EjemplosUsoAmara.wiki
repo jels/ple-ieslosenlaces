@@ -1,0 +1,51 @@
+#summary Ejemplos de uso de Amara
+
+<wiki:toc />
+
+= Secciones de un artículo docbook =
+Usamos  EjemploManualDocbook. Objetivo: sacar un índice con dos niveles de secciones. 	
+
+{{{
+doc = bindery.parse('manual.xml')
+
+secciones = doc.xml_select(u'/article/section')
+
+for n, secc in enumerate(secciones):
+	print n+1, unicode(secc.title).upper()
+	subsecc = secc.xml_select(u'section')
+	for m, sec2 in enumerate(subsecc):
+		print u'%d.%02d - %s' % (n+1, m+1, sec2.title)
+}}}
+
+= Ejemplo RSS =
+Objetivo: sacar los títulos de un rss
+{{{
+>>> from amara import bindery, xml_print
+>>> doc = bindery.parse("http://feeds2.feedburner.com/noticiasmundogamers?format=xml")
+>>> titulos = doc.xml_select(u'//item/title')
+>>> for t in titulos:
+	print t
+
+	
+Anunciado Red Orchestra: Heroes of Stalingrad
+Mostrada la edición de coleccionista de Anno 1404
+Confirmada la lista definitiva de boxeadores de Fight Night Round 4
+El estudio creador de Dead Space cambia de nombre
+High Voltage mostrarán nuevos títulos en el E3
+Epic Games prepara un nuevo juego
+Las secuelas más deseadas por los jugadores japoneses
+Nuevos luchadores para Punch Out!!
+Las portátiles siguen arrasando en Japón
+Rumor: Call of Duty 7 podría ambientarse en Vietnam
+Lista de los juegos más vendidos en Japón
+El remake de Perfect Dark podría ser una realidad
+Un nuevo juego de Pokémon será anunciado el 10 de Mayo
+Lista provisional de títulos confirmados para el E3 2009
+Turtles in Time tendrá un remake en XBLA
+Rumor: ¿Detector de movimiento para Xbox 360?
+Nuevas imágenes de Assassin´s Creed 2
+Ya está lista la demo de Battlestations: Pacific 
+Batman: Arkham Asylum se retrasa unos meses
+Resident Evil 5 llegará a PC
+>>>
+}}}
