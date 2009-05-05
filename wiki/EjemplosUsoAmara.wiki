@@ -87,3 +87,25 @@ Thomas Vander Stichele: The Art of the Rip
 Uwe Feldtmann: Money - Our Global Problem
 >>> 
 }}}
+= HTML con errores = 
+Imprimo urls de las imágenes de esta página: http://www.flickr.com/search/?q=python
+{{{
+from amara import bindery
+import html5lib
+import urllib
+from amara.bindery import html
+from amara import xml_print
+
+url = "http://www.flickr.com/search/?q=python"
+
+parser = html5lib.HTMLParser(tree = html.treebuilder)
+
+f = urllib.urlopen(url)
+
+doc = parser.parse(f)
+print unicode(doc.html.head.title)
+
+imgs = doc.xml_select(u"//img")
+for i in imgs:
+	print i.src
+}}}
