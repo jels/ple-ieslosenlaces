@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Ejemplo xml docbook
 
 {{{
 <?xml version="1.0" encoding="UTF-8"?>
