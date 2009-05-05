@@ -17,7 +17,7 @@ for n, secc in enumerate(secciones):
 		print u'%d.%02d - %s' % (n+1, m+1, sec2.title)
 }}}
 
-= Ejemplo RSS =
+= Ejemplo RSS sencillo =
 Objetivo: sacar los títulos de un rss
 {{{
 >>> from amara import bindery, xml_print
@@ -48,4 +48,42 @@ Ya está lista la demo de Battlestations: Pacific
 Batman: Arkham Asylum se retrasa unos meses
 Resident Evil 5 llegará a PC
 >>>
+}}}
+
+= Ejemplo RSS más complejo =
+{{{
+>>> doc = bindery.parse("http://planet.python.org/rss10.xml")
+# Título del channel
+>>> print doc.RDF.channel.title
+Planet Python
+# títulos de los nuevos items
+>>> for t in doc.xml_select(u'//rss:item/rss:title', prefixes=ns):
+	print t
+	
+ShowMeDo: Python Club-set Takes Shape
+ShowMeDo: Scientific and Parallel Computing Using IPython
+Ted Leung: Erlang Factory 2009
+Chui Tey: List of Server or Application Provisioning Tools
+Spyced: A better analysis of Cassandra than most
+Greg Wilson: RailsBridge
+Brett Cannon: Does XHR lead to better testing/abstraction?
+IronPython-URLs: Getting Started with IronPython - Part 1 where to start
+IronPython-URLs: Lang.NET and Microsoft Dynamics
+Python News: OSCON 2009: July 20-24, San Jose, California
+Kay Schluehr: Trace Based Parsing ( Part III ) - NFALexer
+Alvaro Lopez Ortega: Running Cherokee on an iPod/iPhone
+Greg Wilson: Courses on CS Education?
+Andy Todd: Gerald release 0.2.6
+PyCon Podcast: PyCon Podcast Status Update (PyCon 2009)
+Python 411 Podcast: Visualization
+IronPython-URLs: CodeCast Episode 18: IronPython and Dynamic Languages with Harry Pierson
+IronPython-URLs: ZLIB and .NET
+Washington Times OpenSource: Django-District Meetup
+Tim Golden: Questions and Answers on the Python lists
+Just a little Python: MetaPython 0.2.2 with Hygienic Macros
+Greg Wilson: Science Rendezvous in Toronto May 9, 2009
+Tarek Ziade: Gsoc : Keyring library work started !
+Thomas Vander Stichele: The Art of the Rip
+Uwe Feldtmann: Money - Our Global Problem
+>>> 
 }}}
