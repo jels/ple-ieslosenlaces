@@ -10,7 +10,7 @@ Basado en el ejemplo EjemploLibrosXml
 = Leer documento =
 {{{
 from amara import bindery
-doc = amara.parse('libros.xml')
+doc = bindery.parse('libros.xml')
 }}}
 
 = Mostrar documento =
