@@ -5,7 +5,7 @@
 
 http://wiki.xml3k.org/Amara2/QuickRef#Amarabindery
 
-Basado en el ejemplo libros.xml
+Basado en el ejemplo EjemploLibrosXml
 
 = Leer documento =
 {{{
