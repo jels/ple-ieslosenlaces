@@ -79,3 +79,5 @@ Eliminamos el primer libro:
 }}}
 
 EjemplosUsoAmara
+
+EjerciciosBindery
