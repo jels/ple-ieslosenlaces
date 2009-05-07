@@ -1,0 +1,5 @@
+#summary Oracle sql xml
+
+= Docs = 
+https://oracle.sys-con.com/node/299947
+http://gemsres.com/story/nov06/299947/source.html
