@@ -3,3 +3,60 @@
 = Docs = 
   * https://oracle.sys-con.com/node/299947
   * http://gemsres.com/story/nov06/299947/source.html
+
+Ejemplo con zxJDBC
+{{{
+from com.ziclix.python.sql import zxJDBC
+d, u, p, v = "dbc:oracle:thin:@172.30.6.190:1521/enlaces5", 'dai1', 'tiger', "oracle.jdbc.driver.OracleDriver"
+
+
+db = zxJDBC.connect(d, u, p, v)
+
+cursor = db.cursor()
+#[ ... ]
+con3 = """Select
+   c.CustId,
+      xmlelement(name customer,
+         xmlelement(name name, c.Name),
+         xmlelement(name address, c.Address)) as CustInfo
+from customer c"""
+
+cursor.execute(con3)
+
+for l in cursor.fetchall():
+    print l
+}}}
+
+{{{
+Traceback (most recent call last):
+  File "conexion_zx.py", line 58, in <module>
+    cursor.execute(con3)
+zxJDBC.Error: error getting index [2], type [2.007] [SQLCode: 0]
+
+}}}
+
+Ejemplo con cx_oracle
+{{{
+
+import cx_Oracle
+
+conexion='dai1/tiger@ENLACES5'
+con3 = """select custid,name, address from customer"""
+
+db_conn = cx_Oracle.connect(conexion)
+cursor = db_conn.cursor()
+cursor.execute(con2)
+for l in cursor.fetchall():
+    print l
+}}}
+{{{
+(100, <cx_Oracle.OBJECT object at 0x8b5ad20>)
+(101, <cx_Oracle.OBJECT object at 0x8b5ad40>)
+(102, <cx_Oracle.OBJECT object at 0x8b5ad60>)
+(103, <cx_Oracle.OBJECT object at 0x8b5ad80>)
+(104, <cx_Oracle.OBJECT object at 0x8b5ada0>)
+(105, <cx_Oracle.OBJECT object at 0x8b5adc0>)
+(106, <cx_Oracle.OBJECT object at 0x8b5ade0>)
+(107, <cx_Oracle.OBJECT object at 0x8b5ae00>)
+(108, <cx_Oracle.OBJECT object at 0x8b5ae20>)
+}}}
