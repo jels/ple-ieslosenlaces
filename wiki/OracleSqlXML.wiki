@@ -2,6 +2,7 @@
 
 <wiki:toc />
 = Algo de doc = 
+  * https://oracle.sys-con.com/node/111252?page=0%2C0
   * http://www.zonaoracle.com/resources/oracle_xml.doc
   * http://www.filibeto.org/sun/lib/nonsun/oracle/10.2.0.1.0/B19306_01/appdev.102/b14259/xdb11jav.htm#g1039140
   * http://www.adp-gmbh.ch/ora/sql/xmlelement.html
