@@ -1,1 +1,8 @@
 #summary Django
+
+= Intro =
+  * http://www.djangoproject.com/
+  * http://docs.djangoproject.com/en/dev/
+  * http://django.es/
+  * http://www.djangobook.com/
+  * http://blog.jeffhui.net/2009/03/django-blog-tutorial/
