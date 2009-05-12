@@ -49,3 +49,5 @@ http://www.xml3k.org/logos/amaralogo-medium.png
 http://wiki.xml3k.org/Amara2
   * IntroAmara
   * AmaraUsoBindery
+= Django = 
+  * IntroDjango
