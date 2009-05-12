@@ -111,3 +111,10 @@ admin.site.register(Mensaje, MensajeAdmin)
   * *fields* restringe los campos en los formularios para añadir/editar. También se puede usar *exclude*
   * *list_display* especifica qué campos (o métodos) se muestran en el listado de mensajes. Si nos especifica, se muestra el {{{__unicode__}}} del modelo.
   *  *date_hierarchy* permite ver los detalles de una campo fecha.
+Añadirmos el autor de forma automática cuando se crea un nuevo mensaje (no cuando se modifica).
+{{{
+def save_model(self, request, obj, form, change):
+    if not change:
+        obj.autor = request.user
+    obj.save()
+}}}
