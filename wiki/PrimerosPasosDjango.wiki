@@ -65,3 +65,28 @@ python manage.py syncdb
 
 = Django admin =
 Aplicación [http://es.wikipedia.org/wiki/CRUD CRUD] automática sobre el diseño de nuestro modelo.
+== Instalar admin ==
+Añadir en {{{settings.py}}}
+{{{
+INSTALLED_APPS = (
+    ...
+    'django.contrib.admin',
+    ...
+}}}
+Añadir la url a {{{urls.py}}}
+{{{
+from django.contrib import admin
+admin.autodiscover()
+
+urlpatterns = patterns('',
+    (r'^admin/', include(admin.site.urls)),
+)
+}}}
+Creación de {{{admin.py}}} dentro de la aplicación que queremos administrar:
+{{{
+from django.contrib import admin
+from models import Mensaje
+
+# Clase que voy a administrar
+admin.site.register(Mensaje)
+}}}
