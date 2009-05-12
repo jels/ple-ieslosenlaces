@@ -31,6 +31,11 @@ MEDIA_ROOT = ruta('media')
 MEDIA_URL = '/recursos/'
 TEMPLATE_DIRS = (ruta('templates'),)
 }}}
+= Comprobación =
+{{{
+python manage.py runserver
+}}}
+Lanza la aplicación por defecto en {{{localhost 8000}}}
 = Crear primera aplicación =
 Dentro del directorio del proyecto
 {{{
