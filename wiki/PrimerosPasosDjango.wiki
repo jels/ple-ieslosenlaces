@@ -99,6 +99,7 @@ admin.site.register(Mensaje)
 }}}
 
 == Adaptando el formato de admin ==
+=== ¿Qué va a salir en los listados y formularios? ===
 {{{
 from django.contrib import admin
 from models import Mensaje
@@ -112,6 +113,7 @@ admin.site.register(Mensaje, MensajeAdmin)
   * *list_display* especifica qué campos (o métodos) se muestran en el listado de mensajes. Si nos especifica, se muestra el {{{__unicode__}}} del modelo.
   *  *date_hierarchy* permite ver los detalles de una campo fecha.
 Añadirmos el autor de forma automática cuando se crea un nuevo mensaje (no cuando se modifica).
+=== Autor automático ===
 {{{
 def save_model(self, request, obj, form, change):
     if not change:
