@@ -7,7 +7,7 @@ Queremos que nuestra aplicación muestre un listado con los posts más recientes
 Preparamos urls.py para las nuevas direcciones de nuestra aplicación:
 {{{miBlog/urls.py}}}
 {{{
- urlpatterns = patterns(”,
+ urlpatterns = patterns('',
    (r’^', include(’blog.urls’)),
    (r’^admin/’, include(admin.site.urls)),
 ) 
@@ -19,7 +19,7 @@ from models import Mensaje
 
 queryset = {’queryset’: Mensaje.objects.all()}
 urlpatterns = patterns(’django.views.generic.list_detail’,
-    url(’^$’, ‘object_list’, queryset, name=”posts”),
-    url(’^(?P<object_id>\d+)/$’, ‘object_detail’, queryset, name=”post”),
+    url('^$', 'object_list', queryset, name="mensajes"),
+    url(’^(?P<object_id>\d+)/$’, ‘object_detail’, queryset, name=”mensaje”),
 )
 }}}
