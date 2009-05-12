@@ -126,3 +126,6 @@ En {{{blog/models.py}}}:
     fech_pub = models.DateTimeField(u'Fecha publicación', auto_now_add=True)
     fech_mod = models.DateTimeField(u'Fecha modificación', auto_now=True) 
 }}}
+
+= Una aplicación django =
+DjangoInterfazPublica
