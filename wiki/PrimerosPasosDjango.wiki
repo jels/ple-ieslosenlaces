@@ -2,6 +2,8 @@
 
 <wiki:toc />
 
+Basado en el tutorial de Jeff Hui en http://www.bestechvideos.com/2009/04/05/nettuts-diving-into-django y http://blog.jeffhui.net/2009/03/django-blog-tutorial/ .
+
 = Creación del proyecto =
 {{{
 django-admin.py startproject <nombre_del_proyecto>
