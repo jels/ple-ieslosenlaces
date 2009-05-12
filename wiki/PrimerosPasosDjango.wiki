@@ -25,3 +25,40 @@ import os
 def ruta(archivo):
     return os.path.join(os.path.abspath(os.path.dirname(__file__)), archivo)
 }}}
+= Media =
+{{{
+MEDIA_ROOT = ruta('media')
+MEDIA_URL = '/recursos/'
+TEMPLATE_DIRS = (ruta('templates'),)
+}}}
+= Crear primera aplicación =
+Dentro del directorio del proyecto
+{{{
+python manage.py startproject <nombre_proyecto>
+}}}
+Activamos el nuevo proyecto en {{{settings.py}}}:
+{{{
+INSTALLED_APPS = (
+     .......
+    'blog',
+)
+}}}
+= Creación de los modelos =
+Editamos proyecto/models.py:
+{{{
+class Mensaje(models.Model):
+    autor = models.ForeignKey(User)
+    titulo = models.CharField(max_length=120)
+    cuerpo = models.TextField()
+    fech_pub = models.DateTimeField(auto_now_add=True)
+    def __unicode__(self):
+        return self.titulo
+}}}
+Para ver el sql que se va a crear:
+{{{
+python manage.py sql
+}}}
+Para crear la estructura en la BD:
+{{{
+python manage.py syncdb
+}}}
