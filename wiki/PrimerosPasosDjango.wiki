@@ -39,7 +39,7 @@ Lanza la aplicación por defecto en {{{localhost 8000}}}
 = Crear primera aplicación =
 Dentro del directorio del proyecto
 {{{
-python manage.py startproject <nombre_proyecto>
+python manage.py startapp <nombre_proyecto>
 }}}
 Activamos el nuevo proyecto en {{{settings.py}}}:
 {{{
