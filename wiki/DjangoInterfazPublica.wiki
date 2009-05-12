@@ -1,0 +1,9 @@
+#summary Interfaz pública
+
+Preparamos urls.py para las nuevas direcciones:
+{{{
+ urlpatterns = patterns(”,
+   (r’^', include(’blog.urls’)),
+   (r’^admin/’, include(admin.site.urls)),
+) 
+}}}
