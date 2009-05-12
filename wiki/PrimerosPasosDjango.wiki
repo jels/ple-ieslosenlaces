@@ -3,3 +3,25 @@
 <wiki:toc />
 
 = Creación del proyecto =
+{{{
+django-admin.py startproject <nombre_del_proyecto>
+}}}
+Esto crea la siguiente estructura en el nuevo directorio:
+{{{
+__init__.py
+manage.py
+urls.py
+settings.py
+}}}
+=Configuración de la base de datos=
+Para sqlite3 usamos:
+{{{
+DATABASE_ENGINE = 'sqlite3'
+DATABASE_NAME = 'ruta_completa_del_archivo'  
+}}}
+Como las rutas tienen que ser absolutas podemos crear/usar la siguente función:
+{{{
+import os
+def ruta(archivo):
+    return os.path.join(os.path.abspath(os.path.dirname(__file__)), archivo)
+}}}
