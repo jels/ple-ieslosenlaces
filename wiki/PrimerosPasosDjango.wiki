@@ -1,0 +1,5 @@
+#summary Primeros pasos django
+
+<wiki:toc />
+
+= Creación del proyecto =
