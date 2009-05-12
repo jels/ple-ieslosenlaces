@@ -16,3 +16,7 @@
 python setup.py install
 }}}
   * Añadir el archivo instalado {{{django-admin.py}}} al path del sistema.
+
+
+
+PrimerosPasosDjango
