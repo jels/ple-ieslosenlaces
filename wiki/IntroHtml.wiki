@@ -11,7 +11,7 @@
   * http://www.w3.org/Style/Examples/011/firstcss.es.html
   * http://www.librosweb.es/xhtml/
 == Herramientas ==
-  * http://www.aptana.com
+  * http://www.aptana.com   --> http://update.aptana.com/update/studio/3.4 
 === Extensiones de firefox===
 https://addons.mozilla.org/es-ES/firefox/browse/type:1/cat:4
   * Web Developper: http://chrispederick.com/work/web-developer/
