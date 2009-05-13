@@ -1,0 +1,22 @@
+#summary Intro HTML / XHTML
+
+<wiki:toc />
+= Introducción =
+
+== ¿Qué es html / xhtml? ==
+  * http://es.wikipedia.org/wiki/C%C3%B3digo_HTML
+  * http://es.wikipedia.org/wiki/XHTML
+
+== Algún tutorial ==
+  * http://www.w3.org/Style/Examples/011/firstcss.es.html
+  * http://www.librosweb.es/xhtml/
+== Herramientas ==
+  * http://www.aptana.com
+=== Extensiones de firefox===
+https://addons.mozilla.org/es-ES/firefox/browse/type:1/cat:4
+  * Web Developper: http://chrispederick.com/work/web-developer/
+  * Firebug: https://addons.mozilla.org/es-ES/firefox/addon/1843
+  * Measureit: http://www.kevinfreitas.net/extensions/measureit/
+  * Link Checker: http://www.kevinfreitas.net/extensions/linkchecker/
+  * View Source Chart: http://jennifermadden.com/scripts/ViewRenderedSource.html
+  * Colorzilla: http://www.colorzilla.com/firefox/
