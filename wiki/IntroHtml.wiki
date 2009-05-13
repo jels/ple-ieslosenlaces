@@ -20,3 +20,10 @@ https://addons.mozilla.org/es-ES/firefox/browse/type:1/cat:4
   * Link Checker: http://www.kevinfreitas.net/extensions/linkchecker/
   * View Source Chart: http://jennifermadden.com/scripts/ViewRenderedSource.html
   * Colorzilla: http://www.colorzilla.com/firefox/
+
+= Validación =
+http://validator.w3.org/
+= Ejercicios = 
+  * Ejercicio 3: http://www.librosweb.es/xhtml/capitulo3/marcado_avanzado_de_texto.html
+  * Ejercicio 4: http://www.librosweb.es/xhtml/capitulo3/marcado_generico_de_texto.html
+  * Ejercicio 6: http://www.librosweb.es/xhtml/capitulo4/enlaces_basicos.html
