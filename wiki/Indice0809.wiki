@@ -51,3 +51,5 @@ http://wiki.xml3k.org/Amara2
   * AmaraUsoBindery
 = Django = 
   * IntroDjango
+  * IntroHtml
+  * IntroAptana
