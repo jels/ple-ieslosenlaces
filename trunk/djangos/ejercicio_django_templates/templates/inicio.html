@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}<title>Ejercicio de clase</title> {% endblock %}
+
+{% block logo %}
+		<h1 id="logo"><a href="/" title="Programación divertida">programa<span class="gray">ción</span></a></h1>	
+		<h2 id="slogan">Cómo mola programar con django...</h2>		
+{% endblock %}
+
+{% block sidebar %}
+<div class="sidebox">
+<h1>Sistemas operativos</h1>
+
+<p>En esta asignatura se estudia Windows y Linux con máquinas físicas y máquinas virtuales </p>	
+	
+</div>	
+{% endblock %}
+
+{% block menutabs%}
+<ul>
+	<li><a href="/" id="current">Inicio</a></li>
+	<li><a href="sistemas">Sistemas</a></li>
+	<li><a href="analisis">Análisis</a></li>
+	<li><a href="programacion">Programación</a></li>
+</ul>		
+{% endblock %}	
