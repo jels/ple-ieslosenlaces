@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import *
+from blog.views import hola, hora, hora_menos_uno, hora_mas, hora_mas_t, lista_empleados
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
@@ -14,4 +15,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+    (r'^saludo/$', hola),
+    (r'^ahora/$', hora),
+    (r'^canarias/$', hora_menos_uno),
+    (r'^ahora/mas/(\d+)/$', hora_mas_t),
+    (r'^empleados/$', lista_empleados),
 )
