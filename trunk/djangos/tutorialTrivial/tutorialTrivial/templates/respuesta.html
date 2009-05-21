@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block cuerpo %}
+
+<h2>Resultado de la pregunta</h2>
+<h3>{{ pregunta.titulo }}</h3>
+<img class="foto" src="/static/{{ pregunta.foto }}">
+
+<p>{{ pregunta.texto }}</p>
+<p>Respuesta seleccionada: {{ opcion }}</p>
+<p>Respuesta correcta: {{ pregunta.respuesta_correcta }}</p>
+{% if respuesta.resultado %}
+<p>¡Enhorabuena!</p>
+{% else %}
+<p>¡Has fallado!</p>
+{% endif %}
+<p>Tiempo empleado: {{ respuesta.tiempo }} segundos.</p>
+{% endblock %}
+

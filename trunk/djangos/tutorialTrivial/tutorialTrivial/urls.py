@@ -17,6 +17,10 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
-    (r'^static/', 'django.views.static.serve', 
-     {'document_root': settings.MEDIA_ROOT}),
+    (r'^pregunta/(\d+)/$', 'tutorialTrivial.juego.views.pregunta'),
+    (r'^responder/$', 'tutorialTrivial.juego.views.respuesta'),
+    (r'^static/(?P<path>.*)$', 'django.views.static.serve',
+        {'document_root': settings.MEDIA_ROOT}),
+
+
 )

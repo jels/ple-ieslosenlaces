@@ -1,1 +1,14 @@
-{% block cuerpo %} {% endblock %}
+<html>
+   <head>
+      <title>
+          {% block title %}{% endblock %}
+      </title>
+   </head>
+   <body>
+      {% block cuerpo %}{% endblock %}
+      <div id=”footer”>
+          {% block footer %}(c) 2009{% endblock %}
+      <div>
+   </body>
+</html>
+

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block cuerpo %}
+
+    <h2>Categoría: {{ pregunta.categoria }}</h2>
+    <h3>{{ pregunta.titulo }}</h3>
+
+    {% if texto_error %}
+        <p class="error">{{ texto_error }}</p>
+    {% endif %}
+
+    <img class="foto" src="/static/{{ pregunta.foto }}">
+
+    <p>{{ pregunta.texto }}</p>
+
+    {% if respuesta %}
+        <p>Ya has respondido antes a la pregunta.</p>
+        <p>Tiempo empleado: {{ respuesta.tiempo }} segundos.</p>
+        <p>El resultado fue 
+            {% if respuesta.resultado %}
+                CORRECTO
+            {% else %}
+                INCORRECTO
+            {% endif %}
+        </p>
+    {% else %}
+        <form method="post" action="/responder/">
+            <input type="hidden" name="pregunta" value="{{ pregunta.id }}">
+            <input type="hidden" name="tiempo" value="{{ tiempo }}">
+            <input type="radio" value="{{ pregunta.respuesta_1 }}" 
+                    name="respuesta">{{ pregunta.respuesta_1 }}<br>
+            <input type="radio" value="{{ pregunta.respuesta_2 }}" 
+                    name="respuesta">{{ pregunta.respuesta_2 }}<br>
+            <input type="radio" value="{{ pregunta.respuesta_3 }}" 
+                    name="respuesta">{{ pregunta.respuesta_3 }}<br>
+            <input type="radio" value="{{ pregunta.respuesta_4 }}" 
+                    name="respuesta">{{ pregunta.respuesta_4 }}<br>
+            <br>
+            <input type="submit" value="Responder">
+        </form>
+    {% endif %}
+
+{% endblock %}
