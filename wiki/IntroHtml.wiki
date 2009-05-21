@@ -25,6 +25,10 @@ https://addons.mozilla.org/es-ES/firefox/browse/type:1/cat:4
   * Link Checker: http://www.kevinfreitas.net/extensions/linkchecker/
   * View Source Chart: http://jennifermadden.com/scripts/ViewRenderedSource.html
   * Colorzilla: http://www.colorzilla.com/firefox/
+== Recursos ==
+  * http://www.webresourcesdepot.com/
+  * http://www.smashingmagazine.com
+
 
 = Validación =
 http://validator.w3.org/
