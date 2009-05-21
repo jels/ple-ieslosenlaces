@@ -10,6 +10,11 @@
 == Algún tutorial ==
   * http://www.w3.org/Style/Examples/011/firstcss.es.html
   * http://www.librosweb.es/xhtml/
+== Vocabulario/jerga ==
+  * http://www.smashingmagazine.com/2009/05/21/web-design-industry-jargon-glossary-and-resources/
+
+
+
 == Herramientas ==
   * http://www.aptana.com   --> http://update.aptana.com/update/studio/3.4 
 === Extensiones de firefox===
