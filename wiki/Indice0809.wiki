@@ -53,5 +53,6 @@ http://media.djangoproject.com/img/site/hdr_logo.gif
 = Django = 
   * IntroDjango
   * IntroHtml
+  * [http://www.opera.com/wsc/ http://www.opera.com/bitmaps/company/education/wsc_88x31.jpg]
   * IntroAptana
   * PrimerosPasosDjango
