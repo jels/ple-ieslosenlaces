@@ -7,7 +7,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Example:
-    # (r'^tutorialTrivial/', include('tutorialTrivial.foo.urls')),
+    (r'^/?$', 'tutorialTrivial.juego.views.index'),
+
+    #(r'^tutorialTrivial/', include('tutorialTrivial.foo.urls')),
 
     # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
     # to INSTALLED_APPS to enable admin documentation:
