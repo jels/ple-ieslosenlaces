@@ -17,6 +17,9 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     (r'^admin/', include(admin.site.urls)),
+    (r'^accounts/login/$', 'django.contrib.auth.views.login', 
+     {'template_name': 'login.html'}),
+    (r'^accounts/logout/$', 'django.contrib.auth.views.logout', {'next_page': '/'}),
     (r'^pregunta/(\d+)/$', 'tutorialTrivial.juego.views.pregunta'),
     (r'^responder/$', 'tutorialTrivial.juego.views.respuesta'),
     (r'^static/(?P<path>.*)$', 'django.views.static.serve',
