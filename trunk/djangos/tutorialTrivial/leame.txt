@@ -1,0 +1,4 @@
+Tutorial de David Asorey. 
+Adaptado a django 1.1
+
+http://davidasorey.net/static/django-tutorial/
