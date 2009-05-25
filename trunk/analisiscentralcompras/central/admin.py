@@ -1,7 +1,7 @@
 from django.contrib import admin
 from models import *
 
-class LineaDocPedidoInLine(admin.TabularInLine):
+class LineaDocPedidoInLine(admin.TabularInline):
     model = LineaDocPedido
     
 class DocPedidoAdmin(admin.ModelAdmin):
