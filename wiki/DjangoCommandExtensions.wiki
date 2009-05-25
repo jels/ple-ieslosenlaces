@@ -1,5 +1,0 @@
-#summary Extensiones a django
-
-= Introducción =
-
-http://code.google.com/p/django-command-extensions/
