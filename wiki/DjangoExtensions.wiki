@@ -20,3 +20,9 @@ Para crear gráficos de modelos es necesario pygraphviz (http://networkx.lanl.go
 {{{
 python manage.py  graph_models -a -g -o grafico.png
 }}}
+
+= runserver_plus =
+Necesita Werkzeug:
+{{{
+easy_install Werkzeug
+}}}
