@@ -18,6 +18,6 @@ python setup.py install
   * Añadir el archivo instalado {{{django-admin.py}}} al path del sistema.
 
 = Ampliación =
-  * http://code.google.com/p/django-command-extensions/ DjangoCommandExtensions
+  * http://code.google.com/p/django-command-extensions/ DjangoExtensions
 
 PrimerosPasosDjango
