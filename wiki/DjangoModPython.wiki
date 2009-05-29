@@ -14,11 +14,3 @@ En httpd.con
 </Location>
 }}}
 
-
-y en urls.py
-{{{
-urlpatterns = patterns('',
-    (r'^trivial/?$', 'tutorialTrivial.juego.views.index'),
-    (r'^trivial/admin/', include(admin.site.urls)),
-    )
-}}}
