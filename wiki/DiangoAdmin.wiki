@@ -1,0 +1,15 @@
+#summary Usando django admin site
+<wiki:toc />
+
+= Intro a django admin site =
+
+  * http://docs.djangoproject.com/en/dev/ref/contrib/admin/
+
+= Activar Django admin site =
+  # añadir {{{django.contrib.app}}} a {{{INSTALLED_APPS}}}
+  # Determinar qué modelos se van a editar con el *admin*
+  # Para cada modelo se puede crear un {{{ModelAdmin}}}
+  # Instanciar un {{{AdminSite}}} y relacionar los modelos y ModelAdmin clases
+  # Introducir el AdminSite en el URLconf.
+
+
