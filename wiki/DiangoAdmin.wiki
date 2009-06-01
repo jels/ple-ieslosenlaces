@@ -6,10 +6,39 @@
   * http://docs.djangoproject.com/en/dev/ref/contrib/admin/
 
 = Activar Django admin site =
-  # añadir {{{django.contrib.app}}} a {{{INSTALLED_APPS}}}
+  # Añadir {{{django.contrib.app}}} a {{{INSTALLED_APPS}}}
   # Determinar qué modelos se van a editar con el *admin*
   # Para cada modelo se puede crear un {{{ModelAdmin}}}
   # Instanciar un {{{AdminSite}}} y relacionar los modelos y ModelAdmin clases
   # Introducir el AdminSite en el URLconf.
 
 
+= Objetos ModelAdmin = 
+
+== Opciones ==
+
+= Adaptando el admin =
+== ModelAdmin media ==
+{{{
+class ArticleAdmin(admin.ModelAdmin):
+    class Media:
+        css = {
+            "all": ("my_styles.css",)
+        }
+        js = ("my_code.js",)
+}}}
+== Modificación de las plantillas de Admin ==
+Los archivos de los templates están en el directorio de django {{{contrib/admin/templates/admin}}}
+  * Crear un directorio admin en el directorio templates del proyecto.
+  * Crear subdirectorios con el nombre de la aplicaciones (en minúsculas).
+
+Plantillas clave:
+  * admin/base.html
+  * admin/index.html
+  * admin/change_form.html
+  * admin/change_list.html
+
+Se pueden cambiar para:
+  * Todo el proyecto: admin/change_form.html
+  * Una aplicación: admin/<my_app>/change_form.html
+  * Un modelo: admin/<my_app>/<my_model>/change_form.html
