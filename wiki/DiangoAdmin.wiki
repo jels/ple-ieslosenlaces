@@ -18,7 +18,8 @@
 == Opciones ==
 
 = Adaptando el admin =
-  * http://www.google.es/url?sa=t&source=web&ct=res&cd=8&url=http%3A%2F%2Flincolnloop.com%2Fassets%2FCustomizing_the_Django_Admin-EuroDjangoCon09.pdf&ei=RJ8jSrvdMpC5jAeY1Ym6Bg&usg=AFQjCNGF4qE9I5SaQdfF-AfJ48JNB5qlXA&sig2=7s_58GNRWogUpU6XNOHnyg
+  * http://lincolnloop.com/assets/Customizing_the_Django_Admin-EuroDjangoCon09.pdf
+  * http://www.ibm.com/developerworks/opensource/library/os-django-admin/index.html
 == ModelAdmin media ==
 {{{
 class ArticleAdmin(admin.ModelAdmin):
