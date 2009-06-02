@@ -76,6 +76,8 @@ TEMPLATE_DIRS = (
     ruta('templates'),
 )
 
+LOGIN_URL = r'/accesos/login/'
+                    
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
