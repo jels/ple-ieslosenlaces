@@ -1,0 +1,12 @@
+Processing model: Permission
+Processing model: Group
+Processing model: User
+Processing model: Message
+Processing model: Session
+Processing model: Site
+Processing model: LogEntry
+Processing model: Almacen
+Processing model: DocPedido
+Processing model: Producto
+Processing model: PrecioProducto
+Processing model: LineaDocPedido

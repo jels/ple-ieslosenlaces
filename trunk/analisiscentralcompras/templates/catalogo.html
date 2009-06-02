@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Listado de productos</h2>
+<ol>
+	{% for item in productos %}
+	<li>{{ item.nombre }}<br></li>
+	{% endfor %}
+</ol>
+
+{% endblock %}

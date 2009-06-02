@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+{% if user.is_authenticated %}
+<img class="foto" src="/static/img/qvmt.jpg">
+{% else %}
+<h2>Login</h2>
+{% if form.errors %}
+<p>Tu usuario y contrasena no son correctos. Intentalo de nuevo.</p>
+{% endif %}
+
+<p>Logea si eres usuario registrado</p>
+<form method="post" action="{% url analisiscentralcompras.central.views.login %}">
+<table>
+<tr>
+    <td>{{ form.username.label_tag }}</td>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
+
+
+<input type="submit" value="login" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+<p>Si aun no estas registrado... Date de alta!!!</p>
+{% endif %}
+{% endblock %}	
