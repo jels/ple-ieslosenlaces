@@ -20,6 +20,7 @@ urlpatterns = patterns('',
       {'template_name': 'accesos/login.html'}),
     (r'^accesos/logout/$', 'avanzados.accesos.views.milogout'),
     (r'^test1/$', 'avanzados.accesos.views.vista1'),
+    (r'^accesos/$', 'avanzados.accesos.views.inicio'),
     
 
 )
