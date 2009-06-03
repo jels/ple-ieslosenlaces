@@ -1,0 +1,4 @@
+#summary Mandar email con django
+
+  * http://docs.djangoproject.com/en/dev/topics/forms/
+  * http://docs.djangoproject.com/en/dev/topics/email
