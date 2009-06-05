@@ -26,6 +26,6 @@ urlpatterns = patterns('',
     (r'^meta/$', 'avanzados.coches.views.meta_info'),
     (r'^/static/(?P<path>.*)$', 'django.views.static.serve', 
      {'document_root': ruta('static')}),
-    
-
+    (r'^catalogo/$', 'avanzados.tienda.views.catalogo'),
+    (r'^pedido/$', 'avanzados.tienda.views.pedido'),
 )

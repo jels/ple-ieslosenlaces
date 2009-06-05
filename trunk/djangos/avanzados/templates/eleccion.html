@@ -5,16 +5,18 @@
 {% endblock %}
 
 {% block content %}
+    <!--
     {% if form_was_valid %}
         {# ... show whatever... #}
     {% else %}
-        <form action="/auto/reserve/" method="POST">
+    -->
+        <form action="/eleccion/" method="POST">
         <ul>
         {{ form.as_ul}}
         <li><label for="submit">&nbsp;</label>
         <input type="submit" id="submit" name="submit" value="Submit"/></li>
         </ul>
         </form>
-    {% endif %}
+    <!-- {% endif %} -->
 {% endblock %}
 
