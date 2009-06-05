@@ -2,7 +2,7 @@
 # Create your views here.
 
 from django.contrib.auth.decorators import login_required
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth import logout
 from django.shortcuts import render_to_response, redirect
 from django.template import RequestContext
@@ -21,12 +21,12 @@ def milogout(request):
     logout(request)
     print '*' * 10, usuario
     c = RequestContext(request, {'salida':True, 'usuario': usuario})    
-    return redirect('/accesos', c)
+    return HttpResponseRedirect('/accesos?usuarioseva=%s' % (usuario))
     
 def inicio(request):
     c = RequestContext(request)
     print '*' * 10, c.has_key('usuario')
-    return render_to_response('accesos/inicio.html', c)
+    return render_to_response('accesos/inicio.html')
 
     
 

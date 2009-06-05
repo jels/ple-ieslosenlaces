@@ -7,3 +7,11 @@ class CocheForm(forms.Form):
     type = forms.CharField(choices=TYPE_CHOICES, \
         widget=forms.Select(attrs={'onchange':'get_vehicle_color();'}))
     color = forms.CharField(choices=COLOR_CHOICES)
+    
+class PedidoCocheForm(forms.Form):
+    NUM_PEDIDO = [(x, x) for x in range(10)]
+    
+    cant = forms.IntegerField(choices=NUMPEDIDO, 
+                              widget = forms.Select())
+    
+                    

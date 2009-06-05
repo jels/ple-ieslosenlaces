@@ -86,5 +86,6 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'coches',
     'django_extensions',
+    'tienda'
 )
 
