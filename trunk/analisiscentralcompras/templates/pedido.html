@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Formulario de pedido on-line:</h2>
+<form method="post" action="{% url analisiscentralcompras.central.views.pedido %}">
+<table>
+	{% for item in productos %}
+	<tr><td>{{ item.nombre }} </td><td></td><td></td><td><select name="{{item.id}}" size="1"> 
+		{% for x in lista %}<option>{{x}}</option>{% endfor %}</select></td><td></td><td>uds.</td></tr>
+	{% endfor %}
+</table>
+<input type="submit" value="Enviar" />
+</form>
+{% endblock %}

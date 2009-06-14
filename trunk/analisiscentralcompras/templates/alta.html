@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Registro</h2>
+<form action="/central/alta" method="POST">
+{{ form.as_p }}
+<br />
+<input type="submit" value="Enviar" />
+</form>
+{% endblock %}
