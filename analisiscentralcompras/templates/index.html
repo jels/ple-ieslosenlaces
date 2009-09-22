@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block avisos %}
+{{ avisos }}
+{% endblock %}
+{% block left %}
+<h2>Bienvenido a la Central de compras Txiripas</h2>
+<p>En esta página usted podrá:</p>
+ <ul>
+ <li> - Darse de alta como usuario.</li>
+ <br/>
+ <li> - Ver nuestro catálogo de productos.</li>
+ <br/>
+ <li> - Comprar al mejor precio del mercado.</li>
+ <br/>
+ <li> - Realizar sus pedidos On-Line.</li>
+ <br/>
+ <li> - Y más ...</li>
+ </ul>
+ {% endblock %}	

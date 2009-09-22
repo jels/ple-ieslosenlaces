@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1> Bienvenido al sistema {{ usuario }}</h1>
+<hr />
+<p>La variable <strong>user</strong> también informa de que te llamas {{ user.username }}
+<p>Para terminar la sesión pulsa <a href="/accesos/logout">aquí</a></p>
+
+{% endblock %}

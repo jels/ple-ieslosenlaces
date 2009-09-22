@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Contacto</h2>
+<p>Tenemos varias vías de contacto:</p>
+ <ul>
+ <li> - Email: daienlaces@gmail.com</li>
+ <br/>
+ <li> - Teléfono: 555 55 55 55</li>
+ <br/>
+ <li> - Fax: 666 66 66 66</li>
+ <br/>
+ <li> - Paloma mensajera.</li>
+ <br/>
+ <li> - Señales de humo.</li>
+ </ul>
+ {% endblock %}	

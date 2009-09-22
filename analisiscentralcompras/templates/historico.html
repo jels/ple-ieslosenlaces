@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Historico de pedidos</h2>
+{% for pedido in pedidos %}
+<li>
+	<a href="detallepedido/{{ pedido.id }}/"> {{pedido}} </a>
+	</li> 
+{% endfor %}
+{% endblock %}	

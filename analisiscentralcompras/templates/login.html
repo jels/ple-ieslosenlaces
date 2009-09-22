@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+{% if user.is_authenticated %}
+	<p><font size=3>Bienvenido <strong> {{ user.username }} :</strong></font></p>
+	<p><a href="historico">Historico de pedidos</a></p>
+	<p><a href="pedido">Hacer pedido online </a></p>
+	<p><a href="logout">Logout </a></p>
+{% else %}
+<h2>Login</h2>
+{% if form.errors %}
+<p><strong>Tu usuario y contraseña no son correctos. Inténtalo de nuevo.</strong></p>
+{% endif %}
+
+<p>Logueate si eres un usuario registrado:</p>
+<form method="post" action="{% url analisiscentralcompras.central.views.login %}">
+<table>
+<tr>
+    <td>{{ form.username.label_tag }} </td>
+</tr>
+<tr>
+    <td>{{ form.username }}</td>
+</tr>
+<tr>
+    <td>{{ form.password.label_tag }}</td>
+</tr>
+<tr>
+    <td>{{ form.password }}</td>
+</tr>
+</table>
+
+<br>
+<input type="submit" value="Login" />
+<input type="hidden" name="next" value="{{ next }}" />
+</form>
+<p>Si aún no estas registrado... <a href="/central/alta">Date de alta!!!</a></p>
+{% endif %}
+{% endblock %}	

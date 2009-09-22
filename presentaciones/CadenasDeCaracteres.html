@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<title>Cadenas de Caracteres</title>
+<!-- presentations based on Dave's model at http://www.w3.org/2006/02/woa/ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Copyright &#169; 2008 Luis Miguel Morillas" />
+<meta name="font-size-adjustment" content="1" />
+<link rel="stylesheet" href="notebook.css"
+ type="text/css" media="screen, projection, print" />
+<script src="slidy.js" type="text/javascript">
+</script>
+</head>
+<body>
+<!-- this defines the slide background -->
+
+<div class="background">
+
+  <div class="margin">
+    <div class="header">
+    <!-- sized and colored via CSS -->
+    </div>
+    <!-- hidden style graphics to ensure they are saved with other content -->
+    <img class="hidden" src="square-bullet.gif" alt="" />
+    <img class="hidden" src="fold.bmp" alt="" />
+    <img class="hidden" src="fold.bmp" alt="" />
+    <img class="hidden" src="fold-dim.bmp" alt="" />
+
+    <img class="hidden" src="nofold-dim.bmp" alt="" />
+    <img class="hidden" src="unfold-dim.bmp" alt="" />
+    <img class="hidden" src="bullet-fold.gif" alt="" />
+    <img class="hidden" src="bullet-unfold.gif" alt="" />
+    <img class="hidden" src="bullet-fold-dim.gif" alt="" />
+    <img class="hidden" src="bullet-nofold-dim.gif" alt="" />
+    <img class="hidden" src="bullet-unfold-dim.gif" alt="" />
+    <img class="sharpener" src="sharpener.gif" alt="sharpener" />
+    <img class="pencil" src="pencil3.gif" alt="pencil" />
+
+  </div>
+</div>
+
+<div class="slide cover">
+<div class="header">
+<h1>Cadenas de Caracteres</h1>
+<p><a href="mailto:morillas@gmail.com">Luis Miguel Morillas</a>
+</p>
+</div>
+<img src="sky.jpg" class="cover"
+alt="wispy clouds in a blue sky" />
+<h2>Programación en lenguajes estructurados<br />
+Ciclo DAI. IES Los Enlaces</h2>
+</div>
+
+
+<div class="slide">
+<h1>El tipo de datos Cadena de Caracteres</h1>
+<div class="extract">
+<ul> 
+  <li>Hemos visto cómo usar programas para manipular números</li> 
+  <li>Hoy los ordenadores pueden trabajar con otros tipos de datos</li>
+  <li>El uso más habitual es proceso de textos</li> 
+  <li>Representamos los textos con el tipo de datos <strong>cadena de caracteres</strong></li>
+  <li>Una cadena es una secuencia de caracteres</li>
+  <li>Representación: caracteres entre comillas (simples, dobles o triples)</li>
+</ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Ejemplos de cadenas</h1>
+<div class="extract">
+<pre>
+>>> cadena1 = "Hola"
+>>> cadena2 = 'Hello'
+>>> print cadena1, cadena2
+Hola Hello
+>>> type(cadena1)
+&lt;type 'str'>
+
+>>> cadena_larga = """Más de
+una línea.
+Adiós."""
+
+>>> print cadena_larga
+Más de
+una línea.
+Adiós.
+</pre>
+</div>
+</div>
+
+
+<div class="slide">
+<h1>Entrada/lectura de cadenas</h1>
+<div class="extract">
+<ul> 
+  <li>raw_input("Mensaje para el usuario: ")</li>
+</ul>
+<pre>
+>>> nombre = raw_input("Introduzce tu nombre: ")
+Introduzce tu nombre: Miguel
+>>> print "Te llamas", nombre
+Te llamas Miguel
+</pre>
+</div>
+</div>
+
+<div class="slide">
+<h1>Acceso a las letras de una cadena</h1>
+<div class="extract">
+<ul> 
+  <li>Una cadena es una <strong>secuencia</strong> de caracteres.</li>
+  <li>Podemos acceder a los caracteres con ínidices:
+  <pre>
+>>> nombre = "Miguel"
+>>> nombre[0]
+'M'
+>>> nombre[1]
+'i'
+>>> nombre[-1]
+'l'
+>>> len(nombre)
+6
+>>> nombre[6]
+
+Traceback (most recent call last):
+  File "&lt;pyshell#18>", line 1, in &lt;module>
+    nombre[6]
+IndexError: string index out of range
+  </pre>
+  </li>
+</ul>
+</div>
+</div>
+
+
+<div class="slide">
+<h1>Rebanadas</h1>
+<div class="extract">
+<pre>
+>>> asignatura = "PLE: Programación en python"
+>>> print asignatura[0:4]
+PLE:
+>>> print asignatura[0:3]
+PLE
+>>> print asignatura[:3]
+PLE
+>>> print asignatura[-6:]
+python
+>>> 
+</pre>
+<ul>
+<li>El formato es siempre el mismo: <strong>&lt;cadena&gt;[&lt;inicio&gt;:&lt;fin&gt;]</strong></li>
+<li>inicio y fin tienen que evaluarse como enteros</li>
+<li>Si faltan: desde el inicio o hasta el final</li>
+</ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Operaciones con cadenas</h1>
+<div class="extract">
+<ul>
+  <li>Concatenar: <strong>+</strong></li>
+  <li>Repetir: <strong>*</strong></li>
+  <li>Tamaño: <strong>len(cadena)</strong></li>
+  <li><strong>chr()</strong> y <strong>ord()</strong>
+  <pre>
+>>> ord('a')
+97
+>>> chr(97)
+'a'
+  </pre>
+  </li>
+  <li>Recorrido
+  <pre>
+>>> for letra in "Hola":
+	print letra,
+
+H o l a
+  </pre>
+  </li>
+</ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Cadenas, listas y secuencias</h1>
+<div class="extract">
+<ul>
+  <li>Las operaciones que hemos visto no son exactamente de cadenas</li>
+  <li>Son operaciones de cualquier secuencia</li>
+  <li>Las listas son secuencias de cualquier tipo de objetos
+  <pre>
+>>> mi_lista = [1, "Luis", "Python", 12.35]
+  </pre>
+  </li>
+  <li>Los objetos de una lista van entre corchetes, separados por comas</li>
+</ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Modificación ejercicio meses</h1>
+<div class="extract">
+  <ul>
+    <li>Podemos usar una lista de meses para mejorar nuestro ejercicio
+    <pre>
+meses = ["Enero", "Febrero", "Marzo", ...]
+n = input("Introduce el número del mes (1-12): ")
+print meses[n-1]
+    </pre>
+    </li>
+  </ul>
+</div>
+</div>
+
+   
+<div class="slide">
+<h1>Más operaciones con cadenas</h1>
+<div class="extract">
+  <ul>
+    <li><strong>dir(cadena)</strong> nos informa de las operaciones que podemos hacer</li>
+    <li><strong>help(cadena.método)</strong> informa de lo que hace ese método.</li>
+    <li>Algunas operaciones interesantes:
+    <pre>
+c.capitalize()    c.center(anchura)
+c.capwords()      c.count(sub)
+c.find(sub)       c.join(lista)
+c.ljust(anchura)  c.lower()
+c.lstrip()        c.replace(sub, nueva)
+c.rjust(anchura)  c.rstrip()
+c.split()         c.strip()
+c.upper()
+    </pre>
+    <a href="http://rgruet.free.fr/PQR25/PQR2.5.html#stringMethods">http://rgruet.free.fr/PQR25/PQR2.5.html#stringMethods</a>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Ejemplo: Conversión de fechas</h1>
+<div class="extract">
+<pre>
+# -*- encoding: utf-8 -*-
+
+"""
+Conversor de fechas
+convierte fechas en el formato "dd/mm/aaaa" a "dia de mes de año"
+"""
+
+# Toma de datos de la fecha
+fecha_cadena = raw_input("Introduce la fecha (dd/mm/aaaa): ")
+dia, mes, anno = fecha_cadena.split('/')
+
+# Meses ***** Por terminar ****
+meses = ["Enero", "Febrero", "Marzo", "..."]
+
+mes_cadena = meses[int(mes)-1]
+
+print "%s de %s de %s" % (dia, mes_cadena, anno)
+</pre>
+</div></div>
+
+<div class="slide">
+<h1>Proceso de ficheros</h1>
+<div class="extract">
+  <ul>
+    <li>Abrir fichero
+    <pre>
+      variable_fichero = open(nombre[, modo])
+      fichero_lectura = open("Texto ya escrito.txt")
+    </pre>
+    </li>
+    <li>Leer un fichero
+    <pre>
+      variable_fichero.read()
+      variable_fichero.readline()
+      variable_fichero.readlines()
+    </pre>
+    <pre>
+      nombre = raw_input("Introduce ruta fichero: ")
+      fich_lect = open(nombre)
+      contenido = fich_lect.read()
+      print contenido
+    </pre>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Lectura de ficheros. Ejemplos</h1>
+<div class="extract">
+  <ul>
+    <li>Leemos las primeras 5 líneas de un fichero
+    <pre>
+      fich_lectura = open(fichero)
+      for i in range(5):
+          linea = fich_lectura.readline()
+	  print linea,
+    </pre>
+    </li>
+    <li>Leer todo el fichero
+    <pre>
+      fich_lectura = open(fichero)
+      for linea in fich_lectura:
+          print linea,
+    </pre>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div class="slide">
+<h1>Utilidades para ficheros</h1>
+<div class="extract">
+  <pre>
+    import os
+    os.getcwd()
+	os.chdir()
+    os.listdir(ruta)
+    os.listdir('.')
+    os.mkdir(nombre_dir)
+    os.path.getsize(ruta)
+	os.environ['HOME']
+  </pre>
+</div>
+</div>
+
+<div class="slide">
+<h1>Escritura en ficheros</h1>
+<div class="extract">
+  <pre>
+    f_escritura = open(ruta, 'w')
+    f_escritura.write(cadena)
+    
+    for x in range(100):
+        f_escritura.write("Línea número %d\n" % (x+1))
+    f_escritura.close()
+  </pre>
+</div>
+</div>
+
+ 
+
+<!--
+<div class="slide">
+<h1>Pencil test</h1>
+
+<img width="60%" float="right"
+src="pencil.gif" alt="pencil" />
+</div>
+-->
+</body>
+</html>
+
+

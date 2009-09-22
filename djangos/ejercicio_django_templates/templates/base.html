@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- documento modificado para uso de ejemplo con django -->
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+
+<meta name="Description" content="Information architecture, Web Design, Web Standards." />
+<meta name="Keywords" content="your, keywords" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Distribution" content="Global" />
+<meta name="Author" content="Erwin Aligam - ealigam@gmail.com" />
+<meta name="Robots" content="index,follow" />
+
+<link rel="stylesheet" href="static/PixelGreen.css" type="text/css" />
+<!-- bloque titulo para el title de la pagina -->
+{% block title %}<title></title> {% endblock %}
+	
+</head>
+
+<body>
+<!-- wrap starts here -->
+<div id="wrap">
+
+	<div id="header"><div id="header-content">	
+		{% block logo %}
+		<h1 id="logo"><a href="index.html" title="">pixel<span class="gray">green</span></a></h1>	
+		<h2 id="slogan">Put your site slogan here...</h2>		
+		{% endblock %}
+		<!-- Menu Tabs -->
+		{% block menutabs%}
+		<ul>
+			<li><a href="index.html" id="current">Home</a></li>
+			<li><a href="index.html">News</a></li>
+			<li><a href="index.html">Downloads</a></li>
+			<li><a href="index.html">Support</a></li>
+			<li><a href="index.html">About</a></li>			
+		</ul>		
+		{% endblock %}	
+	
+	</div></div>
+	
+	<div class="headerphoto"></div>
+				
+	<!-- content-wrap starts here -->
+	<div id="content-wrap"><div id="content">		
+		
+		<div id="sidebar" >
+		    {% block sidebar %}
+		      <!-- un sidebar está formado por sidebox del tipo: 
+
+			<div class="sidebox">
+			
+				<h1>Short About</h1>
+				
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum. 
+				Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu 
+				posuere nunc justo tempus leo.</p>	
+						
+			</div>			
+			-->
+
+		    {% endblock %}
+					
+		</div>	
+	
+		<div id="main">		
+		{% block main %}
+		{% endblock %}					
+		</div>					
+		
+	<!-- content-wrap ends here -->		
+	</div></div>
+
+<!-- footer starts here -->	
+<div id="footer"><div id="footer-content">
+	
+		<div class="col float-left">
+		{% block pieiz %}
+		{% endblock %}		
+		</div>
+		
+		<div class="col float-left">
+		{% block piecen %}
+		{% endblock %}		
+		</div>		
+	
+		<div class="col2 float-right">
+		{% block pieder %}
+		{% endblock %}		
+		</div>
+	
+</div></div>
+<!-- footer ends here -->
+	
+<!-- wrap ends here -->
+</div>
+
+</body>
+</html>

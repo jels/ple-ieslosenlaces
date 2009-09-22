@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<meta http-equiv="refresh" content="5;url=/central/login" />
+{% endblock %}
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block avisos %}
+
+{% endblock %}
+{% block left %}
+<br><br><center><font size=3 color="red">Pedido enviado correctamente</font></center>
+<br><br>
+<center>Redireccionando al Panel de Control ... 
+</center>
+ {% endblock %}	

@@ -1,0 +1,12 @@
+<form action="/pedido/" method="POST">
+<table>
+{% for n in productos %}
+<tr><td>{{n}}</td><td><select name="{{n}}">
+    {% for v in valores %}
+        <option>{{v}}</option>
+    {%endfor%}
+    </select>
+{%endfor%}
+</table>
+<input type="submit" value="Enviar"/>
+</form>

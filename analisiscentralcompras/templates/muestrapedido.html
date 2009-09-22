@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block menu %}
+<ul>
+	{% for el in secciones %}
+	<li><a href="{{el}}" {% ifequal actual el %} class="current" {% endifequal %}>{{el}}</a></li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block left %}
+<h2>Confirmación de pedido:</h2>
+<form method="post" action="{% url analisiscentralcompras.central.views.alta_pedido %}">
+<table>
+	{%for k, v in res.items%}
+	<tr><td>- {{k}}:</td><td>{{v}} uds.</td></tr>
+	<input type="hidden" name="{{k}}" value="{{v}}" />
+	{%endfor%}
+</table>
+<br/>
+
+<input type="submit" value="Confirmar pedido" />
+<input type="button" value=" Volver al pedido" onClick="javascript:history.back(1)"/>
+</form>
+{% endblock %}

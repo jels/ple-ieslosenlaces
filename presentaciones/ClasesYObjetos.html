@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
+<head>
+<title>Clases y Objetos</title>
+<!-- presentations based on Dave's model at http://www.w3.org/2006/02/woa/ -->
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="copyright" content="Copyright &#169; 2008 Luis Miguel Morillas" />
+<meta name="font-size-adjustment" content="1" />
+<link rel="stylesheet" href="notebook.css"
+ type="text/css" media="screen, projection, print" />
+<script src="slidy.js" type="text/javascript">
+</script>
+</head>
+<body>
+<!-- this defines the slide background -->
+
+<div class="background">
+
+  <div class="margin">
+    <div class="header">
+    <!-- sized and colored via CSS -->
+    </div>
+    <!-- hidden style graphics to ensure they are saved with other content -->
+    <img class="hidden" src="square-bullet.gif" alt="" />
+    <img class="hidden" src="fold.bmp" alt="" />
+    <img class="hidden" src="fold.bmp" alt="" />
+    <img class="hidden" src="fold-dim.bmp" alt="" />
+
+    <img class="hidden" src="nofold-dim.bmp" alt="" />
+    <img class="hidden" src="unfold-dim.bmp" alt="" />
+    <img class="hidden" src="bullet-fold.gif" alt="" />
+    <img class="hidden" src="bullet-unfold.gif" alt="" />
+    <img class="hidden" src="bullet-fold-dim.gif" alt="" />
+    <img class="hidden" src="bullet-nofold-dim.gif" alt="" />
+    <img class="hidden" src="bullet-unfold-dim.gif" alt="" />
+    <img class="sharpener" src="sharpener.gif" alt="sharpener" />
+    <img class="pencil" src="pencil3.gif" alt="pencil" />
+
+  </div>
+</div>
+
+<div class="slide cover">
+<div class="header">
+<h1>Clases y objetos</h1>
+<p><a href="mailto:morillas@gmail.com">Luis Miguel Morillas</a>
+</p>
+</div>
+<img src="sky.jpg" class="cover"
+alt="wispy clouds in a blue sky" />
+<h2>Programación en lenguajes estructurados<br />
+Ciclo DAI. IES Los Enlaces</h2>
+</div>
+
+
+<div class="slide">
+<h1>¿Qué es un objeto?</h1>
+<div class="extract">
+<ul> 
+  <li>Una entidad que agrupa
+  <ul>
+    <li>estado</li>
+    <li>una funcionalidad</li>
+    </ul>
+    relacionadas. </li>
+    <li>Estado del objeto: a través de variables llamadas atributos</li>
+    <li>funcionalidad: a través de funciones: métodos</li>
+    
+    </ul>
+    </div>
+</div>
+
+<div class="slide">
+<h1>¿Ventajas?  ¡Todas!</h1>
+<div class="extract">
+  <ul>
+    <li>Tenemos juntas información y funcionalidad</li>
+    <li>Podemos reutilizar</li>
+    <li>Podemos hacer copias de nuestros objetos</li>
+    <li>Ofrecemos una forma de usar el objeto y podemos cambiarlo internamente</li>
+  </ul>
+</div>
+</div>
+<div class="slide">
+<h1>Ejemplo</h1>
+<h2>Héroes y aliens</h2>
+<div class="extract">
+  <ul>
+    <li>El héroe tiene que eliminar al alien</li>
+    <li>Podemos crear héroes que actúen con aliens</li>
+    <li>Creamos aliens que respondan a las acciones de un héroe</li>
+  </ul>
+  
+</div>
+</div>
+<div class="slide">
+<h1>Ejemplo (2)</h1>
+<h2>Héroes y aliens</h2>
+<div class="extract">
+<h2>Definición</h2>
+  <pre>
+class Heroe(object):
+    "Un jugador de la partida."""
+    def ataca(self, enemigo):
+        print "El jugador dispara al enemigo"
+        enemigo.huir()
+
+class Alien(object):
+    "Un alien que invade el planeta"
+    def huir(self):
+        print "Me voy porque me atacan ..."
+  </pre>
+<h2>Uso</h2>
+<pre>
+jugador = Heroe()
+enemigo = Alien()
+jugador.ataca(enemigo)
+</pre>
+</div>
+</div>
+</body>
+</html>
