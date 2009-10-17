@@ -2,11 +2,11 @@
 
 = Introducción =
 Algunos links:
-
+  * http://research.microsoft.com/en-us/projects/kodu/
   * wiki: http://koduplayground.com/index.php?title=Main_Page
   * Foros: http://boards.kodux.com/
-  *
-  *
+  * wikipedia: http://en.wikipedia.org/wiki/Kodu_Game_Lab
+  * http://blogs.msdn.com/microsoftuseducation/archive/2009/07/09/integrating-kodu-and-gaming-in-the-classroom.aspx
   *
   *
   *
@@ -17,3 +17,4 @@ Algunos links:
 
 == Demos ==
   * http://www.joystiq.com/2009/07/02/video-tour-kodu-microsofts-diy-game-builder/
+  * http://www.slate.com/id/2222546/
