@@ -1,7 +1,7 @@
 #summary Intro kodu
 
 = Introducción =
-Algunos links:
+== Algunos links ==
   * http://research.microsoft.com/en-us/projects/kodu/
   * wiki: http://koduplayground.com/index.php?title=Main_Page
   * Foros: http://boards.kodux.com/
