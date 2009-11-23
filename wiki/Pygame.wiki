@@ -1,0 +1,10 @@
+#summary Intro Pygame
+= Introducción =
+== ¿Qué es? ==
+http://pygame.org/wiki/about
+== Instalar ==
+http://pygame.org/download.shtml
+=== En windows ===
+Para python2.6 --> http://pygame.org/ftp/pygame-1.9.1.win32-py2.6.msi
+== Utilizar ==
+Módulos que podemos utilizar independientemente. Accedemos con {{{pygame.<modulo>}}}
