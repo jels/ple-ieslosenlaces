@@ -26,8 +26,9 @@ print '*' * 20
 print
 puntos_equipos(datos_liga)
     
-# imprime s�lo nombres
+# imprime sólo nombres
 nombres_equipos = nombres(datos_liga)
 print sorted(nombres_equipos)
 
-grafico([], 'Mejores equipos')
+
+grafico(seis_primeros(datos_liga), 'Mejores equipos')
