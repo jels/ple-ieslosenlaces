@@ -109,3 +109,13 @@ def nombres(tabla):
     for li in tabla:
         res.append(li[0])
     return res
+
+def seis_primeros(tabla):
+    '''devuelve los seis primeros de la 
+    clasificación con el formato: nombre, puntos
+    '''
+    tabla.sort(ordena_puntos)
+    res = []
+    for x in range(6):
+        res.append([tabla[x][0], puntos(tabla[x])])  # nombre y puntos
+    return res
