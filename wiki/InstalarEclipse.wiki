@@ -25,10 +25,8 @@ Se instala desde eclipse como todo:
 {{{
 Ayuda --> Instalar nuevo software --> Add / Añadir --> http://pydev.org/updates
 }}}
-
-  * http://www.aptana.com/python
-  * http://pydev.sourceforge.net/
-  * http://fabioz.com/pydev/manual_101_root.html
+Documentación: 
+  * http://pydev.org/manual.html
   * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
 
 = Instalar subclipse =
