@@ -19,8 +19,13 @@ $ sudo aptitude install eclipse-pydev
   * Ejecutar *eclipse* y configurar el *workspace*.
 
 
-
 = Pydev=
+Ha cambiado el proyecto. Ahora se ha integrado en aptana. Página inicial de pydev: http://pydev.org/
+Se instala desde eclipse como todo:
+{{{
+Ayuda --> Instalar nuevo software --> Add / Añadir --> http://pydev.org/updates
+}}}
+
   * http://www.aptana.com/python
   * http://pydev.sourceforge.net/
   * http://fabioz.com/pydev/manual_101_root.html
