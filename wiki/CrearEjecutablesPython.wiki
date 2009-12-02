@@ -7,3 +7,8 @@
 c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino> -OO -c  --icon=<icono.ico> --target-name=<nombre_exe>  --base=Win32GUI 
 }}}
   # copiar el directorio de datos en el dir destino del ejecutable.
+
+== Uso de pysetup (wrapper de py2exe) ==
+_py2exe me está dando problemas con las fuentes_
+  * http://www.pygame.org/project-PySetup-589-.html
+  * http://www.moviepartners.com/blog/utilities/ppb/
