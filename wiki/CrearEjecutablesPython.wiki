@@ -9,6 +9,7 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
   # copiar el directorio de datos en el dir destino del ejecutable.
 
 == py2exe ==
+  * http://www.pygame.org/wiki/Pygame2exe
 === Wrappers ===
 _py2exe me está dando problemas con las fuentes_
   * http://www.pygame.org/project-PySetup-589-.html
