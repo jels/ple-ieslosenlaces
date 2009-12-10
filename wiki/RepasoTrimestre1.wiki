@@ -1,0 +1,80 @@
+#summary Repaso trimestre 1
+
+= ¿Qué sabemos hacer? =
+
+== Números ==
+  * Operaciones con enteros y números reales
+  * Uso de math
+{{{
+import math
+math.sqrt(9)
+}}}
+  * Uso de variables
+{{{
+nombre = "Pilar"
+edad = 19
+}}}
+  *Bucles para repeticiones fijas
+{{{
+# repite 10 veces algo
+for x in range(10)
+    print x
+}}}
+== Cadenas de caracteres ==
+  * Crear, concatenar, recorrer, trocear
+{{{
+for letra in cadena:
+    print letra
+}}}
+
+{{{
+datos = "nombre; edad; salario"
+for d in datos.split(';'):
+    print d
+}}}
+{{{
+nombre = 'Juan'
+apellido = 'Pérez'
+nombre_completo = nombre + ' ' + apellido
+}}}
+
+== Estructuras de control ==
+{{{
+if edad < 18:
+    print 'Menor de edad'
+else:
+    print 'Mayor de edad'
+}}}
+contador = 1
+limite = 10
+{{{
+{{{
+}}}
+while contador <= limite:
+    print contador
+    contador += 1
+}}}
+{{{
+for x in range(10, 0, -1):
+    print x
+}}}
+== Ficheros ===
+{{{
+fich_lectura = open('datos.txt')
+for linea in fichero:
+    print linea
+}}}
+{{{
+fich_escritura = open('datos.txt', 'w')
+fich_escritura.write(nombre + ';' + str(edad) + '\n')
+}}}
+
+== Funciones ==
+{{{
+def mayor_de_edad(edad):
+    if edad < 18:
+        return False
+    else:
+        return True
+mayor_de_edad(24)
+}}}
