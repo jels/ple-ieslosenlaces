@@ -92,3 +92,20 @@ clon_de_lista = lista[:]
 if elemento in lista:
    print 'Sí que está'
 }}}
+
+{{{
+notas_alumnos = [[5,7,4,8],
+                 [6,8,4,3],
+                 [7,8,9,7]]
+print 'Notas primer alumno'
+for x in notas_alumnos[0]:
+    print x
+print 'Notas primer ejercicio'
+for al in notas_alumnos:
+    print al[0]
+print 'todas las notas'
+for al in notas_alumnos:
+    for nota in al:
+        print nota,
+    print
+}}}
