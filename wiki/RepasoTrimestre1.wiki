@@ -78,3 +78,17 @@ def mayor_de_edad(edad):
         return True
 mayor_de_edad(24)
 }}}
+
+== Listas ==
+{{{
+for elemento in lista:
+    print elemento
+
+primero = lista[0]
+ultimo = lista[-1]
+tres_primeros = lista[0:3]
+lista.append(nuevo_elemento)
+clon_de_lista = lista[:]
+if elemento in lista:
+   print 'Sí que está'
+}}}
