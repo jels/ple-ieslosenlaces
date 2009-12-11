@@ -20,6 +20,7 @@ En la página de microsoft connect tienes acceso a los archivos de instalación,
   * wikipedia: http://en.wikipedia.org/wiki/Kodu_Game_Lab
   * http://blogs.msdn.com/microsoftuseducation/archive/2009/07/09/integrating-kodu-and-gaming-in-the-classroom.aspx
   * http://www.slideshare.net/llangit/kodu
+  * http://www.kodulab.com/
 
 == Demos ==
   * http://www.joystiq.com/2009/07/02/video-tour-kodu-microsofts-diy-game-builder/
