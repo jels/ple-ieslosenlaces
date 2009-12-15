@@ -1,5 +1,7 @@
 #summary Taller VideoJuegos
 
+= Taller de creación de videojuegos en 2D y 3D = 
+
 En el IES Los Enlaces
 
 Los jueves por la tarde. Horario a determinar ...
