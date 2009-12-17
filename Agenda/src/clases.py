@@ -46,6 +46,7 @@ class Amigo(object):
                                          )
 class Agenda(object):
     def __init__ (self):
+        self.fichero = "miagenda.csv"
         self.lista_amigos = []
     def pon_amigo(self, amigo):
         self.lista_amigos.append(amigo)
@@ -72,6 +73,28 @@ class Agenda(object):
                         am.apellido.lower() == apellido:
                 encontrado.append(am)
         return encontrado
+    def guardar(self):
+        '''
+        Almacena los datos de la agenda en un fichero csv
+        '''
+        # Abrir fichero escritura
+        f = open(self.fichero, 'w')
+        # Recorrer lista_amigos
+        for am in self.lista_amigos:
+            # Para cada amigo: guardar sus datos en 
+            # una línea, separados por un ';'
+            # ej datos: ['Pepe', 'Pérez','123, 456', 'p@com, j@com']
+            datos=[am.nombre, am.apellido, 
+                   ','.join(am.telefonos),
+                   ','.join(am.correos)]
+            f.write(';'.join(datos)+'\n')
+        f.close()
+        
+    def cargar(self):
+        '''
+        Carga los datos de un fichero .csv a la agenda
+        '''
+        pass
         
     
 if __name__ == '__main__':
@@ -94,3 +117,5 @@ if __name__ == '__main__':
         print am
     for am in agenda.buscar(apellido='pérez'):
         print am
+    agenda.guardar()
+    
