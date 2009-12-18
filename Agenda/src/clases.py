@@ -50,6 +50,9 @@ class Agenda(object):
         self.lista_amigos = []
     def pon_amigo(self, amigo):
         self.lista_amigos.append(amigo)
+    def quita_amigo(self, amigo):
+        self.lista_amigos.remove(amigo)
+
     def listado(self):
         for n, amigo in enumerate(self.lista_amigos):
             print n+1, amigo
@@ -94,28 +97,35 @@ class Agenda(object):
         '''
         Carga los datos de un fichero .csv a la agenda
         '''
-        pass
-        
+        # abre fichero lectura
+        f = open(self.fichero)
+        # recorre línea a línea
+        for linea in f:  
+            # split ; --> 4 elementos
+            n, ap, lt, lc = linea.strip().split(';')  # nombre, ape, lista tel, lista correos             
+            # [0] --> nombre
+            # [1] --> apellido
+            # [2] --> lista de telfs separados por ','
+            # [3] --> lista de correos separados por ','
+            # Crear amigo --> Amigo(nombre, ape)
+            amigo = Amigo(n, ap)
+            # Añadir telfs  (split , )
+            for tel in lt.split(','):
+                amigo.pon_telefono(tel)
+            # Añadir correos (split ,)
+            for cor in lc.split(','):
+                amigo.pon_correo(cor)
+            # Añadir amigo a lista_amigos
+            self.lista_amigos.append(amigo)
+        f.close()
     
 if __name__ == '__main__':
-    import pprint
-    amigo1 = Amigo('Pedro', 'Vidal')
-    amigo2 = Amigo('Ana', 'Pérez')
-    amigo3 = Amigo('Pedro', 'Pérez')
-    amigo1.pon_telefono(666777888)
-    amigo1.pon_telefono('976-123-456')
-    amigo1.pon_correo('pedro@hotmail.com')
-    amigo1.pon_correo('pedro@gmail.com')
     agenda = Agenda()
-    agenda.pon_amigo(amigo1)
-    agenda.pon_amigo(amigo2)
-    agenda.pon_amigo(amigo3)
+    agenda.cargar()
     agenda.listado()
-    print 'Tengo', agenda.num_contactos(), 'contactos.'
-    # recorro los resultados de .buscar
-    for am  in  agenda.buscar('peDRo'):
-        print am
-    for am in agenda.buscar(apellido='pérez'):
-        print am
+    encontrado = agenda.buscar(apellido='Pérez')
+    agenda.quita_amigo(encontrado) # encontrado es una lista
+    agenda.listado()
     agenda.guardar()
+    
     
