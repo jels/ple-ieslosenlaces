@@ -10,8 +10,8 @@ Página del proyecto:   http://research.microsoft.com/en-us/projects/kodu/
   * Hay una versión educativa para PC. Solicita el acceso en https://connect.microsoft.com/Survey/NominationSurvey.aspx?SurveyID=8255&ProgramID=2743&SiteID=714
 
 = Instalación =
-En la página de microsoft connect tienes acceso a los archivos de instalación, al tutorial y a los foros del proyecto. Cuando te llegue la respuesta de la solicitud de participación, entra en connect y descarga la aplicación.
-
+  * En la página de microsoft connect tienes acceso a los archivos de instalación, al tutorial y a los foros del proyecto. Cuando te llegue la respuesta de la solicitud de participación, entra en connect y descarga la aplicación.
+  * Windows Installer 4.5: http://go.microsoft.com/fwlink/?LinkId=120486.
 
 = Algunos links =
   * http://research.microsoft.com/en-us/projects/kodu/
