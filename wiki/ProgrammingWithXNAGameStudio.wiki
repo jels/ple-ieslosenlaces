@@ -1,3 +1,6 @@
 #summary Programming with XNA Game Studio
 
-= 
+= C# for pythoners =
+Todas las sentencias terminadas con {{{;}}}
+Bloques: {{{  {} }}}
+Comentarios: {{{ // }}}
