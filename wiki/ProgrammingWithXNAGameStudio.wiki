@@ -2,5 +2,15 @@
 
 = C# for pythoners =
 Todas las sentencias terminadas con {{{;}}}
+
 Bloques: {{{  {} }}}
+
 Comentarios: {{{ // }}}
+
+= Condicionales =
+{{{
+if (condición)
+{
+    bloque
+{
+}}}
