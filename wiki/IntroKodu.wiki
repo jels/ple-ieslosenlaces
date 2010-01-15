@@ -3,7 +3,9 @@
 = ¿Qué es Kodu?=
 Kodu es un juego para Xbox que permite editar el entorno para crear nuevos videojuegos.
 
-Página del proyecto:   http://research.microsoft.com/en-us/projects/kodu/
+Página del proyecto:  
+  * http://fuse.microsoft.com/kodu/
+  * http://research.microsoft.com/en-us/projects/kodu/
 
 = ¿Cómo lo consigo? =
   * Se compra con puntos de XBox para utilizarlo en la vídeo consola
