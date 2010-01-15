@@ -14,3 +14,16 @@ if (condición)
     bloque
 {
 }}}
+
+= Estructura general de un videojuego =
+
+{{{
+Inicializar controladores gráficos, de entrada y de sonido
+Cargar recursos
+Iniciar bucle del juego. En cada paso:
+    Recoger input de usuario
+    Hacer cálculos necesarios (IA, movimientos, colisiones, etc)
+    Dibujar el nuevo estado de la pantalla, generar sonidos y feedback del controlador
+Finalizar gráficos, input y sonido
+Liberar recursos
+}}}
