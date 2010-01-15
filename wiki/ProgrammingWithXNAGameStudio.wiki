@@ -27,3 +27,17 @@ Iniciar bucle del juego. En cada paso:
 Finalizar gráficos, input y sonido
 Liberar recursos
 }}}
+
+= Proyecto con XNA =
+XNA oculta parte de la dificultad de crear el videojuego
+== Métodos creados en Game1.cs y Program.cs ==
+{{{
+Game1() --> inicialización general
+Initialize() --> Inicialización del juego
+LoadContent() --> Carga recursos gráficos
+Run() --> Inicia el bucle del juego
+  En cada paso:
+    Update()  
+    Draw()
+UnloadContent()
+}}}
