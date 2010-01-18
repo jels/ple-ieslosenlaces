@@ -1,5 +1,8 @@
 #summary Programming with XNA Game Studio
 
+= Conexión XBox =
+http://creators.xna.com/en-US/education/gettingstarted/bgintro/Chapter5
+
 = C# for pythoners =
 Todas las sentencias terminadas con {{{;}}}
 
