@@ -1,0 +1,10 @@
+#summary Tutoriales de XNA
+
+= Tutoriales de XNA =
+
+== 2D ==
+
+* http://www.xna-tutorial.com/tutoriales-space-invaders/ (esp) Mira en general la página xna-tutorial.
+* http://alicante.dotnetclubs.com/eventos/webcast/webcast-taller-de-creaci-oacute-n-de-videojuegos-con-xna/ (esp) (webcast)
+* http://creators.xna.com/es-ES/education/gettingstarted/bg2d/chapter1 (eng)
+
