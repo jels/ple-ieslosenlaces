@@ -8,6 +8,7 @@ Si utilizáis un recurso que no es vuestro, hay que citar su procedencia.
 
 
 == sprites == 
+  * http://www.flyingyogi.com/fun/spritelib.html
   * http://www.spriters-resource.com/
   * http://www.retrogamezone.co.uk/
   * http://www.videogamesprites.net/
