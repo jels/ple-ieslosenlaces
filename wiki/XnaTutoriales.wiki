@@ -10,3 +10,4 @@
   * Your First Game: Microsoft XNA Game Studio in 2D http://msdn.microsoft.com/en-us/library/bb203893.aspx
   * Platformer: Adding a Power-Up http://msdn.microsoft.com/es-es/library/dd254920(en-us).aspx
   * Platformer: Adding a Scrolling Level http://msdn.microsoft.com/en-us/library/dd254919.aspx
+  * Sprites engine tutorial. http://www.xnaresources.com/pages.asp?pageid=45
