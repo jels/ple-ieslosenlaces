@@ -1,5 +1,12 @@
 #summary Sobre Xna
 
+= Qué es XNA =
+  * http://en.wikipedia.org/wiki/Microsoft_XNA
+  * http://creators.xna.com/es-ES/
+= Documentación =
+  * http://msdn.microsoft.com/en-us/aa937791.aspx
+
+
 
 = Curriculum Pilot Program: Teach Computer Science with XNA Game Studio =
 http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.aspx?cid=2031&c1=en-bz&c2=BZ
