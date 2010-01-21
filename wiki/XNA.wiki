@@ -6,6 +6,7 @@
   * http://www.xna.com/
 = Documentación =
   * http://msdn.microsoft.com/en-us/aa937791.aspx
+  * http://msdn.microsoft.com/en-us/library/bb200104.aspx
 
 
 =Otras plataformas=
