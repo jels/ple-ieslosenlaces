@@ -3,6 +3,7 @@
 = Qué es XNA =
   * http://en.wikipedia.org/wiki/Microsoft_XNA
   * http://creators.xna.com/es-ES/
+  * http://www.xna.com/
 = Documentación =
   * http://msdn.microsoft.com/en-us/aa937791.aspx
 
