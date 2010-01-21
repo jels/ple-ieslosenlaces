@@ -1,0 +1,5 @@
+#summary Usar Gamepad standard
+
+= Introducción =
+  * http://forums.xna.com/forums/p/45983/275322.aspx
+  * http://sourceforge.net/projects/gamepadxna/
