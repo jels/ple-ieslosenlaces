@@ -1,5 +1,8 @@
 #summary Usar Gamepad standard
 
 = Introducción =
+==Referencias al proyecto==
   * http://forums.xna.com/forums/p/45983/275322.aspx
   * http://sourceforge.net/projects/gamepadxna/
+
+Tenemos que tener instalado DirectX SDK http://www.microsoft.com/downloads/details.aspx?FamilyID=b66e14b8-8505-4b17-bf80-edb2df5abad4
