@@ -2,6 +2,8 @@
 
 = Python & pygame =
   * http://tech.canterburyschool.org/pycon/
+  * http://rene.f0o.com/mywiki/PythonGameProgramming
+
 
 = Java & =
 
@@ -15,3 +17,8 @@
   * http://trinit.es/tutoriales/
   * http://bennupack.blogspot.com/
   * http://bulletphysics.org/
+
+= Alice =
+  * http://www.alice.org
+  * http://www.sju.edu/~scooper/alice/alice.html
+  * http://www.aliceprogramming.net/
