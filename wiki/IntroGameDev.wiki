@@ -1,5 +1,6 @@
 #summary Introducción a la programación de videojuegos
 
 = Intro =
+  * http://tech.canterburyschool.org/pycon/
 
-http://www.cs.tufts.edu/comp/50GD/
+  * http://www.cs.tufts.edu/comp/50GD/
