@@ -1,6 +1,12 @@
 #summary Introducción a la programación de videojuegos
 
-= Intro =
+= Python & pygame =
   * http://tech.canterburyschool.org/pycon/
 
+= Java & =
+
   * http://www.cs.tufts.edu/comp/50GD/
+
+= C# & XNA =
+
+  * http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.aspx?cid=2031&c1=en-bz&c2=BZ
