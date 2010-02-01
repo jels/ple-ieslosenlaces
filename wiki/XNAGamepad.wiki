@@ -1,7 +1,7 @@
 #summary Usar Gamepad standard
 
 = Introducción =
-El controlador de Xbox lo podemos utilizar instalando el driver (en XP) o directamente en Win Vista o Win 7. Driver: http://www.microsoft.com/downloads/details.aspx?FamilyID=0e989b12-576b-42f2-b7c1-2a17ce25188b&displaylang=en&Hash=4k2cPjYLoTkvWY4XpmASzRPhHBJUdRnUGia6ZZI2mne2EG761xqaQ4I%2fpL1ndmxzkYWUYiGBA5MOqMMlPVxIJw%3d%3d
+El controlador de Xbox lo podemos utilizar instalando el driver (en XP) o directamente en Win Vista o Win 7. [http://www.microsoft.com/downloads/details.aspx?FamilyID=0e989b12-576b-42f2-b7c1-2a17ce25188b&displaylang=en&Hash=4k2cPjYLoTkvWY4XpmASzRPhHBJUdRnUGia6ZZI2mne2EG761xqaQ4I%2fpL1ndmxzkYWUYiGBA5MOqMMlPVxIJw%3d%3d Driver para Win 32]
 Pero no se pueden utilizar otros controladores por defecto.
 
 ==Referencias al proyecto==
