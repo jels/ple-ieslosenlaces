@@ -2,5 +2,5 @@
 
 [POR HACER]
 = Docs =
-* *¿Qué es un radián?* http://es.wikipedia.org/wiki/Radi%C3%A1n
-* http://bluwiki.com/go/XNA_Tutorials/Rotating_a_Sprite
+  * *¿Qué es un radián?* http://es.wikipedia.org/wiki/Radi%C3%A1n
+  * http://bluwiki.com/go/XNA_Tutorials/Rotating_a_Sprite
