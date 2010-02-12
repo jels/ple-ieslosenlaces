@@ -7,3 +7,4 @@
   * http://xnaessentials.com/archive/2009/06/11/xna-game-studio-3-1-avatar-tutorial.aspx
   * http://forums.xna.com/forums/t/1988.aspx
   * http://forums.xna.com/forums/t/37710.aspx
+  * http://creators.xna.com/en-US/education/bestpractices31
