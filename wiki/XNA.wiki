@@ -24,3 +24,5 @@ http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.
 == Menús ==
   * [http://xnacommunity.codeplex.com/wikipage?title=Componente%20Menu&referringTitle=Componentes Componente Menú]
   * http://ferpect.codeplex.com/
+== Instaladores ==
+  * Instalador en NSIS:  http://msdn.microsoft.com/es-es/ee923706.aspx
