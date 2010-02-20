@@ -7,6 +7,9 @@
 = Documentación =
   * http://msdn.microsoft.com/en-us/aa937791.aspx
   * http://msdn.microsoft.com/en-us/library/bb200104.aspx
+== Foros en español ==
+  * http://social.msdn.microsoft.com/Forums/es-ES/xnaes/threads
+  * http://www.dotnetclubs.com/forums/44.aspx
 
 
 =Otras plataformas=
