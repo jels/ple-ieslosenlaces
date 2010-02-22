@@ -71,23 +71,33 @@ private static void DoSaveGame(StorageDevice device)
 
 = Cargar datos =
 {{{
-/// <summary>
-/// This method opens a file using System.IO classes and the
-/// TitleLocation property.  It presumes that a file named
-/// ship.dds has been deployed alongside the game.
-/// </summary>
-private static void DoOpenFile()
+private static void DoLoadGame(StorageDevice device)
 {
-    FileStream file = OpenTitleFile(
-        "ship.dds", FileMode.Open, FileAccess.Read);
-    Console.WriteLine("File Size: " + file.Length);
-    file.Close();
-}
-private static FileStream OpenTitleFile(
-    string filename, FileMode mode, FileAccess access)
+// Cambiar MiJuego por el nombre de tu juego.
+StorageContainer container =
+device.OpenContainer(”MiJuego”);
+
+// Get the path of the save game.
+string filename = Path.Combine(container.Path, “SaveMiJuego.sav”);
+
+// Check to see whether the save exists.
+if (!File.Exists(filename))
 {
-    string fullpath = Path.Combine(StorageContainer.TitleLocation, filename);
-    return File.Open(fullpath, mode, access);
+return;
 }
 
+// Open the file.
+FileStream stream = File.Open(filename, FileMode.OpenOrCreate,
+FileAccess.Read);
+
+// Read the data from the file.
+XmlSerializer serializer = new XmlSerializer(typeof(Jugador));
+Control.jugador = (Jugador)serializer.Deserialize(stream);
+
+// Close the file.
+stream.Close();
+
+// Dispose the container.
+container.Dispose();
+}
 }}}
