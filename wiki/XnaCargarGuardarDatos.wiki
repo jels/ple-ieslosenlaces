@@ -1,0 +1,93 @@
+#summary Cargar y guardar datos con XNA
+
+Ejemplo sacados de http://msdn.microsoft.com/en-us/library/bb199073.aspx
+= Abrir archivos =
+
+{{{
+private static void DoOpen(StorageDevice device)
+{
+    // Open a storage container.
+    StorageContainer container =
+        device.OpenContainer("StorageDemo");
+
+    // Add the container path to our file name.
+    string filename = Path.Combine(container.Path, "demobinary.sav");
+
+    FileStream file = File.Open(filename, FileMode.Open);
+    file.Close();
+
+    // Dispose the container.
+    container.Dispose();
+}
+}}}
+
+= Preparar clase para guardar =
+{{{
+[Serializable]
+public struct SaveGameData
+{
+    public string PlayerName;
+    public Vector2 AvatarPosition;
+    public int Level;
+    public int Score;
+}
+
+}}}
+
+= Guardar datos =
+{{{
+private static void DoSaveGame(StorageDevice device)
+{
+    // Create the data to save.
+    SaveGameData data = new SaveGameData();
+    data.PlayerName = "Hiro";
+    data.AvatarPosition = new Vector2(360, 360);
+    data.Level = 11;
+    data.Score = 4200;
+
+    // Open a storage container.
+    StorageContainer container =
+        device.OpenContainer("StorageDemo");
+
+    // Get the path of the save game.
+    string filename = Path.Combine(container.Path, "savegame.sav");
+
+    // Open the file, creating it if necessary.
+    FileStream stream = File.Open(filename, FileMode.Create);
+    
+
+    // Convert the object to XML data and put it in the stream.
+    XmlSerializer serializer = new XmlSerializer(typeof(SaveGameData));
+    serializer.Serialize(stream, data);
+
+    // Close the file.
+    stream.Close();
+
+    // Dispose the container, to commit changes.
+    container.Dispose();
+}
+
+}}}
+
+= Cargar datos =
+{{{
+/// <summary>
+/// This method opens a file using System.IO classes and the
+/// TitleLocation property.  It presumes that a file named
+/// ship.dds has been deployed alongside the game.
+/// </summary>
+private static void DoOpenFile()
+{
+    FileStream file = OpenTitleFile(
+        "ship.dds", FileMode.Open, FileAccess.Read);
+    Console.WriteLine("File Size: " + file.Length);
+    file.Close();
+}
+private static FileStream OpenTitleFile(
+    string filename, FileMode mode, FileAccess access)
+{
+    string fullpath = Path.Combine(StorageContainer.TitleLocation, filename);
+    return File.Open(fullpath, mode, access);
+}
+
+}}}
