@@ -1,6 +1,7 @@
 #summary Cargar y guardar datos con XNA
 
-Ejemplo sacados de http://msdn.microsoft.com/en-us/library/bb199073.aspx
+Ejemplo sacados de http://msdn.microsoft.com/en-us/library/bb199073.aspx y http://www.ikisoftware.com/2009/02/26/xna-game-studio-como-guardar-y-cargar-saves-en-el-xbox360/
+
 = Abrir archivos =
 
 {{{
