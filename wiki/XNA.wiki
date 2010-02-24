@@ -26,6 +26,13 @@ http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.
   * http://creators.xna.com/en-US/tutorial/collision2dperpixel
   * http://xnaessentials.com/archive/2009/10/12/getting-started-with-xna-game-studio-3-hands-on-lab.aspx
   * http://black-byte.com/tutoriales/
+== RPG==
+  * http://xna.jtmbooks.com/rpgtutorials.html
+  * http://fatso784.wordpress.com/
+
+== Tiles y pantallas ==
+  * http://xna.jtmbooks.com/xnatutorials.html
+
 == Menús ==
   * [http://xnacommunity.codeplex.com/wikipage?title=Componente%20Menu&referringTitle=Componentes Componente Menú]
   * http://ferpect.codeplex.com/
