@@ -1,0 +1,10 @@
+#summary Documentando proyectos de C#
+
+= links =
+
+  * http://sieg-kyzer.blogspot.com/2008/06/documentar-con-c-para-visual-studio.html
+  * http://msdn.microsoft.com/es-es/library/3260k4x7(VS.80).aspx
+  * http://www.microsoft.com/downloads/details.aspx?FamilyId=E82EA71D-DA89-42EE-A715-696E3A4873B2&displaylang=en
+  * http://submain.com/products/ghostdoc.aspx
+  * http://urriellu.net/es/articles-software/csharp-documentation-xml.html
+
