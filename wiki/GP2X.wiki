@@ -1,0 +1,6 @@
+#summary Notas y links sobre gp2x
+
+= Links =
+  * http://gp2x-emulation.dcemu.co.uk/
+  * http://www.gp32spain.com/
+  * http://www.hardcore-gamer.net/tienda/product_info.php/products_id/7251
