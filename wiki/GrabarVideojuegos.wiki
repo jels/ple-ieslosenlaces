@@ -7,4 +7,4 @@
  * taksi http://taksi.sourceforge.net/
  * Gamecam http://www.planetgamecam.com/
 
-Para los juegos en 2D nos servirán programas de grabar escritorios:
+Para los juegos en 2D nos servirán programas de grabar escritorios: CrearScreencasts
