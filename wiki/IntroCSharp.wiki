@@ -1,0 +1,6 @@
+#summary Intro C#
+
+= Links =
+  * Escribir aplicaciones con Visual C# http://msdn.microsoft.com/es-es/library/aezdt881.aspx
+  * Guía de programación de C# http://msdn.microsoft.com/es-es/library/67ef8sbd.aspx
+  * Ejemplos de Visual C# http://msdn.microsoft.com/es-es/library/z9hsy596.aspx
