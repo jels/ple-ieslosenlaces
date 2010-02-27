@@ -3,7 +3,7 @@
  * http://www.labnol.org/software/download/how-to-record-computer-game-videos-for-youtube/2205/
 
  * wegame.com http://www.wegame.com/
- * fraps (comercial) http://www.fraps.com/download.php
+ * fraps ( ! comercial) http://www.fraps.com/download.php
  * taksi http://taksi.sourceforge.net/
  * Gamecam http://www.planetgamecam.com/
 
