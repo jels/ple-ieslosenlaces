@@ -9,3 +9,5 @@
   * http://urriellu.net/es/articles-software/csharp-documentation-xml.html
   * XML Comments Let You Build Documentation Directly From Your Visual Studio .NET Source Files http://msdn.microsoft.com/en-us/magazine/cc302121.aspx
   * C# Programming Tools http://msdn.microsoft.com/en-us/vcsharp/aa336818.aspx 
+
+  * http://mono-project.com/Generating_Documentation
