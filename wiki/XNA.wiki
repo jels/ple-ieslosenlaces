@@ -40,3 +40,5 @@ http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.
   * http://ferpect.codeplex.com/
 == Instaladores ==
   * Instalador en NSIS:  http://msdn.microsoft.com/es-es/ee923706.aspx
+  * http://www.arenawars.net/Blog/post/2008/04/10/Using-Nullsofts-Installer-System-%28NSIS%29-to-create-Setups-for-XNA-Games.aspx
+  * http://www.flatredball.com/frb/docs/index.php?title=Installing_Your_Game_%28Including_Prerequisites%29
