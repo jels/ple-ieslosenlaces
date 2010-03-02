@@ -34,6 +34,8 @@ http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.
   * http://geeks.ms/blogs/jbosch/archive/2010/02/27/xna-tetris.aspx
 == Tiles y pantallas ==
   * http://xna.jtmbooks.com/xnatutorials.html
+== 3D ==
+  * http://sabia.tic.udc.es/gc/XNA/index.html
 
 == Menús ==
   * [http://xnacommunity.codeplex.com/wikipage?title=Componente%20Menu&referringTitle=Componentes Componente Menú]
