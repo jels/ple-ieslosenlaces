@@ -1,0 +1,4 @@
+#summary Diseñar juegos
+
+= Links =
+  * http://www.eecs.tufts.edu/~kseyboth/Games/
