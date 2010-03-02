@@ -1,4 +1,5 @@
 #summary Diseñar juegos
+#labels Diseño,Games,Juegos
 
 = Links =
   * http://www.eecs.tufts.edu/~kseyboth/Games/
