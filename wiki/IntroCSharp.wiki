@@ -6,6 +6,9 @@
   * Guía de programación de C# http://msdn.microsoft.com/es-es/library/67ef8sbd.aspx
   * Ejemplos de Visual C# http://msdn.microsoft.com/es-es/library/z9hsy596.aspx
 
+  * http://www.microsoft.com/spanish/msdn/vstudio/Express/VCS/Docs/Howto/Console.mspx
+  * http://www.microsoft.com/spanish/msdn/vstudio/Express/VCS/Docs/Howto/Windows.mspx
+
   * http://www.mono-hispano.org/wiki/Manuales
   * http://es.wikibooks.org/wiki/Programaci%C3%B3n:C_sharp_NET
 
