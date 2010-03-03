@@ -1,0 +1,5 @@
+#summary One-sentence summary of this page.
+
+= links =
+
+* http://klucher.com/blog/video-support-in-xna-game-studio-3-1/
