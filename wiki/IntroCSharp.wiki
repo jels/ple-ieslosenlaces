@@ -9,6 +9,7 @@
   * http://www.microsoft.com/spanish/msdn/vstudio/Express/VCS/Docs/Howto/Console.mspx
   * http://www.microsoft.com/spanish/msdn/vstudio/Express/VCS/Docs/Howto/Windows.mspx
 
+  * http://elvex.ugr.es/decsai/csharp/language/index.xml
   * http://www.mono-hispano.org/wiki/Manuales
   * http://es.wikibooks.org/wiki/Programaci%C3%B3n:C_sharp_NET
 
