@@ -1,4 +1,5 @@
 #summary Sobre Xna
+<wiki:toc max_depth="2" />
 
 = Qué es XNA =
   * http://en.wikipedia.org/wiki/Microsoft_XNA
