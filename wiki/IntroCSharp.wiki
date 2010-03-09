@@ -13,5 +13,8 @@
   * http://www.mono-hispano.org/wiki/Manuales
   * http://es.wikibooks.org/wiki/Programaci%C3%B3n:C_sharp_NET
 
+== Libros ==
+  * http://www.robmiles.com/c-yellow-book/
+
 == XML ==
   * http://www.mono-hispano.org/wiki/Tutorial_de_XML_con_C_Sharp
