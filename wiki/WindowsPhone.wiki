@@ -1,13 +1,8 @@
-#summary One-sentence summary of this page.
+#summary Windows Phone 7
 
-= Introduction =
+= Algunos links =
+  * http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&displaylang=en
 
-Add your content here.
+  * http://blogs.msdn.com/microsoft_press/archive/2010/03/15/free-ebook-programming-windows-phone-7-series-draft-preview.aspx
 
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  * http://developer.windowsphone.com/windows-phone-7-series/
