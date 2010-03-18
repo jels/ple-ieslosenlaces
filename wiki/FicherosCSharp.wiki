@@ -1,7 +1,8 @@
 #summary trabajo con ficheros en C#
-
+<wiki:toc max_depth="3" />
 = Docs =
   * http://msdn.microsoft.com/es-es/library/2kzb96fk.aspx
+
 = Ejemplos =
 ==Datos de un fichero==
 {{{
