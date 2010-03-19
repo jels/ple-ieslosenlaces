@@ -14,4 +14,4 @@
 
 = Herramientas = 
   * http://us.pycon.org/media/2010/talkdata/PyCon2010/009/IronPython_Tools_for_Visual_Studio_Walkthrough.pdf
-  * http://ironpythonstudio.codeplex.com/
+  * http://ironpythonstudio.codeplex.com/   http://www.codeplex.com/IronPythonStudio
