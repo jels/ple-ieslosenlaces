@@ -2,7 +2,7 @@
 
 =Proyectos XNA=
 ||Daniel Espinosa || http://bitbucket.org/melow/proyecto-juego-xna/||[http://public.blu.livefilestore.com/y1put1_BYnk2cJtuXZ1TyeVjVHH7Vt-7NuyP26EbBZp2mvzeupEKKUsEcA69Nl3Ai3kUk1TJSflCv4g33GG1da2gA/videoRotacuadre.zip?download video]||
-||Ángel Monguilod ||http://bitbucket.org/angel.monguilod/juego-c/||http://www.megaupload.com/?d=XPB1SWKR|| ||
+||Ángel Monguilod ||http://bitbucket.org/angel.monguilod/juego-c/||[http://www.megaupload.com/?d=XPB1SWKR Video]|| 
 ||Andrés Rodes|| http://code.google.com/p/andresspaceinvaders/|| ||
 ||Raquel Garcia y Luis Bosque || http://code.google.com/p/come-cocos/|| ||
 ||Juan Carlos Sanchez|| http://bitbucket.org/juancarlos.sanchez/tenis|| ||
