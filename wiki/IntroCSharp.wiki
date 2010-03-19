@@ -13,6 +13,8 @@
   * http://www.mono-hispano.org/wiki/Manuales
   * http://es.wikibooks.org/wiki/Programaci%C3%B3n:C_sharp_NET
 
+  * C# y XNA http://www.microsoft.com/education/facultyconnection/bz/articles/articledetails.aspx?cid=2084&c1=en-bz&c2=BZ
+
   * Compilar desde la línea de comandos http://www.mundoprogramacion.com/net/dotnet/compilar_linea_comandos_msdos.aspx
   * Introducción a C# para programadores Java http://mundogeek.net/archivos/2009/05/08/introduccion-a-c-para-programadores-java/
 
