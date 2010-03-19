@@ -5,7 +5,7 @@
 ||Daniel Espinosa || http://bitbucket.org/melow/proyecto-juego-xna/||[http://public.blu.livefilestore.com/y1put1_BYnk2cJtuXZ1TyeVjVHH7Vt-7NuyP26EbBZp2mvzeupEKKUsEcA69Nl3Ai3kUk1TJSflCv4g33GG1da2gA/videoRotacuadre.zip?download video]|| [http://cid-75dd8d0c0c402fd3.skydrive.live.com/self.aspx/.Public/Rotacuadre/instalador%5E_RotaCuadre.exe Instalador]||
 ||Ángel Monguilod ||http://bitbucket.org/angel.monguilod/juego-c/||[http://www.megaupload.com/?d=XPB1SWKR Video]|| [http://www.megaupload.com/?d=VGWOX67H Instalador] ||
 ||Andrés Rodes|| http://code.google.com/p/andresspaceinvaders/|| || ||
-||Raquel Garcia y Luis Bosque || http://code.google.com/p/come-cocos/|| || ||
+||Raquel Garcia y Luis Bosque || http://code.google.com/p/come-cocos/ || [http://come-cocos.googlecode.com/svn/trunk/pacman.avi Vídeo] || [http://come-cocos.googlecode.com/svn/trunk/COMECOCOS%20instalador.rar Instalador] ||
 ||Juan Carlos Sanchez|| http://bitbucket.org/juancarlos.sanchez/tenis|| [http://www.youtube.com/watch?v=QL1TvYi-8mc Vídeo] || [http://cid-27c359aa2c1407ab.skydrive.live.com/browse.aspx/Proyecto%20Juego?uc=1 Instalador]||
 ||Alberto Arbona|| http://code.google.com/p/albertoarbona/|| || ||
-||Laura Vallés||http://code.google.com/p/lauravalles/|||| || ||
+||Laura Vallés||http://code.google.com/p/lauravalles/ ||  || ||
