@@ -4,7 +4,7 @@
   * http://www.connectionstrings.com
   * Conectarse a datos: http://msdn.microsoft.com/es-es/library/ms171886.aspx
 = Oracle =
-  * http://msdn.microsoft.com/es-es/library/xexk8kx3.aspx
+  * Cómo crear conexiones a bases de datos de Oracle (msdn): http://msdn.microsoft.com/es-es/library/xexk8kx3.aspx
   * http://www.oracle.com/technology/tech/windows/odpnet/index.html
   * http://www.connectionstrings.com/Providers/oracle-data-provider-for-net-odp-net
   * http://www.connectionstrings.com/oracle#12
