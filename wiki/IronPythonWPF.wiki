@@ -1,0 +1,7 @@
+#summary Intro IronPython WPF
+
+= Qué es WPF =
+  * http://en.wikipedia.org/wiki/Windows_Presentation_Foundation
+  * http://msdn.microsoft.com/es-es/library/ms754130.aspx
+
+= WPF con IronPython =
