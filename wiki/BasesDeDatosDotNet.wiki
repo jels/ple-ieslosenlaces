@@ -27,6 +27,7 @@ myConnection.Close();
   * http://sourceforge.net/projects/mysqldrivercs/
 
   * http://dev.mysql.com/tech-resources/articles/Beginning_MYSQL_5_with_Visual_Studio.NET_2005.pdf
+  * http://windows-programming.suite101.com/article.cfm/how_to_access_mysql_with_c
 
 {{{
 using MySql.Data.MySqlClient;
