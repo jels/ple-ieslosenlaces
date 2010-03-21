@@ -2,8 +2,7 @@
 <wiki:toc max_depth="3" />
 = Links = 
   * http://www.connectionstrings.com
-  * 
-
+  * Orígenes de datos http://msdn.microsoft.com/es-es/library/w4dd7z6t.aspx
 
 = Oracle =
   * http://www.oracle.com/technology/tech/windows/odpnet/index.html
