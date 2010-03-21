@@ -37,3 +37,5 @@ myConnection.Open();
 //execute queries, etc
 myConnection.Close();
 }}}
+== Ejemplo ==
+http://www.csharphelp.com/2006/08/opening-mysql-database-with-c/
