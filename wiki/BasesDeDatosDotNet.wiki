@@ -25,3 +25,14 @@ myConnection.Close();
   * http://www.mysql.com/downloads/connector/net/
   * http://www.elguille.info/colabora/puntoNET/versae_MySQLNET.htm
   * http://sourceforge.net/projects/mysqldrivercs/
+
+  * http://dev.mysql.com/tech-resources/articles/Beginning_MYSQL_5_with_Visual_Studio.NET_2005.pdf
+
+{{{
+using MySql.Data.MySqlClient;
+MySqlConnection myConnection = new MySqlConnection();
+myConnection.ConnectionString = myConnectionString;
+myConnection.Open();
+//execute queries, etc
+myConnection.Close();
+}}}
