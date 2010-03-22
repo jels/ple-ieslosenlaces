@@ -6,8 +6,15 @@
 Windows Forms, construida sobre User32 era la librería usada hasta ahora para construir interfaces.
 WPF es una nueva librería de .NET para interfaces . Está construida sobre DirectX. Es más moderna y flexible. Permite más efectos (transparencias, gráficos vectoriales, 3D, animación ...) Las interfaces se pueden crear también con un dialectode XML llamado eXtensible Application Markup Language: XAML. Los diseñadores pueden crear los interfaces con herramientas como Expression Blend (o Lunar Eclipse en Mono).
 
+==Ensamblados de WPF==
+{{{
+PresentationFramework.dll
+PresentationCore.dll
+WindowsBase.dll
+milcore.dll
+WindowsCodecs.dll
+}}}
 ==Namespaces de WPF==
-
 {{{
 System.Windows
 System.Windows.Controls
