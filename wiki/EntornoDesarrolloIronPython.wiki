@@ -9,3 +9,5 @@ http://monodevelop.com/Developers/Tasks/Language_Bindings/IronPython
 = !SharpDevelop = 
   * http://www.codeplex.com/SharpDevelop
   * http://www.icsharpcode.net/OpenSource/SD/
+= Eclipse y !PyDev =
+  * http://pydev.org/index.html
