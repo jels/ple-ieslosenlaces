@@ -8,7 +8,8 @@ WPF es una nueva librería de .NET para interfaces . Está construida sobre Dire
 
 ==Namespaces de WPF==
 
-{{{System.Windows
+{{{
+System.Windows
 System.Windows.Controls
 System.Windows.Documents
 System.Windows.Media
