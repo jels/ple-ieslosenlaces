@@ -1,5 +1,7 @@
 #summary Entornos de desarrollo para IronPython
 
+Un buen resumen: http://www.voidspace.org.uk/ironpython/tools-and-ides.shtml
+
 = Visual Studio =
 Vía IronPython Studio http://www.codeplex.com/IronPythonStudio
 = !MonoDevelop = 
