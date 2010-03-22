@@ -14,6 +14,10 @@
   * http://www.gp32spain.com
   * http://www.gp32x.com/
 = SDK oficial =
+  * Descarga: SDK Oficial GP2X Wiz para Windows (78.26 MB) http://www.gp32spain.com/foros/downloads.php?do=file&id=2549
+  * Descarga: SDK Oficial GP2X Wiz para Linux (98.43 MB) http://www.gp32spain.com/foros/downloads.php?do=file&id=2550
+  * Fuente: http://www.gpain.com
+  * Web oficial: http://dev.fungp.co.kr/
   * http://www.gp32spain.com/foros/showthread.php?s=&threadid=72174
 = Comprar = 
   * http://www.hardcore-gamer.net/tienda/product_info.php/products_id/7251
