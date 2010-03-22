@@ -4,3 +4,14 @@
   * http://gp2x-emulation.dcemu.co.uk/
   * http://www.gp32spain.com/
   * http://www.hardcore-gamer.net/tienda/product_info.php/products_id/7251
+
+=  Doc =
+== wikis ==
+  * http://www.gp2xwiz.co.uk
+  * http://wiki.gp32spain.com/
+  * http://wiki.gp2x.org/
+== Comunidades == 
+  * www.gp32spain.com
+  * www.gp32x.com/
+= SDK oficial =
+http://www.gp32spain.com/foros/showthread.php?s=&threadid=72174
