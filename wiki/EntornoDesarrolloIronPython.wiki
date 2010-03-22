@@ -1,0 +1,8 @@
+#summary Entornos de desarrollo para IronPython
+
+= Visual Studio =
+Vía IronPython Studio http://www.codeplex.com/IronPythonStudio
+= MonoDevelop = 
+http://monodevelop.com/Developers/Tasks/Language_Bindings/IronPython
+= SharpDevelop = 
+http://www.codeplex.com/SharpDevelop
