@@ -2,7 +2,8 @@
 
 = Visual Studio =
 Vía IronPython Studio http://www.codeplex.com/IronPythonStudio
-= MonoDevelop = 
+= !MonoDevelop = 
 http://monodevelop.com/Developers/Tasks/Language_Bindings/IronPython
-= SharpDevelop = 
-http://www.codeplex.com/SharpDevelop
+= !SharpDevelop = 
+  * http://www.codeplex.com/SharpDevelop
+  * http://www.icsharpcode.net/OpenSource/SD/
