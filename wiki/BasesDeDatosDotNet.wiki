@@ -11,6 +11,38 @@ Command
 DataReader
 DataAdapter
 }}}
+= Ejemplo Postgresql =
+{{{
+import clr
+clr.AddReference('Npgsql')
+import Npgsql as pgslql
+
+connection = pgsql.NpgsqlConnection('server=localhost; database=miBase; user id=postgres; password=1234')
+
+connection.Open()
+
+command = connection.CreateCommand()
+command.CommandText = "insert into person (name) values ('Pepe Pérez')"
+command.ExecuteNonQuery()
+
+command.CommandText("select name from person where id = 1")
+command.ExecuteScalar()
+
+command.CommandText("select name from person")
+lector = command.ExecuteReader()
+lector.HasRows
+lector.FieldCount
+
+while lector.Read():
+    print lector['id'], lector['name']
+
+
+from System.Data import DataSet
+
+dataset = DataSet()
+adapter = pgsql.NpgsqlDataAdapter()
+
+}}}
 = Oracle =
   * Cómo crear conexiones a bases de datos de Oracle (msdn): http://msdn.microsoft.com/es-es/library/xexk8kx3.aspx
   * http://www.oracle.com/technology/tech/windows/odpnet/index.html
