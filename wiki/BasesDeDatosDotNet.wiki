@@ -3,6 +3,13 @@
 = Links = 
   * http://www.connectionstrings.com
   * Conectarse a datos: http://msdn.microsoft.com/es-es/library/ms171886.aspx
+=Clases principales en un proveedor de datos=
+{{{
+Connection
+Command
+DataReader
+DataAdapter
+}}}
 = Oracle =
   * Cómo crear conexiones a bases de datos de Oracle (msdn): http://msdn.microsoft.com/es-es/library/xexk8kx3.aspx
   * http://www.oracle.com/technology/tech/windows/odpnet/index.html
