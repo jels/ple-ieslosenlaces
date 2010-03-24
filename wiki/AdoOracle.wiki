@@ -20,15 +20,23 @@ myConnection.Close();
 == Ejemplo completo == 
 {{{
 import clr
+
 clr.AddReference('Oracle.DataAccess')
 import Oracle.DataAccess.Client as oracledb
 
-cadena = "User Id=dai;Password=tiger; Data Source=172.30.6.190/enlaces5"
+cadena = "User Id=dai20;Password=tiger; Data Source=172.30.6.190/enlaces5"
 con = oracledb.OracleConnection(cadena)
 con.Open()
 command = con.CreateCommand()
 command.CommandText = "select * from coches"
 lector = command.ExecuteReader()
-lector.HasRows
-lector.FieldCount
+print lector.HasRows
+num_campos = lector.FieldCount
+while lector.Read():
+    for i in range(num_campos):
+        nom_campo = lector.GetName(i)
+        print nom_campo, lector.GetFieldType(i), '-->', lector[nom_campo], '(',lector[i],')'
+    print
+lector.Close()
+con.Close()
 }}}
