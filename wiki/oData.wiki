@@ -1,0 +1,6 @@
+#summary Sobre The Open Data Protocol
+
+=The Open Data Protocol=
+== Links ==
+  * http://www.odata.org/
+  * http://tirania.org/blog/archive/2010/Mar-22.html
