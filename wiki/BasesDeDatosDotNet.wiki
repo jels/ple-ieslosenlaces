@@ -1,9 +1,12 @@
 #summary Acceso a bases de datos desde .NET
 <wiki:toc max_depth="3" />
-= Links = 
-  * http://www.connectionstrings.com
+= ADO .NET = 
+  * http://es.wikipedia.org/wiki/ADO.NET
   * Conectarse a datos: http://msdn.microsoft.com/es-es/library/ms171886.aspx
   * http://www.scribd.com/doc/289168/Sesion-05-ADONet
+
+  * http://www.connectionstrings.com
+
 =Clases principales en un proveedor de datos=
 {{{
 Connection
