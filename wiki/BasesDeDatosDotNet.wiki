@@ -11,6 +11,7 @@ Command
 DataReader
 DataAdapter
 }}}
+
 = Ejemplo Postgresql =
 {{{
 import clr
@@ -42,6 +43,29 @@ from System.Data import DataSet
 dataset = DataSet()
 adapter = pgsql.NpgsqlDataAdapter()
 
+}}}
+= Inyección de código =
+Mucho cuidado con el paso de parámetros. Hay que evitar *SQL injection*.
+
+{{{
+# PROHIBIDO HACER ESTO
+usuarios = ['Ana', 'María', 'Juan']
+sentencia_insert = "insert into agenda (nombre) values ('%s')"
+for u in usuarios:
+    command.CommandText = sentencia_insert % u
+    command.ExecuteNonQuery()
+      
+
+}}}
+Imaginad que nos colocan como usuario {{{"); DROP TABLE presupuestos CASCADE;"}}}
+== Uso de parámetros ==
+Por seguridad, eficiencia, 
+{{{
+command = conexion.CreateCommand()
+command.CommandText = 'insert into agenda (nombre) values (:nombre)'
+for u in usuarios:
+    command.Parameters['nombre'].Value = u
+    command.ExecuteNonQuery()
 }}}
 = Ejemplos =
   * AdoOracle 
