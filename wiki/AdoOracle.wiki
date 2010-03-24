@@ -18,6 +18,8 @@ myConnection.Close();
 }}}
 
 == Ejemplo completo == 
+http://download-west.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm
+
 {{{
 import clr
 
