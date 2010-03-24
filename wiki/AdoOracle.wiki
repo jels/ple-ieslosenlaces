@@ -43,3 +43,34 @@ while lector.Read():
 lector.Close()
 con.Close()
 }}}
+
+
+{{{
+import clr
+
+clr.AddReference('Oracle.DataAccess')
+clr.AddReference('System.Data')
+import Oracle.DataAccess.Client as oracledb
+from System.Data import DataSet
+
+dataset = DataSet()
+adaptador = oracledb.OracleDataAdapter()
+
+cadena = "User Id=dai20;Password=tiger; Data Source=172.30.6.190/enlaces5"
+con = oracledb.OracleConnection(cadena)
+con.Open()
+command = adaptador.SelectCommand = con.CreateCommand()
+command.CommandText = "select * from coches"
+
+adaptador.Fill(dataset)
+print 'Num. tablas del dataset', dataset.Tables.Count
+tabla = dataset.Tables[0]
+print 'Nombre de la tabla', tabla.TableName
+print 'Num. columnas', tabla.Columns.Count
+for col in tabla.Columns:
+    print col.ColumnName, col.DataType.Name
+print 'Num. filas', tabla.Rows.Count
+# selección primera fila
+fila = tabla.Rows[0]
+print 'Primera fila', fila[0], fila[1], fila[2]
+}}}
