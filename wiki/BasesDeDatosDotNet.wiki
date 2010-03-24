@@ -67,6 +67,45 @@ for u in usuarios:
     command.Parameters['nombre'].Value = u
     command.ExecuteNonQuery()
 }}}
+= Búsquedas = 
+== Un solo valor ==
+{{{
+>>> command.CommandText = "select count(*) from agenda"
+>>> command.ExecuteScalar()
+10L
+>>> command.CommandText = "select nombre from agenda where id=1"
+'Carmen'
+}}}
+Si la consulta devuelve varios valores, ExecuteScalar sólo devuelve el primero.
+== Varios valores ==
+Para recuperar varios valores necesitamos un *DataReader*
+{{{
+>>> reader = command.ExecuteReader()
+}}}
+Ver ejemplo en AdoOracle 
+
+== Transascciones == 
+Propiedades transacción: *ACID*: 
+  * Atomicidad: todo o nada
+  * Consistencia: No se puede dejar la BD en un estado inconsistente
+  * 'Isolation': Otras transacciones no pueden ver los cambios de esta transacción hasta que no se hayan confirmado
+  * Durabilidad: Una vez confirmada, los cambios se aplicarán incluso ante fallos del sistema.
+
+{{{
+transaccion = conexion.BeginTransaction()
+command = conexion.CreateCommand()
+...
+command.Transaction = transaccion
+command.ExecuteNonQuery()
+transaccion.Commit()
+}}}
+Se puede cancelar con {{{transaccion.Rollback()}}}
+
+= !DataSets =
+El proposito de un !DataAdapter es conectar la capa del Data Provider con un !DataSet
+
+Los !DataReaders son limitados: sólo lectura y sólo adelante. Los !DataSets no son dependientes de la Base de Datos.
+
 = Ejemplos =
   * AdoOracle 
   * AdoMySql
