@@ -23,5 +23,8 @@ System.Windows.Media
 System.Windows.Shapes
 System.Windows.Markup
 }}}
-
+== Controles == 
+http://msdn.microsoft.com/es-es/library/system.windows.controls.aspx
+== Ejemplos ==
+  * Cómo enlazar a un origen de datos ADO.NET: http://msdn.microsoft.com/es-es/library/ms752057.aspx
 = WPF con IronPython = 
