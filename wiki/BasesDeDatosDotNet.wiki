@@ -43,22 +43,8 @@ dataset = DataSet()
 adapter = pgsql.NpgsqlDataAdapter()
 
 }}}
-= Oracle =
-  * Cómo crear conexiones a bases de datos de Oracle (msdn): http://msdn.microsoft.com/es-es/library/xexk8kx3.aspx
-  * http://www.oracle.com/technology/tech/windows/odpnet/index.html
-  * http://www.connectionstrings.com/Providers/oracle-data-provider-for-net-odp-net
-  * http://www.connectionstrings.com/oracle#12
-
-  * http://www.oracle.com/technology/software/tech/windows/odpnet/install1110720.html
-
-{{{
-using Oracle.DataAccess.Client;
-OracleConnection myConnection = new OracleConnection();
-myConnection.ConnectionString = myConnectionString;
-myConnection.Open();
-//execute queries, etc
-myConnection.Close();
-}}}
+= Ejemplos =
+  * AdoOracle 
 
 = MySQL =
   * http://www.connectionstrings.com/mysql
