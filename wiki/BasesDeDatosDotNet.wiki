@@ -84,7 +84,7 @@ Para recuperar varios valores necesitamos un *DataReader*
 }}}
 Ver ejemplo en AdoOracle 
 
-== Transascciones == 
+== Transacciones == 
 Propiedades transacción: *ACID*: 
   * Atomicidad: todo o nada
   * Consistencia: No se puede dejar la BD en un estado inconsistente
@@ -101,7 +101,11 @@ transaccion.Commit()
 }}}
 Se puede cancelar con {{{transaccion.Rollback()}}}
 
-= !DataSets =
+= !DataSets = 
+== ¿Qué es un !DataSet? ==
+_El DataSet de ADO.NET es una representación de datos residente en memoria que proporciona un modelo de programación relacional coherente independientemente del origen de datos que contiene._ http://msdn.microsoft.com/es-es/library/ss7fbaez%28VS.80%29.aspx
+
+== Ejemplo ==
 Ver ejemplo en AdoOracle.
 
 El proposito de un !DataAdapter es conectar la capa del Data Provider con un !DataSet
