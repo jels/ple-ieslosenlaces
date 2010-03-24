@@ -102,9 +102,13 @@ transaccion.Commit()
 Se puede cancelar con {{{transaccion.Rollback()}}}
 
 = !DataSets =
+Ver ejemplo en AdoOracle.
+
 El proposito de un !DataAdapter es conectar la capa del Data Provider con un !DataSet
 
-Los !DataReaders son limitados: sólo lectura y sólo adelante. Los !DataSets no son dependientes de la Base de Datos.
+Los !DataReaders son limitados: sólo lectura y sólo adelante. Los !DataSets no son dependientes de la Base de Datos. 
+
+Recursos avanzados: {{{DataSet.Update}}}, {{{DataRelations}}}
 
 = Ejemplos =
   * AdoOracle 
