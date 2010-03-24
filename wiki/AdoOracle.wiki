@@ -17,8 +17,9 @@ myConnection.Open();
 myConnection.Close();
 }}}
 
-== Ejemplo completo == 
-http://download-west.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm
+== Ejemplo completo ==
+  * http://download-west.oracle.com/docs/cd/B19306_01/win.102/b14307/OracleDataAdapterClass.htm
+  * http://download-west.oracle.com/docs/cd/B25329_01/doc/appdev.102/b25312/building_odp.htm
 
 {{{
 import clr
