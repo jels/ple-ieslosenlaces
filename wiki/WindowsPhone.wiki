@@ -6,3 +6,5 @@
   * http://blogs.msdn.com/microsoft_press/archive/2010/03/15/free-ebook-programming-windows-phone-7-series-draft-preview.aspx
 
   * http://developer.windowsphone.com/windows-phone-7-series/
+
+  * Emulador de Windows Phone 7 Series desbloqueado   http://geeks.ms/blogs/jbosch/archive/2010/03/23/ot-emulador-de-windows-phone-7-series-desbloqueado.aspx
