@@ -1,0 +1,7 @@
+#summary Intro WPF
+
+
+= Notas =
+  * http://www.codeplex.com/wikipage?ProjectName=wpf&title=Tips%20%26%20Tricks&referringTitle=Home
+  * http://www.codeproject.com/KB/WPF/WPFDataGridExamples.aspx
+ 
