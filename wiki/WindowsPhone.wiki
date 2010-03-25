@@ -8,3 +8,4 @@
   * http://developer.windowsphone.com/windows-phone-7-series/
 
   * Emulador de Windows Phone 7 Series desbloqueado   http://geeks.ms/blogs/jbosch/archive/2010/03/23/ot-emulador-de-windows-phone-7-series-desbloqueado.aspx
+    * Instalación http://forum.xda-developers.com/showpost.php?p=5921008&postcount=270
