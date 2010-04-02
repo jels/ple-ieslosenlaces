@@ -1,5 +1,6 @@
 #summary Windows Phone 7
 
+<wiki:toc max_depth="3" />
 = Algunos links =
   * http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&displaylang=en
 
