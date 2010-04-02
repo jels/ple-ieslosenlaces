@@ -13,6 +13,9 @@
   * Emulador de Windows Phone 7 Series desbloqueado   http://geeks.ms/blogs/jbosch/archive/2010/03/23/ot-emulador-de-windows-phone-7-series-desbloqueado.aspx
     * Instalación http://forum.xda-developers.com/showpost.php?p=5921008&postcount=270
 
+= Windows Phone MIX10 presentations =
+ * http://blogs.msdn.com/shawnhar/archive/2010/03/19/windows-phone-mix10-presentations.aspx
+
 = Building a High Performance 3D Game for Windows Phone= 
   * Charla Mix10: http://live.visitmix.com/MIX10/Sessions/CL22
   * Demo: http://creators.xna.com/en-US/minigame/reachgraphicsdemo
