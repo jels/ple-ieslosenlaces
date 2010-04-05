@@ -1,0 +1,12 @@
+#summary Ejercicio Municipios con IronPython
+
+
+= Ejercicio con Bases de Datos =
+
+== Objetivos ==
+  * Implementar la clase siguiente utilizando Ado.NET. Podemos utilizar Oracle, MySql, Sqlite ...
+  * Los datos se sacarán de los fichero del repositorio: http://code.google.com/p/ple-ieslosenlaces/source/browse/branches/curso0809/dbapi/ej_municipios/
+  * Para los gráficos podemos utilizar los ejemplos citados en http://www.ironpython.info/index.php/Multi-colored_Bar_Chart_with_ZedGraph o http://www.ironpython.info/index.php/Pie_Chart_with_ZedGraph
+  * Crear una función que utilice la clase para generar la información que buscamos.
+  
+http://ple-ieslosenlaces.googlecode.com/svn/branches/curso0809/dbapi/ej_municipios/poblacion.png
