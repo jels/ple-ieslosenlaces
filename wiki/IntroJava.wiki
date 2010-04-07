@@ -100,3 +100,7 @@ JavaBucles
 http://www.chuidiang.com/chuwiki/index.php?title=Lectura_y_Escritura_de_Ficheros_en_Java
 = Swing =
   JavaSwing
+= Ejercicios = 
+  * http://www.jtech.ua.es/plj/ejercicios.htm
+  * http://math.hws.edu/javanotes/c6/exercises.html
+  * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:practica1
