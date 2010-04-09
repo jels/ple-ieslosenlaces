@@ -17,4 +17,5 @@ myConnection.Open();
 myConnection.Close();
 }}}
 == Ejemplo ==
-http://www.csharphelp.com/2006/08/opening-mysql-database-with-c/
+  * Ej. C#: http://www.csharphelp.com/2006/08/opening-mysql-database-with-c/
+  * Ej. ironpython: http://d.hatena.ne.jp/akiramei/20060129/p1
