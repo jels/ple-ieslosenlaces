@@ -1,6 +1,7 @@
 #summary Ejercicios Jython
 
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="2" />
+= Ejercicios Jython =
 
 Traduce a Jython los siguientes ejemplos en Java
 == Conversión temperatura ==
