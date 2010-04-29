@@ -30,6 +30,8 @@ for linea in cursor:
     print linea[0]
 }}}
 
-= Ejemplos para trabajar con MySql =
+= Ejemplos para trabajar con !MySql =
   * http://dev.mysql.com/doc/index-other.html
     * http://downloads.mysql.com/docs/world.sql.zip
+= Doc !MySql = 
+  * http://www.slideshare.net/ajdgeniz/mysql-for-developers
