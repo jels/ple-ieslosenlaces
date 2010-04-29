@@ -1,8 +1,8 @@
 #summary Ejemplo Acceso MySql Jython
 
 =Requisitos=
-* Instalar el conector de mysql para java: http://dev.mysql.com/downloads/connector/j/
-* Configurar entorno (CLASSPATH o librerías de eclipse)
+  * Instalar el conector de mysql para java: http://dev.mysql.com/downloads/connector/j/
+  * Configurar entorno (CLASSPATH o librerías de eclipse)
 
 = Ejemplo código=
 
