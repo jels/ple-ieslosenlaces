@@ -22,7 +22,7 @@ http://wiki.python.org/jython/JythonEditors
   * [http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-5548&yr=2008&track=tools Database Development with Jython, Hibernate, and SQLAlchemy]
   * [http://www.linux-magazine.es/issue/52/050-053PythonLM52.pdf Jython a la carga]
 == Links del wiki ==
-  * zxJDBCMySql
+  * [zxJDBCMySql]
   * MySqlJython
   * JythonJdbc
   * JdbcSqlite
