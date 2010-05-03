@@ -1,4 +1,5 @@
 #summary Introducción a la programación con jython
+<wiki:toc max_depth="2" />
 
 = Intro =
   * http://www.jython.org/Project/
@@ -16,3 +17,7 @@
 
 = Editores =
 http://wiki.python.org/jython/JythonEditors
+
+= Bases de Datos =
+  * [http://developers.sun.com/learning/javaoneonline/j1sessn.jsp?sessn=TS-5548&yr=2008&track=tools Database Development with Jython, Hibernate, and SQLAlchemy]
+  * [http://www.linux-magazine.es/issue/52/050-053PythonLM52.pdf Jython a la carga]
