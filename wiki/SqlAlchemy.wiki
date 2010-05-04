@@ -25,5 +25,5 @@ easy_install SQLAlchemy
 = Primeros pasos =
 {{{
 from slqalchemy import *
-db = create_engine('mysql://username:password@localhost/mydb'
+db = create_engine('mysql+zxjdbc://username:password@localhost/mydb'
 }}}
