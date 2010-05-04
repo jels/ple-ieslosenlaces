@@ -23,7 +23,7 @@ easy_install SQLAlchemy
   * http://www.ibm.com/developerworks/aix/library/au-sqlalchemy/
   * http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html
   * http://cleverdevil.org/elixirtalk/slides.pdf
-  * http//files.meetup.com/127119/EssentialSQLAlchemy.pdf
+  * http://files.meetup.com/127119/EssentialSQLAlchemy.pdf
 = Primeros pasos =
 {{{
 from slqalchemy import *
