@@ -17,6 +17,8 @@ easy_install SQLAlchemy
 0.6.0
 }}}
 == Doc ==
+  * http://www.sqlalchemy.org/docs/
+  * http://www.sqlalchemy.org/trac/wiki/UsageRecipes
   * http://www.ibm.com/developerworks/aix/library/au-sqlalchemy/
   * http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html
 = Primeros pasos =
