@@ -14,7 +14,7 @@ http://java.sun.com/docs/books/tutorial/uiswing/layout/using.html
 ArbolDeClases
 
 = Ejemplos de código =
-  * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/ejemplo2.html
+  * http://www.dcc.uchile.cl/~lmateu/CC60H/Trabajos/edavis/swing.html
   * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:practica3
   * http://www.chuidiang.com/java/mysql/resultset_jtable.php
 
