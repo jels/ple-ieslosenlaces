@@ -9,7 +9,8 @@
   * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
 = Intro =
 == Layouts ==
-http://java.sun.com/docs/books/tutorial/uiswing/layout/using.html
+  * http://java.sun.com/docs/books/tutorial/uiswing/layout/using.html
+  * http://www.javafaq.nu/java-bookpage-15-2.html
 == Árbol de clases ==
 ArbolDeClases
 
