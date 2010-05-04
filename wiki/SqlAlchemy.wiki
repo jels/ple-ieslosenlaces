@@ -22,6 +22,7 @@ easy_install SQLAlchemy
   * http://jythonpodcast.hostjava.net/jythonbook/en/1.0/DatabasesAndJython.html#object-relational-mapping
   * http://www.ibm.com/developerworks/aix/library/au-sqlalchemy/
   * http://www.rmunn.com/sqlalchemy-tutorial/tutorial.html
+  * http://cleverdevil.org/elixirtalk/slides.pdf
 = Primeros pasos =
 {{{
 from slqalchemy import *
