@@ -29,3 +29,6 @@ easy_install SQLAlchemy
 from slqalchemy import *
 db = create_engine('mysql+zxjdbc://username:password@localhost/mydb'
 }}}
+
+= Ejemplo completo =
+  * http://code.google.com/p/ple-ieslosenlaces/source/browse/trunk/jython/mundo_sqlalchemy.py
