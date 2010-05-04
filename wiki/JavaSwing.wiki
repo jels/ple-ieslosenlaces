@@ -2,11 +2,12 @@
 <wiki:toc />
 
 = Documentación =
-  * http://www.scribd.com/doc/7545519/Manual-JAVA-Swing
-  * http://java.sun.com/docs/books/tutorial/uiswing/TOC.html
-  * http://java.sun.com/docs/books/tutorial/ui/features/components.html
-  * http://ji.ehu.es/LMAlonso/SW/java/Bib/tutorjava/html/ui/index.html
-  * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
+  * Tutoriales oficiales de Java: http://java.sun.com/docs/books/tutorial/uiswing/TOC.html
+  * Guía visual de componentes: http://java.sun.com/docs/books/tutorial/ui/features/components.html
+=== Otros tutoriales ===
+    * http://www.scribd.com/doc/7545519/Manual-JAVA-Swing
+    * http://ji.ehu.es/LMAlonso/SW/java/Bib/tutorjava/html/ui/index.html
+    * http://www.fdi.ucm.es/profesor/balta/traspasjava/swinggui.pdf
 = Intro =
 == Layouts ==
   * http://java.sun.com/docs/books/tutorial/uiswing/layout/using.html
