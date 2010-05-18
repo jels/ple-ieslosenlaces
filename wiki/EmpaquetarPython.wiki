@@ -1,0 +1,3 @@
+#summary Crear paquetes python
+=Doc=
+  * http://guide.python-distribute.org/
