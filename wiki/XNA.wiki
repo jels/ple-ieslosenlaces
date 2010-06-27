@@ -10,6 +10,8 @@
   * http://msdn.microsoft.com/en-us/library/bb200104.aspx
   * http://www.lulu.com/product/descargar/a-simple-introduction-to-game-programming-with-c%23-and-xna-31/5438606
 
+  * The XDSK – (XNA Developer’s Survival Kit): http://www.nelxon.com/journal/entry-1002/xdsk/
+
 == Foros en español ==
   * http://social.msdn.microsoft.com/Forums/es-ES/xnaes/threads
   * http://www.dotnetclubs.com/forums/44.aspx
