@@ -20,4 +20,7 @@ python setup.py install
 = Ampliación =
   * http://code.google.com/p/django-command-extensions/ DjangoExtensions
 
-PrimerosPasosDjango
+= Desarrollo de aplicaciones =
+  * PrimerosPasosDjango
+  * Convenciones Proyectos Django: http://django.es/blog/convenciones-proyecto-django/
+  * http://django.es/blog/convenciones-aplicaciones-reusables-django/
