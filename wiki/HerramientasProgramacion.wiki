@@ -1,0 +1,4 @@
+#Herramientas y técnicas para programar
+
+= Freelance - RoR =
+* http://www.smashingmagazine.com/2010/10/26/successful-freelancing-with-ruby-on-rails-workflow-techniques-and-tools/
