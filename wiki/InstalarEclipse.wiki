@@ -14,9 +14,7 @@ $ sudo aptitude install eclipse-pydev
 
 = Desde la web =
   * http://www.eclipse.org/downloads/  --> Eclipse IDE for Java Developers (85 MB)
-  * Si se quiere poner en español, descargar language-packs de http://download.eclipse.org/technology/babel/babel_language_packs/ (al menos BabelLanguagePack-eclipse-es_3.4.0)
-  * Descomprimir archivos
-  * Ejecutar *eclipse* y configurar el *workspace*.
+  * Si se quiere poner en español, añade el sitio de i18n a los sites de **update**: http://download.eclipse.org/technology/babel/update-site/R0.8.0/helios
 
 
 = Pydev=
@@ -30,8 +28,15 @@ Documentación:
   * http://tomatesasesinos.com/tutoriales/pythonEnEclipse.html
 
 = Instalar subclipse =
+(para usar subversion)
   * http://subclipse.tigris.org/install.html
   * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
+
+= Instalar EclipseMercurial =
+(para usar mercurial)
+  * sitio: http://javaforge.com/project/HGE
+  * site para añadir: http://cbes.javaforge.com/update
+
 
 
 = Chuleta de Pablo =
