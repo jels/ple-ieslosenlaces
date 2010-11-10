@@ -32,7 +32,7 @@ Documentación:
   * http://subclipse.tigris.org/install.html
   * http://www.migue.org/diario/2007/08/cmo-usar-subversion-en-eclipse.html
 
-= Instalar EclipseMercurial =
+= Instalar !EclipseMercurial =
 (para usar mercurial)
   * sitio: http://javaforge.com/project/HGE
   * site para añadir: http://cbes.javaforge.com/update
