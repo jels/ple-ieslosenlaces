@@ -10,3 +10,4 @@
 = Ideas =
   * Control de aplicaciones
   * Uso como pizarra digital
+  * http://www.crunchgear.com/2010/11/16/using-the-kinect-to-make-any-surface-multi-touch/
