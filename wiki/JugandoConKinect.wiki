@@ -1,0 +1,11 @@
+#summary Ideas para proyectos con kinect
+
+= Qué es kinect =
+
+  * http://www.xbox.com/es-ES/Xbox360/Accessories/Kinect/
+  * http://openkinect.org/wiki/Main_Page
+
+
+= Ideas =
+  * Control de aplicaciones
+  * Uso como pizarra digital
