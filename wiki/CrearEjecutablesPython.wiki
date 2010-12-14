@@ -16,6 +16,7 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
   * Específico pygame:
     * http://www.pygame.org/wiki/Pygame2exe
     * http://www.pygame.org/project/589/
+    * Un ejemplo: http://code.google.com/p/pybreakout/source/browse/trunk/src/pybreakout/setup.py
 
 
 
