@@ -10,6 +10,9 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
 
 == py2exe ==
   * http://www.pygame.org/wiki/Pygame2exe
+  * http://mundogeek.net/archivos/2008/09/23/distribuir-aplicaciones-python
+
+
 === Wrappers ===
 _py2exe me está dando problemas con las fuentes_
   * http://www.pygame.org/project-PySetup-589-.html
