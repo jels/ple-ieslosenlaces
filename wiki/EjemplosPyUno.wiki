@@ -5,6 +5,8 @@
 Lanzar el proceso de openoffice:
 {{{
 soffice "-accept=socket,host=localhost,port=2002;urp;"
+
+openoffice.org -accept="socket,host=localhost,port=2002;urp;StarOffice.ServiceManager"
 }}}
 
 
