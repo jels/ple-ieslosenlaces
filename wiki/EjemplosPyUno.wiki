@@ -32,5 +32,5 @@ document.storeAsURL("file:///home/lm/test.doc", (myProps,) )
 }}}
 
 == links ==
-
+  * http://udk.openoffice.org/python/python-bridge.html
   * http://udk.openoffice.org/python/samples/ooextract.py
