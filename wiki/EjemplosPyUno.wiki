@@ -2,6 +2,12 @@
 
 = Ejemplo: Convertir de Ms Word a docx =
 
+Lanzar el proceso de openoffice:
+{{{
+soffice "-accept=socket,host=localhost,port=2002;urp;"
+}}}
+
+
 {{{
 import uno
 local = uno.getComponentContext()
@@ -14,6 +20,8 @@ doc = desktop.loadComponentFromURL("file:///home/lm/test.doc" ,"_blank", 0, ())
 doc.storeAsURL("file:///home/lm/test.odf", () )
 }}}
 
+
+
 {{{
 # guardar como word
 from com.sun.star.beans import PropertyValue 
@@ -22,3 +30,7 @@ myProps.Name="FilterName"
 myProps.Value="MS Word 97" 
 document.storeAsURL("file:///home/lm/test.doc", (myProps,) )
 }}}
+
+== links ==
+
+  * http://udk.openoffice.org/python/samples/ooextract.py
