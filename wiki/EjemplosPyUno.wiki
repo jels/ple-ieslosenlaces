@@ -1,6 +1,6 @@
 #summary Ejemplos de uso de PyUno
 
-= Ejemplo: Convertir de Ms Word a docx =
+= Ejemplo: Convertir de Ms Word a odf =
 
 Lanzar el proceso de openoffice:
 {{{
