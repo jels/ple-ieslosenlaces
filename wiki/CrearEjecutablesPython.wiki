@@ -30,3 +30,10 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
 _py2exe me está dando problemas con las fuentes_
   * http://www.pygame.org/project-PySetup-589-.html
   * http://www.moviepartners.com/blog/utilities/ppb/
+
+== nsis ==
+  * http://nsis.sourceforge.net
+  * http://foro.portalhacker.net/index.php/topic,76300.0.html
+
+== innosetup ==
+  * http://www.scribd.com/doc/27229302/Tutorial-de-Inno-Setup
