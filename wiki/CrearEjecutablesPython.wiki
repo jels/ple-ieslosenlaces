@@ -12,6 +12,7 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
   * http://www.py2exe.org
   * Descargar: http://sourceforge.net/projects/py2exe/files/
   * Tutorial: http://py2exe.org/index.cgi/Tutorial
+  * http://www.blog.pythonlibrary.org/2010/07/31/a-py2exe-tutorial-build-a-binary-series/
   * Documentación del wiki de python: http://wiki.wxpython.org/index.cgi/DistributingYourApplication
   * En general (distribuir python): http://mundogeek.net/archivos/2008/09/23/distribuir-aplicaciones-python
   * Específico pygame:
@@ -21,7 +22,8 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
   * py2exe y QT:
     * http://popdevelop.com/2010/04/how-to-build-an-executable-application-from-your-python-script-qt-special/
 
-
+== GUI2EXE ==
+  * Proyecto interesante: http://code.google.com/p/gui2exe/
 
 
 === Wrappers ===
