@@ -1,5 +1,9 @@
 #summary Recursos desarrollo web
 
+= APIs =
+  * http://www.smashingmagazine.com/2010/12/21/yql-using-web-content-for-non-programmers/
+  * http://www.programmableweb.com/
+
 = PHP =
 
 == Tutoriales ==
