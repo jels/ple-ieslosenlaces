@@ -1,5 +1,10 @@
 #summary Recursos desarrollo web
 
+= Diseño =
+== Wireframes ==
+  * http://www.volkside.com/2010/12/introducing-wirify-the-web-as-wireframes/
+
+
 = APIs =
   * http://www.smashingmagazine.com/2010/12/21/yql-using-web-content-for-non-programmers/
   * http://www.programmableweb.com/
@@ -8,3 +13,8 @@
 
 == Tutoriales ==
   * http://www.killerphp.com/videos/
+
+
+= Usabilidad = 
+
+  * http://www.paulolyslager.com/five-quick-easy-ways-improve-websites-usability
