@@ -1,4 +1,4 @@
-#summary GUI Python
+#summary Intro GUI Python
 
 = EASYGUI =
   * http://sourcefreedom.com/?p=42
