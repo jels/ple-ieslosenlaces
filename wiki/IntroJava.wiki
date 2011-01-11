@@ -6,10 +6,19 @@
 = Java en Ubuntu =
   * http://www.guia-ubuntu.org/index.php?title=Java
   * InstalarEclipse
-
+== Instalar java de Oracle ==
+  * Descargar de http://www.oracle.com/technetwork/java/javase/downloads/index.html
+  * Crear directorios y copiar:
 {{{
+$ sudo mkdir -p /opt/java/32
+$ sudo cp jdk-6u23-linux-i586.bin /opt/java/32
+}}}
+  * Ejecutar: 
+{{{
+sudo sh /opt/java/32/jdk-6u23-linux-i586.bin
 sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/32/jdk1.6.0_23/bin/java" 1
 }}}
+
 = Documentación ==
   * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:inicio
   * http://ocw.uc3m.es/informatica/programacion/transparencias
