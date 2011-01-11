@@ -1,0 +1,18 @@
+#summary Repaso listas, cadenas, dicc, ficheros, funciones
+
+= Ejercicios de Repaso =
+
+== Material recomendado ==
+  * http://manuales.gfc.edu.co/python/tlc/thinkCSpy.es.pdf
+  * Más recursos: http://python.org.ar/pyar/AprendiendoPython
+  * http://www.rexx.com/~dkuhlman/#training-documents-for-python
+
+== Listado de ejercicios ==
+(Basados en el libro http://www.rexx.com/~dkuhlman/python_book_01.pdf)
+  * Listas y tuplas: ej. pág. 126 y 130
+  * Cadenas: ej. pág. 133 y 135
+  * Diccionarios: ej. pág. 140 y 141
+  * Ficheros: ej. pág. 143
+  * Tipos de datos: ej. pág. 147
+  * For: ej. pág. 153
+  * Funciones: ej. pág. 157, 158 y 159 
