@@ -7,6 +7,9 @@
   * http://www.guia-ubuntu.org/index.php?title=Java
   * InstalarEclipse
 
+{{{
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/32/jre1.6.0_23/bin/java" 1
+}}}
 = Documentación ==
   * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:inicio
   * http://ocw.uc3m.es/informatica/programacion/transparencias
