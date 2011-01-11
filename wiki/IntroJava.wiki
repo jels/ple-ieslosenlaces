@@ -8,7 +8,7 @@
   * InstalarEclipse
 
 {{{
-sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/32/jre1.6.0_23/bin/java" 1
+sudo update-alternatives --install "/usr/bin/java" "java" "/opt/java/32/jdk1.6.0_23/bin/java" 1
 }}}
 = Documentación ==
   * http://www.humbertocervantes.net/dokuwiki/doku.php?id=cursos:introjava:inicio
