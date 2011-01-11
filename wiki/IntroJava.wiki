@@ -7,6 +7,7 @@
   * http://www.guia-ubuntu.org/index.php?title=Java
   * InstalarEclipse
 == Instalar java de Oracle ==
+Documentación: http://sites.google.com/site/easylinuxtipsproject/java#TOC-INSTALL-MANUALLY
   * Descargar de http://www.oracle.com/technetwork/java/javase/downloads/index.html
   * Crear directorios y copiar:
 {{{
