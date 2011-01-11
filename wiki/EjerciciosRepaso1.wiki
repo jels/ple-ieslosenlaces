@@ -18,15 +18,6 @@
   * Funciones: ej. pág. 157, 158 y 159 
 
 == Más ejercicios ==
-  # Write a function called find_dups that takes a list of integers as its
-input argument and returns a set of those integers that occur two
-or more times in the list.
-  # The keys in a dictionary are guaranteed to be unique, but the
-   values are not. Write a function called count_values that takes a
-   single dictionary as an argument and returns the number of dis-
-   tinct values it contains. Given the input {’red’:1, ’green’:1, ’blue’:2},
-   for example, it would return 2.
-  # Write a function called dict_intersect that takes two dictionaries
-as arguments and returns a dictionary that contains only the
-key/value pairs found in both of the original dictionaries.
-
+  # Write a function called find_dups that takes a list of integers as its input argument and returns a set of those integers that occur two or more times in the list.
+  # The keys in a dictionary are guaranteed to be unique, but the values are not. Write a function called count_values that takes a single dictionary as an argument and returns the number of distinct values it contains. Given the input {’red’:1, ’green’:1, ’blue’:2}, for example, it would return 2.
+  # Write a function called dict_intersect that takes two dictionaries as arguments and returns a dictionary that contains only the key/value pairs found in both of the original dictionaries.
