@@ -3,6 +3,22 @@
 = Documentación general =
   * http://es.wikipedia.org/wiki/Control_de_versiones
 
+= Mercurial =
+== Documentación fácil ==
+  * http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=mercurial
+  * https://developer.mozilla.org/es/FAQ_de_Mercurial
+
+== Más docs ==
+  * http://devnull.li/libromercurial/index.es.html
+  * http://hginit.com/
+  * http://www.joelonsoftware.com/items/2010/03/17.html
+
+  * http://www.losersjuegos.com.ar/incoming/descargas/20101217/pilas_desarrolladores.pdf
+  * Mercurial y eclipse: http://www.vogella.de/articles/Mercurial/article.html
+  * Mercurial, bitbucket y Netbeans: http://es.debugmodeon.com/articulo/control-de-versiones-con-netbeans-mercurial-y-bitbucket
+  * Googlecode, eclise y mercurial: http://blogs.intland.com/main/entry/39
+
+
 = Subversion =
 == Intro ==
   * http://es.wikipedia.org/wiki/Subversion
@@ -49,19 +65,3 @@ $ svn resolve
 {{{
 $ svn commit ­m ”Mensaje”
 }}}
-
-
-= Mercurial =
-== Documentación fácil ==
-  * http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=mercurial
-  * https://developer.mozilla.org/es/FAQ_de_Mercurial
-
-== Más docs ==
-  * http://devnull.li/libromercurial/index.es.html
-  * http://hginit.com/
-  * http://www.joelonsoftware.com/items/2010/03/17.html
-
-  * http://www.losersjuegos.com.ar/incoming/descargas/20101217/pilas_desarrolladores.pdf
-  * Mercurial y eclipse: http://www.vogella.de/articles/Mercurial/article.html
-  * Mercurial, bitbucket y Netbeans: http://es.debugmodeon.com/articulo/control-de-versiones-con-netbeans-mercurial-y-bitbucket
-  * Googlecode, eclise y mercurial: http://blogs.intland.com/main/entry/39
