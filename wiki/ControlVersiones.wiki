@@ -52,6 +52,11 @@ $ svn commit ­m ”Mensaje”
 
 
 = Mercurial =
+== Documentación fácil ==
+  * http://www.adictosaltrabajo.com/tutoriales/tutoriales.php?pagina=mercurial
+  * https://developer.mozilla.org/es/FAQ_de_Mercurial
+
+== Más docs ==
   * http://devnull.li/libromercurial/index.es.html
   * http://hginit.com/
   * http://www.joelonsoftware.com/items/2010/03/17.html
