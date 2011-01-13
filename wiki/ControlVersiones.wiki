@@ -1,4 +1,5 @@
 #summary Introducción al control de versiones
+<wiki:toc max_depth="3" />
 
 = Documentación general =
   * http://es.wikipedia.org/wiki/Control_de_versiones
