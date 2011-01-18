@@ -9,3 +9,5 @@
     * Revisa los pasos. Se cambiará algún carácter al buscar su complemento varias veces?
     * Escribe la función complemento(secuencia) que devuelve el complemento de una secuencia.
   # Escribe una función minimo_maximo(secuencia, booleano) Si booleano es True, devuelve el mínimo, si no de vuelve el índice máximo.
+
+*NOTA:* Crea los doctests para todas las funciones antes de empezar a programar. Recuerda http://docs.python.org/library/doctest.html
