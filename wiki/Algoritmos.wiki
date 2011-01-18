@@ -1,0 +1,11 @@
+#summary Ejercicios de algoritmos
+
+= Búsqueda =
+
+  # Encuentra el índice que ocupa el número menor de una serie.
+  # Encuentra los índices que ocupan los dos números menores de una serie
+  # Una secuencia de ADN es una cadena construida con las siguientes letras: A, T, G, y C. Para encontrar el complemento de una secuencia de ADN las Aes se reemplazan por Tes, las Tes por Aes, las Ges por Ces y las Ces por Ges. Por ejemplo el complemento de AATTGCCGT es TTAACGGCA.
+    * Escribe los pasos (en español) para encontrar el complemento.
+    * Revisa los pasos. Se cambiará algún carácter al buscar su complemento varias veces?
+    * Escribe la función complemento(secuencia) que devuelve el complemento de una secuencia.
+  # Escribe una función minimo_maximo(secuencia, booleano) Si booleano es True, devuelve el mínimo, si no de vuelve el índice máximo.
