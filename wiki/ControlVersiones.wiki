@@ -19,6 +19,8 @@
   * Mercurial, bitbucket y Netbeans: http://es.debugmodeon.com/articulo/control-de-versiones-con-netbeans-mercurial-y-bitbucket
   * Googlecode, eclise y mercurial: http://blogs.intland.com/main/entry/39
 
+= GIT =
+  * http://library.edgecase.com/git_immersion/index.html
 
 = Subversion =
 == Intro ==
