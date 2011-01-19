@@ -3,6 +3,17 @@
 = Búsqueda =
 
   # Encuentra el índice que ocupa el número menor de una serie.
+{{{
+# -*- coding: cp1252 -*-
+def indice_menor(serie):
+    '''
+    Devuelve el índice que ocupa el valor menor de una serie
+    >>> puntos = [3456, 2345, 120, 4590, 43, 23456]
+    >>> indice_menor(puntos)
+    4
+    '''
+    pass
+}}}
   # Encuentra los índices que ocupan los dos números menores de una serie
   # Una secuencia de ADN es una cadena construida con las siguientes letras: A, T, G, y C. Para encontrar el complemento de una secuencia de ADN las Aes se reemplazan por Tes, las Tes por Aes, las Ges por Ces y las Ces por Ges. Por ejemplo el complemento de AATTGCCGT es TTAACGGCA.
     * Escribe los pasos (en español) para encontrar el complemento.
