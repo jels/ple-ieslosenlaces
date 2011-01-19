@@ -4,7 +4,6 @@
 
   # Encuentra el índice que ocupa el número menor de una serie.
 {{{
-# -*- coding: cp1252 -*-
 def indice_menor(serie):
     '''
     Devuelve el índice que ocupa el valor menor de una serie
