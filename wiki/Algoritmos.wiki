@@ -1,7 +1,7 @@
 #summary Ejercicios de algoritmos
 
 = Búsqueda =
-  * {{{lista.index}}}
+  * {{{lista.index(objeto)}}}
   * Búsqueda binaria: http://code.google.com/p/ple-ieslosenlaces/wiki/BusquedaBinaria
 
 == Ejercicios ==
