@@ -1,7 +1,10 @@
 #summary Ejercicios de algoritmos
 
 = Búsqueda =
+  * {{{lista.index)
+  * Búsqueda binaria: http://code.google.com/p/ple-ieslosenlaces/wiki/BusquedaBinaria
 
+== Ejercicios ==
   # Encuentra el índice que ocupa el número menor de una serie.
 {{{
 def indice_menor(serie):
