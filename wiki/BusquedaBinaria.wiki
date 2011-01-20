@@ -4,7 +4,7 @@
 
 == Algoritmo ==
 {{{
-def busqueda_binaria(v, L):
+def binary_search(v, L):
     """Devuelve el índice de la primera ocurrencia de v en la lista L
     o -1 si v no está en L."""
 
@@ -28,9 +28,9 @@ def busqueda_binaria(v, L):
 == Test ==
 {{{
 import nose
-from busqueda_binaria import busqueda_binaria
+from binary_search import binary_search
 
-# Lista para hacer las búsquedas
+# The list to search with.
 VALUES = [1, 3, 4, 4, 5, 7, 9, 10]
 
 def test_first():
