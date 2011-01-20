@@ -1,7 +1,7 @@
 #summary Algoritmo de búsqueda binaria
 
 =Búsqueda binaria=
-
+  * http://es.wikipedia.org/wiki/Algoritmo_de_b%C3%BAsqueda
 == Algoritmo ==
 {{{
 def binary_search(v, L):
