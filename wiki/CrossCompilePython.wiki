@@ -1,0 +1,5 @@
+#summary Compilar instaladores de windows desde linux
+
+= Ideas y docs =
+  * http://www.hforge.org/itools/docs/windows
+  * http://code.google.com/p/iocbio/wiki/BuildWindowsInstallersOnLinux
