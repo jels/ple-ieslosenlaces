@@ -1,0 +1,9 @@
+#summary Uso de archivos zip con python
+
+= Documentación =
+  * zipfile http://docs.python.org/library/zipfile.html
+  * http://www.doughellmann.com/PyMOTW/zipfile/
+  * http://www.devshed.com/c/a/Python/Python-UnZipped/
+
+= Ejemplos =
+
