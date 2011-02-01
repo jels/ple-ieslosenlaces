@@ -5,16 +5,11 @@
 Vamos a instalar la versión 2.x
 
 == Instalación en windows ==
-  * http://wiki.xml3k.org/Amara2/Windows
-  * Cliente mercurial para win: http://bitbucket.org/tortoisehg/stable/wiki/Home
+  * http://wiki.xml3k.org/Amara/Windows
 == Instalación en linux ==
   * http://wiki.xml3k.org/Amara/Install#Formostusers
   * Instalar python-dev si no está instalado
-  * Instalar python-dateutil
-{{{
-easy_install python-dateutil 
-}}}
-  * Descargar fuente
+
 {{{
 $ pip install http://files.akara.info/00-amara-latest.tar.bz2
 }}}
