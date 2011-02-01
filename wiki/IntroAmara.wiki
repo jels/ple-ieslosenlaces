@@ -9,8 +9,6 @@
 Amara es un conjunto de librerías para procesar XML en Python. 
 http://wiki.xml3k.org/Amara
 
-= Versiones = 
-Actualmente la versión en producción es la 1.x, que necesita 4Suite-XML . Está en desarrollo la versión 2.x (en estado alpha), que ya integra 4Suite y tiene muchas mejoras de prestaciones.
 
 = Instalación = 
 AmaraInstalar
