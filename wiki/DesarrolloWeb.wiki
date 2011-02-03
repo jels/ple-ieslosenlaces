@@ -23,3 +23,7 @@
 
 = Trucos = 
   * Menú con CSS: http://www.youtube.com/watch?v=t17ACEEGBpo&feature=player_embedded
+
+= Links para organizar =
+  * http://www.webmastergranada.es/otros/software-para-webmasters/
+  * http://dzign.us/
