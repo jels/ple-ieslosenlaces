@@ -13,19 +13,31 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
   * Descargar: http://sourceforge.net/projects/py2exe/files/
   * Tutorial: http://py2exe.org/index.cgi/Tutorial
   * http://www.blog.pythonlibrary.org/2010/07/31/a-py2exe-tutorial-build-a-binary-series/
-  * Documentación del wiki de python: http://wiki.wxpython.org/index.cgi/DistributingYourApplication
   * En general (distribuir python): http://mundogeek.net/archivos/2008/09/23/distribuir-aplicaciones-python
-  * Específico pygame:
-    * http://www.pygame.org/wiki/Pygame2exe
-    * http://www.pygame.org/project/589/
-    * Un ejemplo: http://code.google.com/p/pybreakout/source/browse/trunk/src/pybreakout/setup.py
-  * py2exe y QT:
-    * http://popdevelop.com/2010/04/how-to-build-an-executable-application-from-your-python-script-qt-special/
+
+
+===Resolver algunos problemas===
+  * http://crazedmonkey.com/blog/python/pkg_resources-with-py2exe.html
+
+===Con wxpython===
+  * Documentación del wiki de wxpython: http://wiki.wxpython.org/index.cgi/DistributingYourApplication
+
+===Con pygame===
+  * http://www.pygame.org/wiki/Pygame2exe
+  * http://www.pygame.org/project/589/
+  * Un ejemplo: http://code.google.com/p/pybreakout/source/browse/trunk/src/pybreakout/setup.py
+===Con Qt===
+  * http://popdevelop.com/2010/04/how-to-build-an-executable-application-from-your-python-script-qt-special/
+  * http://www.py2exe.org/index.cgi/Py2exeAndPyQt
+  * http://arstechnica.com/open-source/guides/2009/03/how-to-deploying-pyqt-applications-on-windows-and-mac-os-x.ars/
+
+
 
 == GUI2EXE ==
   * Proyecto interesante: http://code.google.com/p/gui2exe/
 
-
+==py2app ==
+  * http://aralbalkan.com/1675
 === Wrappers ===
 _py2exe me está dando problemas con las fuentes_
   * http://www.pygame.org/project-PySetup-589-.html
