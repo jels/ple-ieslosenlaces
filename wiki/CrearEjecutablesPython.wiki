@@ -1,5 +1,7 @@
 #summary Crear ejecutables con python
 
+<wiki:toc max_depth="3" />
+
 == Solución muy sencilla con cx_freeze ==
   # Instalar cx_freeze: http://cx-freeze.sourceforge.net/
   # Ejecutar desde la consola: 
@@ -38,7 +40,8 @@ c:\Python26\Scripts\cxfreeze <nombre_juego>.py --target-dir <directorio_destino>
 
 ==py2app ==
   * http://aralbalkan.com/1675
-=== Wrappers ===
+
+== Wrappers ==
 _py2exe me está dando problemas con las fuentes_
   * http://www.pygame.org/project-PySetup-589-.html
   * http://www.moviepartners.com/blog/utilities/ppb/
