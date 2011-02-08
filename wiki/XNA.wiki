@@ -5,6 +5,12 @@
   * http://en.wikipedia.org/wiki/Microsoft_XNA
   * http://creators.xna.com/es-ES/
   * http://www.xna.com/
+== Instalar ==
+  * Windows Phone Developer Tools installer: http://go.microsoft.com/?linkid=9713250
+  * standalone XNA Game Studio 4.0 installer: http://go.microsoft.com/fwlink/?LinkId=197288
+  * App Hub Membership
+ https://windowsphone.create.msdn.com/Register/
+
 = Documentación =
   * http://msdn.microsoft.com/en-us/aa937791.aspx
   * XNA4 http://msdn.microsoft.com/en-us/library/bb200104.aspx
