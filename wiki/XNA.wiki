@@ -19,6 +19,7 @@
   * http://www.webdottrainsim.com/webdotwiz/homework-prog-gamxna.htm
 
   * The XDSK – (XNA Developer’s Survival Kit): http://www.nelxon.com/journal/entry-1002/xdsk/
+  * Convertir de 3.1 a 4: http://www.nelxon.com/blog/xna-3-1-to-xna-4-0-cheatsheet/
 
 == Foros en español ==
   * http://social.msdn.microsoft.com/Forums/es-ES/xnaes/threads
