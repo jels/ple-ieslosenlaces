@@ -54,6 +54,9 @@ http://www.microsoft.com/education/facultyconnection/BZ/articles/articledetails.
   * http://xna.jtmbooks.com/xnatutorials.html
 == 3D ==
   * http://sabia.tic.udc.es/gc/XNA/index.html
+  * http://msdn.microsoft.com/en-us/library/bb203897%28v=XNAGameStudio.31%29.aspx
+  * http://www.riemers.net/
+  * http://msdn.microsoft.com/en-us/library/bb194916.aspx
 
 == Menús ==
   * [http://xnacommunity.codeplex.com/wikipage?title=Componente%20Menu&referringTitle=Componentes Componente Menú]
