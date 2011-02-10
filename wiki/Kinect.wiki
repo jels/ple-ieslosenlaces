@@ -1,0 +1,5 @@
+#summary Programación del dispositivo kinect
+
+
+== doc ==
+* http://100xna.wordpress.com/2011/01/12/avanzado-programar-aplicaciones-con-kinect/
