@@ -17,7 +17,8 @@ Si utilizáis un recurso que no es vuestro, hay que citar su procedencia.
 
 == fuentes ==
   * http://www.1001freefonts.com/
+  * http://www.blambot.com/fonts.shtml
+  * http://www.fontspace.com/category/video games
 
 == modelos 3D ==
   * http://100xna.wordpress.com/2010/10/19/recursos-modelos-3d-para-usar-en-tus-juegos/
-
