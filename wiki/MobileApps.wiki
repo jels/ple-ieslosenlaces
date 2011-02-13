@@ -1,0 +1,4 @@
+#summary Desarrollo de apps mobile - En proceso
+
+= Ideas =
+* http://blog.mfabrik.com/2011/02/09/native-mobile-application-development-with-plone-wordpress-and-python/
