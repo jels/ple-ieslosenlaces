@@ -1,0 +1,4 @@
+#summary Ideas apps con django
+
+
+* http://www.technobabble.dk/2008/mar/06/exposing-calendar-events-using-icalendar-django/
