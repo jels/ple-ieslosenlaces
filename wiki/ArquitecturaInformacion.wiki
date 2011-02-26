@@ -1,0 +1,5 @@
+#summary Arquitectura de la información
+
+= Wireframes =
+
+  * http://www.nosolousabilidad.com/articulos/diagramacion.htm
