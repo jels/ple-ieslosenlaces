@@ -2,8 +2,14 @@
 
 <wiki:toc max_depth="3" />
 = Algunos links =
-  * http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&displaylang=en
-
+  * http://create.msdn.com/en-us/home/getting_started
+  * http://create.msdn.com/en-US/home/about/developer_registration_walkthrough
+  * http://www.microsoft.com/downloads/en/details.aspx?FamilyID=04704acf-a63a-4f97-952c-8b51b34b00ce&displaylang=en
+  * http://www.telerik.com/products/windows-phone/getting-started/user-groups.aspx
+  * Promo: http://www.microsoft.com/downloads/details.aspx?FamilyID=2338b5d1-79d8-46af-b828-380b0f854203&displaylang=en
+  * http://dfwiki.devfish.net/(X(1)S(mks5knb2cijlwq55c5aeqy45))/Default.aspx?Page=Windows-Phone-7-Design&NS=technology&AspxAutoDetectCookieSupport=1
+  * http://windowsteamblog.com/windows_phone/b/wpdev/archive/2010/11/05/top-ten-things-to-keep-an-eye-on.aspx
+  * http://forums.create.msdn.com/forums/
   * http://blogs.msdn.com/microsoft_press/archive/2010/03/15/free-ebook-programming-windows-phone-7-series-draft-preview.aspx
 
   * http://developer.windowsphone.com/windows-phone-7-series/
