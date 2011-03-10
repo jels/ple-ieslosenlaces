@@ -13,6 +13,7 @@
   * http://blogs.msdn.com/microsoft_press/archive/2010/03/15/free-ebook-programming-windows-phone-7-series-draft-preview.aspx
 
   * http://developer.windowsphone.com/windows-phone-7-series/
+  * Design Resources for Windows Phone http://msdn.microsoft.com/en-us/library/ff637515(v=vs.92).aspx
 
 = Emulador WP7 =
   * http://developer.windowsphone.com/windows-phone-7-series/
