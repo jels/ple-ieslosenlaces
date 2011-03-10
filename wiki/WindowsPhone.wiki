@@ -15,6 +15,9 @@
   * http://developer.windowsphone.com/windows-phone-7-series/
   * Design Resources for Windows Phone http://msdn.microsoft.com/en-us/library/ff637515(v=vs.92).aspx
 
+= UX Metro =
+  * Sobre metro: http://crocusgirl.wordpress.com/2010/04/18/windows-phone-7-design-notes-part1-metro-resources/
+
 = Emulador WP7 =
   * http://developer.windowsphone.com/windows-phone-7-series/
   * Emulador de Windows Phone 7 Series desbloqueado   http://geeks.ms/blogs/jbosch/archive/2010/03/23/ot-emulador-de-windows-phone-7-series-desbloqueado.aspx
