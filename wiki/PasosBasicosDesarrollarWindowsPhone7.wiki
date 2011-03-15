@@ -11,6 +11,8 @@ Tiene un coste de 75 euros. Un paso a paso detallado puede encontrarse aquí:  A
 El proceso puede tardar de 2 a 10 días dependiendo de si el registro es como individuo (2-3 días) o como compañía (5-10 días) y del tiempo que se tarde en aportar la información solicitada para validar la identidad. Es recomendable que contactéis con Geotrust (la compañía que valida vuestra identidad) mediante su chat online en https://www.geotrust.com/support/chat/order-processing.html o mediante el teléfono en Europa de Geotrust: +44 203 0240907 para agilizar los trámites.
 ==Descargarse las herramientas==
 Son Gratuitas y pueden descargarse de aquí: http://create.msdn.com/en-us/home/getting_started
+
+Problema *compatibility mode*: http://blogs.msdn.com/b/astebner/archive/2010/09/17/10064318.aspx
 ==Formarse en Silverlight o en XNA==
 Los recursos de formación principales puedes encontrarlos en nuestro centro de desarrollo de MSDN
 
