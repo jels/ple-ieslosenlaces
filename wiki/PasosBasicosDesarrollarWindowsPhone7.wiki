@@ -1,29 +1,29 @@
-<wiki:toc max_depth="3" />
+<wiki:toc max_depth="2" />
 =Pasos básicos para desarrollar y publicar aplicaciones y juegos en Windows Phone 7=
 
 (de email de Marta Sánchez at Microsoft)
 
 Nos gustaría recordaros los pasos básicos para desarrollar y publicar aplicaciones y juegos en Windows Phone 7:
  
-===Registrarse en el Marketplace como desarrollador o como compañía
-===
+==Registrarse en el Marketplace como desarrollador o como compañía
+==
 Tiene un coste de 75 euros. Un paso a paso detallado puede encontrarse aquí:  App Hub Developer Registration Walkthrough.
 
 El proceso puede tardar de 2 a 10 días dependiendo de si el registro es como individuo (2-3 días) o como compañía (5-10 días) y del tiempo que se tarde en aportar la información solicitada para validar la identidad. Es recomendable que contactéis con Geotrust (la compañía que valida vuestra identidad) mediante su chat online en https://www.geotrust.com/support/chat/order-processing.html o mediante el teléfono en Europa de Geotrust: +44 203 0240907 para agilizar los trámites.
-===Descargarse las herramientas===
+==Descargarse las herramientas==
 Son Gratuitas y pueden descargarse de aquí: http://create.msdn.com/en-us/home/getting_started
-===Formarse en Silverlight o en XNA===
+==Formarse en Silverlight o en XNA==
 Los recursos de formación principales puedes encontrarlos en nuestro centro de desarrollo de MSDN
 
-===Seguir las directrices de diseño de Windows Phone 7===
+==Seguir las directrices de diseño de Windows Phone 7==
 Seguir las directrices de diseño de Windows Phone 7 para asegurar una experiencia de usuario óptima. Lo mejor es revisar las directrices aquí: UI Design and Interaction Guide for Windows Phone 7 y consultar los recursos de diseño aquí: http://dfwiki.devfish.net/(X(1)S(mks5knb2cijlwq55c5aeqy45))/Default.aspx?Page=Windows-Phone-7-Design&NS=technology&AspxAutoDetectCookieSupport=1. Comprobar las diez formas de mejorar la experiencia de usuario de la aplicación: http://windowsteamblog.com/windows_phone/b/wpdev/archive/2010/11/05/top-ten-things-to-keep-an-eye-on.aspx
-===Desarrollar y probar la aplicación o juego y publicarla en el Marketplace===
+==Desarrollar y probar la aplicación o juego y publicarla en el Marketplace==
 Un paso a paso de cómo hacerlo se puede encontrar aquí: Windows Phone 7 Application Submission Walkthrough
 
 Para probar la aplicación en un teléfono es necesario desbloquearlo antes mediante la herramienta Phone Registration que viene con las herramientas de desarrollo, usando el LIVE ID que se ha usado en el paso 1.
-===El proceso de publicación puede llevar===
+==El proceso de publicación puede llevar==
 El proceso de publicación puede llevar 2-5 días hábiles si no hay errores de certificación. Para evitar los errores de certificación, es importante revisar las políticas de certificación aquí y revisar los trucos documentados aquí: http://wp7connect.blogspot.com/2010/10/desarrolladores-trucos-imprescindibles_05.html
-===Si tenéis cualquier problema o error===
+==Si tenéis cualquier problema o error==
 Si tenéis cualquier problema o error en el proceso podéis consultar o abrir incidencias en los foros: http://forums.create.msdn.com/forums/ o abriendo una incidencia de Soporte en el Dashboard de la cuenta correspondiente del AppHub de Windows Phone  (https://windowsphone.create.msdn.com/support)
 
  
