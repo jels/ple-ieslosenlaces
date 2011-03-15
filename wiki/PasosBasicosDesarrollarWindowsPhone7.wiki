@@ -12,7 +12,7 @@ El proceso puede tardar de 2 a 10 días dependiendo de si el registro es como in
 ==Descargarse las herramientas==
 Son Gratuitas y pueden descargarse de aquí: http://create.msdn.com/en-us/home/getting_started
 
-Problema *compatibility mode*: http://blogs.msdn.com/b/astebner/archive/2010/09/17/10064318.aspx
+Problema *compatibility mode*: http://blogs.msdn.com/b/astebner/archive/2010/09/17/10064318.aspx  http://www.wintellect.com/CS/blogs/bcampbell/archive/2010/10/05/windows-phone-7-developer-tools-cannot-run-in-compatibility-mode-on-installation.aspx
 ==Formarse en Silverlight o en XNA==
 Los recursos de formación principales puedes encontrarlos en nuestro centro de desarrollo de MSDN
 
