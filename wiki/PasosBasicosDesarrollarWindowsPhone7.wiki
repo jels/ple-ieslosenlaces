@@ -5,8 +5,7 @@
 
 Nos gustaría recordaros los pasos básicos para desarrollar y publicar aplicaciones y juegos en Windows Phone 7:
  
-==Registrarse en el Marketplace como desarrollador o como compañía
-==
+==Registrarse en el Marketplace como desarrollador o como compañía==
 Tiene un coste de 75 euros. Un paso a paso detallado puede encontrarse aquí:  App Hub Developer Registration Walkthrough.
 
 El proceso puede tardar de 2 a 10 días dependiendo de si el registro es como individuo (2-3 días) o como compañía (5-10 días) y del tiempo que se tarde en aportar la información solicitada para validar la identidad. Es recomendable que contactéis con Geotrust (la compañía que valida vuestra identidad) mediante su chat online en https://www.geotrust.com/support/chat/order-processing.html o mediante el teléfono en Europa de Geotrust: +44 203 0240907 para agilizar los trámites.
