@@ -27,4 +27,5 @@ El proceso de publicación puede llevar 2-5 días hábiles si no hay errores de 
 ==Si tenéis cualquier problema o error==
 Si tenéis cualquier problema o error en el proceso podéis consultar o abrir incidencias en los foros: http://forums.create.msdn.com/forums/ o abriendo una incidencia de Soporte en el Dashboard de la cuenta correspondiente del AppHub de Windows Phone  (https://windowsphone.create.msdn.com/support)
 
- 
+= Primera aplicación =
+  * http://create.msdn.com/en-US/education/quickstarts/Get_Started_Creating_a_Windows_Phone_Application
