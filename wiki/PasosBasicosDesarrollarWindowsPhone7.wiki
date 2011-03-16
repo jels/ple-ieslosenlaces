@@ -29,3 +29,4 @@ Si tenéis cualquier problema o error en el proceso podéis consultar o abrir in
 
 = Primera aplicación =
   * http://create.msdn.com/en-US/education/quickstarts/Get_Started_Creating_a_Windows_Phone_Application
+  * http://jmservera.wordpress.com/2011/03/12/recursos-utiles-para-aprender-a-programar-en-wp7/
