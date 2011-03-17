@@ -27,6 +27,15 @@ El proceso de publicación puede llevar 2-5 días hábiles si no hay errores de 
 ==Si tenéis cualquier problema o error==
 Si tenéis cualquier problema o error en el proceso podéis consultar o abrir incidencias en los foros: http://forums.create.msdn.com/forums/ o abriendo una incidencia de Soporte en el Dashboard de la cuenta correspondiente del AppHub de Windows Phone  (https://windowsphone.create.msdn.com/support)
 
+= Documentación y ejemplos interesantes =
+  * http://www.robmiles.com/c-yellow-book/Rob%20Miles%20Windows%20Phone%20Blue%20Book.pdf (no va el link? )
+  * http://www.charlespetzold.com/phone/
+  * http://geekswithblogs.net/mikebmcl/archive/2011/03/10/tips-for-xna-wp7-developers.aspx
+  * http://create.msdn.com/en-US/education/gamedevelopment
+  * http://channel9.msdn.com/coding4fun/blog/XNA-WP7-getting-started
+  * http://geeks.ms/blogs/jbosch/archive/2010/07/15/webcast-windows-phone-7-jump-start-cuatro-sesiones-de-xna-4-0-para-wp7-en-ingl-233-s.aspx
+  * 
+
 = Primera aplicación =
   * http://create.msdn.com/en-US/education/quickstarts/Get_Started_Creating_a_Windows_Phone_Application
   * http://jmservera.wordpress.com/2011/03/12/recursos-utiles-para-aprender-a-programar-en-wp7/
