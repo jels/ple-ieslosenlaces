@@ -19,5 +19,4 @@ myConnection.Close();
 == Ejemplo ==
   * Ej. C#: http://www.csharphelp.com/2006/08/opening-mysql-database-with-c/
   * Ej. C#: http://softmetal.wordpress.com/2009/03/07/conectar-mysql-con-net-tutorial-c/
-  * C# + Forms: http://www.suite101.com/content/how-to-access-mysql-with-c-a115001
   * Ej. ironpython: http://d.hatena.ne.jp/akiramei/20060129/p1
