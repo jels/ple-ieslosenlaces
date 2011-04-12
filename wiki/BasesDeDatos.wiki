@@ -42,7 +42,8 @@ for tupla in cursor.fetchall():
 }}}
 
 == ejemplo con mysql ==
-http://www.cbs.dtu.dk/biotools/mysql_tut/todo.html#_TOC041
+  * http://www.codegood.com/downloads
+  * http://www.cbs.dtu.dk/biotools/mysql_tut/todo.html#_TOC041
 {{{
 import MySQLdb
 
