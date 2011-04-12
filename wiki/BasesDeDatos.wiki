@@ -40,3 +40,32 @@ cursor.execute("""select * from empleados
 for tupla in cursor.fetchall():
     print tupla
 }}}
+
+== ejemplo con mysql ==
+http://www.cbs.dtu.dk/biotools/mysql_tut/todo.html#_TOC041
+{{{
+import MySQLdb
+
+dbusername = "user" 
+dbname = 'user_private' 
+dbpassword = 'some_password'
+
+# connect to the database 
+db = MySQLdb.Connect(db = dbname, user = dbusername, passwd = dbpassword)
+
+#To perform a query, you first need a cursor, and then you can execute queries on it. 
+cursor = db.cursor()
+
+# create the query 
+query = "SELECT * FROM foo"
+
+# execute the query 
+cursor.execute(query)
+
+# retrieve the result 
+results = cursor.fetchall()
+
+for firstname, age, city in results: 
+    print firstname, age, city 
+
+}}}
