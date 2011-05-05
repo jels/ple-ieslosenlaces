@@ -79,3 +79,7 @@ DjangoAdmin
 
 = Una aplicación django =
 DjangoInterfazPublica
+
+= Tutoriales =
+  * http://www.informit.com/articles/article.aspx?p=1273658
+  * 
