@@ -1,0 +1,1 @@
+  * Lista de empleos de infojobs relacionados con Informática y telecomunicaciones: http://www.infojobs.net/trabajos.rss/c_150/

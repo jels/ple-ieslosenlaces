@@ -1,0 +1,65 @@
+# Árbol de clases #
+
+`* Indica que es una clase abstracta`
+```
+Object
+    *Component
+        Container
+            *JComponent
+                *AbstractButton
+                    JButton
+                    JMenuItem
+                        JCheckBonMenuItem
+                        JMenu
+                        JRadioButonMenuItem
+                    *JToggleButton
+                        JCheckBox
+                        JRadioButton
+                Box 
+                Filler
+                JColorChooser
+                JComboBox
+                JDesktopIcon
+                JFileChooser
+                JInternalFrame
+                JLabel
+                JLayeredPane
+                    JDesktopPane
+                JList
+                JMenuBar
+                JOptionPane
+                JPanel
+                JPopupMenu
+                JProgressBar
+                JRootPane
+                JScrollBar
+                JScrollPane
+                JSeparator
+                JSlider
+                JSplitPane
+                JTabbedPane
+                JTable
+                JTableHeader
+                *JTextComponent
+                    JEditorPane
+                        FrameEditorPane
+                        JTextPane
+                    JTextArea
+                    JtextField
+                        JPasswordField
+                JToolBar
+                JToolTip
+                JTree
+                JViewport
+                    ScrollableTabViewport
+            Panel
+                Applet
+                    JApplet
+            Window
+                Dialog
+                    JDialog
+                Frame
+                    JFrame
+                JWindow
+
+```
